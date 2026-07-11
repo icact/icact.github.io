@@ -41,6 +41,4 @@ The `.nojekyll` file is included so GitHub Pages serves all files as-is.
 
 ## Still to confirm
 
-- **Author guidelines** (`author-guidelines.html`) — the exact **page limit** and **similarity threshold** currently defer to the ConfConnects portal; add the numbers if you want them stated.
 - **Committee** (`committee.html`) — Dr. Mohammad Dilshad Ansari's affiliation is a placeholder ("ICACT 2026 Organising Committee").
-- **Archives** (`archives.html`) — verify the individual ICACT 2024 / 2025 IEEE Xplore edition links.
