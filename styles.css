@@ -219,6 +219,14 @@ em{font-style:normal;color:var(--ieee);}
 .person .aff{font-size:.86rem;color:var(--muted);}
 .tba{color:var(--muted);font-style:italic;font-weight:400;}
 
+/* large TPC roster (multi-column) */
+.tpc-roster{columns:3;column-gap:26px;border-top:2px solid var(--rule);padding-top:6px;}
+@media(max-width:900px){.tpc-roster{columns:2;}}
+@media(max-width:560px){.tpc-roster{columns:1;}}
+.tpc-roster .m{break-inside:avoid;-webkit-column-break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--line);}
+.tpc-roster .m b{display:block;font-family:var(--f-display);font-weight:600;font-size:.9rem;color:var(--ink);line-height:1.25;}
+.tpc-roster .m span{display:block;font-size:.79rem;color:var(--muted);line-height:1.3;margin-top:2px;}
+
 /* fee table */
 .table-scroll{overflow-x:auto;}
 .ftable{width:100%;border-collapse:collapse;border:2px solid var(--rule);background:var(--paper);}
