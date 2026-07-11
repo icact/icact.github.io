@@ -143,6 +143,7 @@ em{font-style:normal;color:var(--ieee);}
 .figs>div:last-child{border-right:none;}
 .figs b{display:block;font-family:var(--f-display);font-weight:800;font-size:2.4rem;color:var(--ieee);line-height:1;}
 .figs span{display:block;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.figs .fig-xplore{height:34px;width:auto;max-width:100%;display:block;}
 @media(max-width:760px){.figs{grid-template-columns:1fr 1fr;}.figs>div:nth-child(2){border-right:none;}.figs>div:nth-child(1),.figs>div:nth-child(2){border-bottom:1px solid var(--line);}}
 
 /* ---------- Directory list (explore) ---------- */
