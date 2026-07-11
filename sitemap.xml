@@ -9,4 +9,7 @@
   <url><loc>https://icact.github.io/venue.html</loc><priority>0.7</priority></url>
   <url><loc>https://icact.github.io/archives.html</loc><priority>0.6</priority></url>
   <url><loc>https://icact.github.io/contact.html</loc><priority>0.6</priority></url>
+  <url><loc>https://icact.github.io/refund.html</loc><priority>0.4</priority></url>
+  <url><loc>https://icact.github.io/privacy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://icact.github.io/terms.html</loc><priority>0.4</priority></url>
 </urlset>
