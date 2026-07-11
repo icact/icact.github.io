@@ -24,31 +24,23 @@ Static website for the **2026 IEEE 3rd International Conference on Advanced Comp
 
 No build step — plain HTML/CSS/JS. Just open `index.html`.
 
-## Deploying to `https://icact.github.io/`
+## Deployment
 
-That exact URL is a **GitHub user/organisation site**, so it must live in a repository literally named `icact.github.io` owned by an account/org named `ieeeicact`. Recommended setup (managed from the **pujaprasad** account):
+The site is **live at https://icact.github.io/**, served by GitHub Pages from the
+**`icact/icact.github.io`** repository (the GitHub user account `icact`), branch `main`, root folder.
 
-1. Sign in to GitHub as **pujaprasad**.
-2. Create a new **organisation** named **`ieeeicact`** (GitHub → *Settings → Organizations → New organization*, free plan). pujaprasad becomes the owner.
-3. Inside that org, create a **public** repository named exactly **`icact.github.io`**.
-4. Push the contents of this folder to that repo's default branch:
-   ```bash
-   git init
-   git add .
-   git commit -m "ICACT 2026 website"
-   git branch -M main
-   git remote add origin https://github.com/ieeeicact/icact.github.io.git
-   git push -u origin main
-   ```
-5. In the repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / root**.
-6. Wait ~1 minute — the site goes live at **https://icact.github.io/**.
+To publish updates, just commit and push to `main` — Pages redeploys automatically in ~1 minute:
 
-> Alternative (no org): push to a repo under the pujaprasad account instead — it will be served at `https://pujaprasad.github.io/<repo>/`, **not** at `icact.github.io`. The org route above is required for the exact URL.
+```bash
+git add -A
+git commit -m "Update ICACT 2026 website"
+git push origin main
+```
 
 The `.nojekyll` file is included so GitHub Pages serves all files as-is.
 
-## To finalise before launch
+## Still to confirm
 
-- **Committee names** (`committee.html`) — currently "To be announced".
-- **Registration fees** (`registration.html`) — currently "TBA".
-- Confirm the **important dates** (note: acceptance 10 Aug currently precedes the 25 Aug submission deadline).
+- **Author guidelines** (`author-guidelines.html`) — the exact **page limit** and **similarity threshold** currently defer to the ConfConnects portal; add the numbers if you want them stated.
+- **Committee** (`committee.html`) — Dr. Mohammad Dilshad Ansari's affiliation is a placeholder ("ICACT 2026 Organising Committee").
+- **Archives** (`archives.html`) — verify the individual ICACT 2024 / 2025 IEEE Xplore edition links.
