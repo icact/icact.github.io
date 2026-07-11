@@ -55,8 +55,9 @@ em{font-style:normal;color:var(--ieee);}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
 .brand:hover{text-decoration:none;}
 .brand__mark{width:38px;height:38px;}
-.brand__txt b{display:block;font-family:var(--f-display);font-weight:800;font-size:1.1rem;color:var(--ink);letter-spacing:-.01em;line-height:1;}
-.brand__txt span{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+.brand__txt{flex:none;}
+.brand__txt b{display:block;font-family:var(--f-display);font-weight:800;font-size:1.1rem;color:var(--ink);letter-spacing:-.01em;line-height:1.05;white-space:nowrap;}
+.brand__txt span{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);white-space:nowrap;margin-top:3px;}
 .brand-div{width:1px;height:36px;background:var(--line-2);flex:none;}
 .header-ieee{display:flex;align-items:center;flex:none;}
 .header-ieee:hover{text-decoration:none;}
