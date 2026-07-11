@@ -9,45 +9,47 @@
 <link rel="icon" href="assets/icact-logo-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="venue">
 <div id="site-header"></div>
 <main id="main">
 
-  <section class="page-hero"><div class="wrap">
-    <p class="eyebrow">Venue &amp; travel</p>
+  <section class="phead"><div class="wrap">
+    <p class="phead__crumb">Home / Venue &amp; Travel</p>
     <h1>Join us in Kathmandu, Nepal.</h1>
     <p>ICACT 2026 is hosted at the Hilton, Kathmandu — or attend online from anywhere in the world in hybrid mode.</p>
   </div></section>
 
-  <section class="section"><div class="wrap">
-    <div class="grid-2">
+  <section class="blk"><div class="wrap">
+    <div class="split">
       <div class="reveal">
-        <div class="sec__head"><span class="sec__num">01</span><span class="sec__kicker">The venue</span></div>
-        <h2>Hilton, Kathmandu</h2>
-        <p class="lead">Thirbam Sadak, Kathmandu, Nepal</p>
+        <span class="klabel">The venue</span>
+        <h2 class="blk__title">Hilton, Kathmandu.</h2>
+        <p class="lead">Thirbam Sadak, Kathmandu, Nepal.</p>
         <p>The conference takes place at the Hilton in Kathmandu, offering modern facilities for keynotes, technical sessions and networking. Full session details and the program schedule will be published closer to the event.</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Hilton+Kathmandu+Thirbam+Sadak" target="_blank" rel="noopener" class="btn btn--ghost">View on map &rarr;</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Hilton+Kathmandu+Thirbam+Sadak" target="_blank" rel="noopener" class="btn btn--outline">View on map &rarr;</a>
       </div>
-      <div class="reveal" style="--d:.1s">
-        <div class="track" style="padding:26px;">
-          <div class="n">At a glance</div>
-          <h3 style="margin-bottom:14px;">Getting there</h3>
-          <p style="margin-bottom:10px;"><b>Airport:</b> Tribhuvan International Airport (KTM), Kathmandu — the country's main international gateway.</p>
-          <p style="margin-bottom:10px;"><b>Local travel:</b> Taxis and ride-hailing are widely available across the Kathmandu valley.</p>
-          <p style="margin:0;"><b>Best time:</b> September offers pleasant weather in Kathmandu ahead of the autumn season.</p>
+      <div class="reveal" style="--d:.08s">
+        <div class="mast__card" style="border-left:2px solid var(--rule);padding:32px 0 32px 40px;">
+          <div class="spec"><span class="spec__k">Airport</span><span class="spec__v">KTM</span></div>
+          <div class="spec"><span class="spec__k">City</span><span class="spec__v">Kathmandu</span></div>
+          <div class="spec"><span class="spec__k">Country</span><span class="spec__v">Nepal</span></div>
+          <div class="spec"><span class="spec__k">Local travel</span><span class="spec__v">Taxi · Ride-hail</span></div>
+          <div class="spec"><span class="spec__k">Season</span><span class="spec__v">Pleasant</span></div>
         </div>
       </div>
     </div>
   </div></section>
 
-  <section class="section section--tint"><div class="wrap">
-    <div class="sec__head"><span class="sec__num">02</span><span class="sec__kicker">International attendees</span></div>
-    <h2 class="sec__title reveal">Visa &amp; entry.</h2>
+  <section class="blk blk--panel"><div class="wrap">
+    <div class="blk__head reveal">
+      <span class="klabel">International attendees</span>
+      <h2 class="blk__title">Visa &amp; entry.</h2>
+    </div>
     <div class="prose reveal">
-      <p>Most international visitors can obtain a <b>visa on arrival</b> at Tribhuvan International Airport, or apply in advance through Nepal's official online system. We recommend confirming the latest requirements for your nationality well before travel.</p>
+      <p>Most international visitors can obtain a <b>visa on arrival</b> at Tribhuvan International Airport (KTM), or apply in advance through Nepal's official online system. We recommend confirming the latest requirements for your nationality well before travel.</p>
       <ul>
         <li>Carry a passport valid for at least six months beyond your travel dates.</li>
         <li>Complete Nepal's online arrival form before you fly to speed up entry.</li>
@@ -60,13 +62,14 @@
     </div>
   </div></section>
 
-  <section class="section"><div class="wrap center">
-    <h2 class="reveal">Prefer to attend remotely?</h2>
-    <p class="reveal" style="color:var(--muted);max-width:52ch;margin:0 auto 24px;">ICACT 2026 runs in hybrid mode — present and participate online from anywhere.</p>
-    <a href="registration.html" class="btn btn--solid btn--lg reveal">Registration &amp; fees</a>
-  </div></section>
-
 </main>
+
+<section class="cta-band"><div class="wrap">
+  <h2>Prefer to attend remotely?</h2>
+  <p>ICACT 2026 runs in hybrid mode — present and participate online from anywhere.</p>
+  <div class="btns"><a href="registration.html" class="btn btn--light btn--lg">Registration &amp; fees</a></div>
+</div></section>
+
 <div id="site-footer"></div>
 <script src="app.js"></script>
 </body>

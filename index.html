@@ -12,12 +12,11 @@
 <link rel="icon" href="assets/icact-logo-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
 
-<!-- Extended-deadline announcement — remove after 25 Aug 2026 -->
 <div class="annbar" id="annbar">
   <span>&#9200; <b>Deadline extended:</b> paper submission now closes <s>30 June</s> <b>25 August 2026</b>.</span>
   <a href="https://app.confconnects.com/conference/wwrazM5QB8hSDwWL78wx" target="_blank" rel="noopener">Submit now &rarr;</a>
@@ -28,128 +27,105 @@
 
 <main id="main">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__grid" aria-hidden="true"></div>
-    <canvas class="hero__net" id="net" aria-hidden="true"></canvas>
-    <div class="hero__in">
-      <div class="hero__eyebrow reveal">
-        <span class="mono">&#9679;</span>
-        <a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625" target="_blank" rel="noopener">IEEE Conference Record #70625</a>
-        · Technically sponsored by the IEEE Nepal Section
-      </div>
-      <h1 class="reveal" style="--d:.05s">Advanced <em>Computing</em> Technologies</h1>
-      <p class="hero__sub reveal" style="--d:.12s">The 2026 IEEE 3rd International Conference — ICACT — bringing researchers, academics and industry together across the full breadth of computing.</p>
-      <div class="hero__meta reveal" style="--d:.2s">
-        <div class="hero__metacol"><span class="lbl">Dates</span><span class="val">1 – 2 Sep 2026</span></div>
-        <div class="hero__metacol"><span class="lbl">Location</span><span class="val">Kathmandu, Nepal</span></div>
-        <div class="hero__metacol"><span class="lbl">Mode</span><span class="val">Hybrid</span></div>
-      </div>
-      <div class="hero__cta reveal" style="--d:.28s">
-        <a href="https://app.confconnects.com/conference/wwrazM5QB8hSDwWL78wx" target="_blank" rel="noopener" class="btn btn--light btn--lg">Submit your paper &rarr;</a>
-        <a href="call-for-papers.html" class="btn btn--ghost-light btn--lg">Call for papers</a>
-      </div>
-      <div class="countdown reveal" style="--d:.36s" id="countdown" aria-label="Countdown to conference">
-        <span class="cd__lead">Starts in</span>
-        <div class="cd__unit"><b data-cd="days">—</b><i>Days</i></div>
-        <div class="cd__unit"><b data-cd="hours">—</b><i>Hrs</i></div>
-        <div class="cd__unit"><b data-cd="mins">—</b><i>Min</i></div>
-        <div class="cd__unit"><b data-cd="secs">—</b><i>Sec</i></div>
+  <!-- MASTHEAD -->
+  <section class="mast"><div class="wrap mast__in">
+    <div class="mast__lead">
+      <p class="mast__eyebrow">
+        <a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625" target="_blank" rel="noopener">IEEE Conf. Record #70625</a>
+        &nbsp;/&nbsp; Technically sponsored by the IEEE Nepal Section
+      </p>
+      <h1 class="mast__title">Advanced<br><em>Computing</em><br>Technologies</h1>
+      <p class="mast__sub">The 2026 IEEE 3rd International Conference — ICACT — bringing researchers, academics and industry together across the full breadth of computing.</p>
+      <div class="mast__cta">
+        <a href="https://app.confconnects.com/conference/wwrazM5QB8hSDwWL78wx" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Submit your paper &rarr;</a>
+        <a href="call-for-papers.html" class="btn btn--outline btn--lg">Call for papers</a>
       </div>
     </div>
-  </section>
+    <aside class="mast__card">
+      <div class="spec"><span class="spec__k">Dates</span><span class="spec__v">1 – 2 Sep 2026</span></div>
+      <div class="spec"><span class="spec__k">Location</span><span class="spec__v">Kathmandu, NP</span></div>
+      <div class="spec"><span class="spec__k">Venue</span><span class="spec__v">Hilton</span></div>
+      <div class="spec"><span class="spec__k">Mode</span><span class="spec__v">Hybrid</span></div>
+      <div class="spec"><span class="spec__k">Record</span><span class="spec__v">#70625</span></div>
+      <p class="count__lead">Conference begins in</p>
+      <div class="count" id="countdown">
+        <div class="count__u"><b data-cd="days">—</b><i>Days</i></div>
+        <div class="count__u"><b data-cd="hours">—</b><i>Hrs</i></div>
+        <div class="count__u"><b data-cd="mins">—</b><i>Min</i></div>
+        <div class="count__u"><b data-cd="secs">—</b><i>Sec</i></div>
+      </div>
+    </aside>
+  </div></section>
 
-  <!-- TICKER -->
-  <div class="ticker" aria-hidden="true">
-    <span class="ticker__label"><span>&#9679;</span> Research themes</span>
-    <div class="ticker__vp"><div class="ticker__track">
-      <span class="ticker__item">Artificial Intelligence</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Machine Learning</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Data Science</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Cybersecurity</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Cloud Computing</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">IoT &amp; Edge</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Quantum Computing</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Blockchain</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Artificial Intelligence</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Machine Learning</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Data Science</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Cybersecurity</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Cloud Computing</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">IoT &amp; Edge</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Quantum Computing</span><span class="ticker__sep">&#9670;</span>
-      <span class="ticker__item">Blockchain</span><span class="ticker__sep">&#9670;</span>
-    </div></div>
-  </div>
-
-  <!-- IEEE STRIP -->
-  <section class="ieee-strip"><div class="wrap ieee-strip__in">
-    <img src="assets/ieee-logo.svg" alt="IEEE — Advancing Technology for Humanity">
-    <div class="ieee-strip__txt reveal">
-      <b>The 2026 IEEE 3rd International Conference</b>
-      <p>ICACT is an IEEE conference (<a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625" target="_blank" rel="noopener">Record #70625</a>), technically sponsored by the <b>IEEE Nepal Section</b>. Accepted, presented papers will be submitted to IEEE Xplore®, subject to IEEE's quality review.</p>
-    </div>
+  <!-- IEEE RIBBON -->
+  <section class="ribbon"><div class="wrap ribbon__in">
+    <img src="assets/ieee-logo-white.svg" alt="IEEE — Advancing Technology for Humanity">
+    <p><b>An IEEE conference.</b> ICACT (<a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625" target="_blank" rel="noopener">Record #70625</a>) is technically sponsored by the <b>IEEE Nepal Section</b>. Accepted, presented papers will be submitted to IEEE&nbsp;Xplore®, subject to IEEE's quality review.</p>
   </div></section>
 
   <!-- ABOUT -->
-  <section class="section section--tint"><div class="wrap">
-    <div class="sec__head"><span class="sec__num">01</span><span class="sec__kicker">About the conference</span></div>
-    <div class="grid-2">
-      <h2 class="sec__title reveal">Advancing the technologies that <em>compute our future.</em></h2>
-      <div class="reveal" style="--d:.1s">
+  <section class="blk"><div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <span class="klabel">About the conference</span>
+        <h2 class="blk__title">Advancing the technologies that compute our future.</h2>
+      </div>
+      <div class="reveal" style="--d:.08s">
         <p class="lead">ICACT 2026 is a platform for the exchange of innovative ideas, the presentation of research findings, and the discussion of recent developments across <b>computing and related fields</b> — from core software engineering to AI, cybersecurity, cloud and emerging technologies.</p>
-        <a href="about.html" class="btn btn--ghost" style="margin-top:8px;">More about ICACT 2026 &rarr;</a>
+        <a href="about.html" class="btn btn--outline">More about ICACT &rarr;</a>
       </div>
     </div>
-    <div class="stats">
-      <div class="stat reveal"><b>3rd</b><span>Edition of ICACT</span></div>
-      <div class="stat reveal" style="--d:.08s"><b>6</b><span>Thematic tracks</span></div>
-      <div class="stat reveal" style="--d:.16s"><b>2</b><span>Days · hybrid mode</span></div>
-      <div class="stat reveal" style="--d:.24s"><b>IEEE</b><span>Xplore® indexed</span></div>
+    <div class="figs reveal">
+      <div><b>3rd</b><span>Edition of ICACT</span></div>
+      <div><b>6</b><span>Thematic tracks</span></div>
+      <div><b>2</b><span>Days · hybrid</span></div>
+      <div><b>IEEE</b><span>Xplore® indexed</span></div>
     </div>
   </div></section>
 
-  <!-- EXPLORE -->
-  <section class="section"><div class="wrap">
-    <div class="sec__head"><span class="sec__num">02</span><span class="sec__kicker">Explore</span></div>
-    <h2 class="sec__title reveal">Everything you need to take part.</h2>
-    <div class="cards">
-      <a class="card reveal" href="call-for-papers.html"><span class="card__k">Authors</span><h3>Call for Papers</h3><p>Six tracks across the computing stack and the full submission workflow via ConfConnects.</p><span class="card__go">View tracks &rarr;</span></a>
-      <a class="card reveal" style="--d:.06s" href="about.html"><span class="card__k">Program</span><h3>About &amp; Dates</h3><p>Conference scope, important dates and the hybrid format for the 3rd edition.</p><span class="card__go">Key dates &rarr;</span></a>
-      <a class="card reveal" style="--d:.12s" href="committee.html"><span class="card__k">People</span><h3>Committee</h3><p>General, technical program and publication chairs, and the organising committee.</p><span class="card__go">Meet the team &rarr;</span></a>
-      <a class="card reveal" href="registration.html"><span class="card__k">Attend</span><h3>Registration</h3><p>Fee categories for authors, IEEE members, students and listeners.</p><span class="card__go">See fees &rarr;</span></a>
-      <a class="card reveal" style="--d:.06s" href="venue.html"><span class="card__k">Travel</span><h3>Venue &amp; Nepal</h3><p>Hilton Kathmandu, getting there, and visa guidance for international attendees.</p><span class="card__go">Plan your trip &rarr;</span></a>
-      <a class="card reveal" style="--d:.12s" href="contact.html"><span class="card__k">Reach us</span><h3>Contact</h3><p>Questions on submission, registration or the program? Reach the ICACT team.</p><span class="card__go">Get in touch &rarr;</span></a>
+  <!-- EXPLORE (directory) -->
+  <section class="blk blk--panel"><div class="wrap">
+    <div class="blk__head reveal">
+      <span class="klabel">Explore</span>
+      <h2 class="blk__title">Everything you need to take part.</h2>
     </div>
+    <nav class="dir reveal">
+      <a class="dir__row" href="call-for-papers.html"><span class="dir__tag">Authors</span><span class="dir__main"><b>Call for Papers</b><span>Six tracks across the computing stack and the submission workflow.</span></span><span class="dir__go">&rarr;</span></a>
+      <a class="dir__row" href="about.html"><span class="dir__tag">Program</span><span class="dir__main"><b>About &amp; Dates</b><span>Conference scope, important dates and the hybrid format.</span></span><span class="dir__go">&rarr;</span></a>
+      <a class="dir__row" href="committee.html"><span class="dir__tag">People</span><span class="dir__main"><b>Committee</b><span>General, technical program and publication chairs.</span></span><span class="dir__go">&rarr;</span></a>
+      <a class="dir__row" href="registration.html"><span class="dir__tag">Attend</span><span class="dir__main"><b>Registration</b><span>Fee categories for authors, members, students and listeners.</span></span><span class="dir__go">&rarr;</span></a>
+      <a class="dir__row" href="venue.html"><span class="dir__tag">Travel</span><span class="dir__main"><b>Venue &amp; Nepal</b><span>Hilton Kathmandu, getting there and visa guidance.</span></span><span class="dir__go">&rarr;</span></a>
+      <a class="dir__row" href="contact.html"><span class="dir__tag">Reach us</span><span class="dir__main"><b>Contact</b><span>Questions on submission, registration or the program.</span></span><span class="dir__go">&rarr;</span></a>
+    </nav>
   </div></section>
 
-  <!-- DATES -->
-  <section class="section section--tint"><div class="wrap">
-    <div class="sec__head"><span class="sec__num">03</span><span class="sec__kicker">Important dates</span></div>
-    <h2 class="sec__title reveal">Mark your calendar.</h2>
-    <ol class="timeline">
-      <li class="tl tl--hot reveal"><span class="tl__date"><s style="color:var(--muted);text-decoration:line-through;">30 June</s> &nbsp;25 August 2026</span><span class="tl__title">Paper submission deadline <span class="badge-ext">Extended</span></span><span class="tl__note">Via the ConfConnects portal</span></li>
-      <li class="tl reveal" style="--d:.06s"><span class="tl__date">10 August 2026</span><span class="tl__title">Acceptance notification</span><span class="tl__note">On or before this date</span></li>
-      <li class="tl reveal" style="--d:.12s"><span class="tl__date">30 August 2026</span><span class="tl__title">Camera-ready &amp; author registration</span><span class="tl__note">Both author deadlines fall here</span></li>
-      <li class="tl tl--hot reveal" style="--d:.18s"><span class="tl__date">1 – 2 September 2026</span><span class="tl__title">The conference</span><span class="tl__note">Hilton, Kathmandu · Hybrid mode</span></li>
-    </ol>
-  </div></section>
-
-  <!-- CFP PANEL -->
-  <section class="section"><div class="wrap">
-    <div class="cfp__panel reveal">
-      <span class="cfp__kicker">Call for papers — open</span>
-      <h2>Have research worth presenting?</h2>
-      <p>Submit original, unpublished papers not currently under review elsewhere, formatted to the official IEEE conference template. Submission is via the ConfConnects portal.</p>
-      <p style="font-size:.92rem;">All accepted, registered and presented papers will be submitted to IEEE Xplore®, subject to IEEE's scope and quality requirements.</p>
-      <div class="cfp__cta">
-        <a href="https://app.confconnects.com/conference/wwrazM5QB8hSDwWL78wx" target="_blank" rel="noopener" class="btn btn--light btn--lg">Submit via ConfConnects &rarr;</a>
-        <a href="call-for-papers.html" class="btn btn--ghost-light btn--lg">Read the full CFP</a>
-      </div>
+  <!-- DATES (ledger) -->
+  <section class="blk"><div class="wrap">
+    <div class="blk__head reveal">
+      <span class="klabel">Important dates</span>
+      <h2 class="blk__title">Mark your calendar.</h2>
     </div>
+    <div class="table-scroll reveal"><table class="sched">
+      <tr class="sched--hot"><td class="sched__date"><s>30 Jun</s> 25 Aug 2026</td><td class="sched__evt"><b>Paper submission deadline <span class="tag-ext">Extended</span></b><span>Via the ConfConnects portal</span></td></tr>
+      <tr><td class="sched__date">10 Aug 2026</td><td class="sched__evt"><b>Acceptance notification</b><span>On or before this date</span></td></tr>
+      <tr><td class="sched__date">30 Aug 2026</td><td class="sched__evt"><b>Camera-ready &amp; author registration</b><span>Both author deadlines fall here</span></td></tr>
+      <tr class="sched--hot"><td class="sched__date">1 – 2 Sep 2026</td><td class="sched__evt"><b>The conference</b><span>Hilton, Kathmandu · Hybrid mode</span></td></tr>
+    </table></div>
   </div></section>
 
 </main>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Have research worth presenting?</h2>
+    <p>Submit original, unpublished papers formatted to the official IEEE template. Accepted, presented papers will be submitted to IEEE Xplore®, subject to IEEE's review. Extended deadline — 25 August 2026.</p>
+    <div class="btns">
+      <a href="https://app.confconnects.com/conference/wwrazM5QB8hSDwWL78wx" target="_blank" rel="noopener" class="btn btn--light btn--lg">Submit via ConfConnects &rarr;</a>
+      <a href="call-for-papers.html" class="btn btn--outline-light btn--lg">Read the full CFP</a>
+    </div>
+  </div>
+</section>
 
 <div id="site-footer"></div>
 <script src="app.js"></script>
