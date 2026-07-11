@@ -227,6 +227,11 @@ em{font-style:normal;color:var(--ieee);}
 .tpc-roster .m b{display:block;font-family:var(--f-display);font-weight:600;font-size:.9rem;color:var(--ink);line-height:1.25;}
 .tpc-roster .m span{display:block;font-size:.79rem;color:var(--muted);line-height:1.3;margin-top:2px;}
 
+/* leadership: 2-col pair layout so co-chairs align top/bottom; honorary spans full width */
+.people--lead{grid-template-columns:1fr 1fr;}
+.person--full{grid-column:1 / -1;}
+@media(max-width:560px){.people--lead{grid-template-columns:1fr;}}
+
 /* fee table */
 .table-scroll{overflow-x:auto;}
 .ftable{width:100%;border-collapse:collapse;border:2px solid var(--rule);background:var(--paper);}
