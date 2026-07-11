@@ -63,6 +63,7 @@
             '<div class="foot__col"><h4>Authors</h4>' +
               '<a href="' + SUBMIT + '" target="_blank" rel="noopener">Submit a Paper</a>' +
               '<a href="call-for-papers.html">Call for Papers</a>' +
+              '<a href="author-guidelines.html">Author Guidelines</a>' +
               '<a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener">IEEE Templates</a>' +
               '<a href="' + IEEE_REC + '" target="_blank" rel="noopener">IEEE Conf. Record #70625</a>' +
             "</div>" +
