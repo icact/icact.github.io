@@ -5,7 +5,7 @@ Static website for the **2026 IEEE 3rd International Conference on Advanced Comp
 - **Dates:** 1–2 September 2026 · Hilton, Kathmandu, Nepal · Hybrid
 - **IEEE Conference Record:** [#70625](https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625)
 - **Sponsor:** Technically sponsored by the IEEE Nepal Section
-- **Live URL (target):** https://ieeeicact.github.io/
+- **Live URL (target):** https://icact.github.io/
 
 ## Structure
 
@@ -24,26 +24,26 @@ Static website for the **2026 IEEE 3rd International Conference on Advanced Comp
 
 No build step — plain HTML/CSS/JS. Just open `index.html`.
 
-## Deploying to `https://ieeeicact.github.io/`
+## Deploying to `https://icact.github.io/`
 
-That exact URL is a **GitHub user/organisation site**, so it must live in a repository literally named `ieeeicact.github.io` owned by an account/org named `ieeeicact`. Recommended setup (managed from the **pujaprasad** account):
+That exact URL is a **GitHub user/organisation site**, so it must live in a repository literally named `icact.github.io` owned by an account/org named `ieeeicact`. Recommended setup (managed from the **pujaprasad** account):
 
 1. Sign in to GitHub as **pujaprasad**.
 2. Create a new **organisation** named **`ieeeicact`** (GitHub → *Settings → Organizations → New organization*, free plan). pujaprasad becomes the owner.
-3. Inside that org, create a **public** repository named exactly **`ieeeicact.github.io`**.
+3. Inside that org, create a **public** repository named exactly **`icact.github.io`**.
 4. Push the contents of this folder to that repo's default branch:
    ```bash
    git init
    git add .
    git commit -m "ICACT 2026 website"
    git branch -M main
-   git remote add origin https://github.com/ieeeicact/ieeeicact.github.io.git
+   git remote add origin https://github.com/ieeeicact/icact.github.io.git
    git push -u origin main
    ```
 5. In the repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / root**.
-6. Wait ~1 minute — the site goes live at **https://ieeeicact.github.io/**.
+6. Wait ~1 minute — the site goes live at **https://icact.github.io/**.
 
-> Alternative (no org): push to a repo under the pujaprasad account instead — it will be served at `https://pujaprasad.github.io/<repo>/`, **not** at `ieeeicact.github.io`. The org route above is required for the exact URL.
+> Alternative (no org): push to a repo under the pujaprasad account instead — it will be served at `https://pujaprasad.github.io/<repo>/`, **not** at `icact.github.io`. The org route above is required for the exact URL.
 
 The `.nojekyll` file is included so GitHub Pages serves all files as-is.
 
