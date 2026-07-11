@@ -7,7 +7,7 @@
   var page = document.body.getAttribute("data-page") || "";
 
   var NAV = [
-    ["home", "index.html", "Home"],
+    ["home", "./", "Home"],
     ["about", "about.html", "About"],
     ["cfp", "call-for-papers.html", "Call for Papers"],
     ["committee", "committee.html", "Committee"],
@@ -25,7 +25,7 @@
       '<header class="site-header">' +
         '<div class="site-header__bar"></div>' +
         '<div class="wrap site-header__in">' +
-          '<a class="brand" href="index.html">' +
+          '<a class="brand" href="./">' +
             '<img class="brand__mark" src="assets/icact-logo-mark.svg" alt="ICACT logo">' +
             '<span class="brand__txt"><b>ICACT&nbsp;2026</b><span>Advanced Computing Technologies</span></span>' +
           "</a>" +
@@ -52,7 +52,7 @@
         '<div class="wrap">' +
           '<div class="foot__top">' +
             '<div class="foot__brand">' +
-              '<a class="brand" href="index.html">' +
+              '<a class="brand" href="./">' +
                 '<img class="brand__mark" src="assets/icact-logo-mark.svg" alt="ICACT logo">' +
                 '<span class="brand__txt"><b>ICACT&nbsp;2026</b><span>Advanced Computing Technologies</span></span>' +
               "</a>" +

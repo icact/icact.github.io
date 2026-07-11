@@ -202,6 +202,12 @@ em{font-style:normal;color:var(--ieee);}
 .callout{background:var(--tint);border-left:4px solid var(--ieee);padding:18px 22px;margin:24px 0;font-size:.96rem;}
 .callout b{color:var(--ieee-dark);}
 
+/* indexing logo row (light backgrounds) */
+.indexing{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:22px 0 4px;}
+.indexing .lbl{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ieee);}
+.indexing .plate{border:1px solid var(--line-2);border-radius:8px;padding:9px 15px;background:#fff;display:flex;align-items:center;}
+.indexing .plate img{height:26px;width:auto;display:block;}
+
 /* prose */
 .prose{max-width:760px;}
 .prose h2{margin-top:1.5em;font-size:1.55rem;text-transform:none;}
