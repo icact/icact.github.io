@@ -39,6 +39,4 @@ git push origin main
 
 The `.nojekyll` file is included so GitHub Pages serves all files as-is.
 
-## Still to confirm
 
-- **Committee** (`committee.html`) — Dr. Mohammad Dilshad Ansari's affiliation is a placeholder ("ICACT 2026 Organising Committee").
