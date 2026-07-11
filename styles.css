@@ -57,6 +57,12 @@ em{font-style:normal;color:var(--ieee);}
 .brand__mark{width:38px;height:38px;}
 .brand__txt b{display:block;font-family:var(--f-display);font-weight:800;font-size:1.1rem;color:var(--ink);letter-spacing:-.01em;line-height:1;}
 .brand__txt span{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+.brand-div{width:1px;height:36px;background:var(--line-2);flex:none;}
+.header-ieee{display:flex;align-items:center;flex:none;}
+.header-ieee:hover{text-decoration:none;}
+.header-ieee img{height:34px;width:auto;display:block;}
+@media(max-width:1120px){.header-ieee img{height:30px;}}
+@media(max-width:600px){.brand-div,.header-ieee{display:none;}}
 .nav{display:flex;align-items:center;gap:2px;margin-left:auto;}
 .nav a{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;font-weight:400;color:var(--ink-2);padding:9px 12px;text-decoration:none;transition:color .15s;}
 .nav a:hover{color:var(--ieee);text-decoration:none;}

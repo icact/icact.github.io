@@ -28,6 +28,10 @@
             '<img class="brand__mark" src="assets/icact-logo-mark.svg" alt="ICACT logo">' +
             '<span class="brand__txt"><b>ICACT&nbsp;2026</b><span>Advanced Computing Technologies</span></span>' +
           "</a>" +
+          '<span class="brand-div" aria-hidden="true"></span>' +
+          '<a class="header-ieee" href="' + IEEE_REC + '" target="_blank" rel="noopener" title="IEEE Conference Record #70625">' +
+            '<img src="assets/ieee-logo.svg" alt="IEEE — Advancing Technology for Humanity">' +
+          "</a>" +
           '<button class="navtoggle" aria-label="Menu" aria-expanded="false">' +
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
           "</button>" +
