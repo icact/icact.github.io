@@ -51,7 +51,7 @@ em{font-style:normal;color:var(--ieee);}
 /* ---------- Header ---------- */
 .site-header{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:2px solid var(--rule);}
 .site-header__bar{height:4px;background:var(--ieee);}
-.site-header__in{display:flex;align-items:center;gap:22px;height:70px;}
+.site-header__in{display:flex;align-items:center;gap:16px;height:70px;}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
 .brand:hover{text-decoration:none;}
 .brand__mark{width:38px;height:38px;}
@@ -63,7 +63,7 @@ em{font-style:normal;color:var(--ieee);}
 .header-ieee img{height:38px;width:auto;display:block;}
 @media(max-width:600px){.brand-div,.header-ieee{display:none;}}
 .nav{display:flex;align-items:center;gap:2px;margin-left:auto;}
-.nav a{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;font-weight:400;color:var(--ink-2);padding:9px 12px;text-decoration:none;transition:color .15s;}
+.nav a{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.03em;text-transform:uppercase;font-weight:400;color:var(--ink-2);padding:9px 10px;text-decoration:none;white-space:nowrap;transition:color .15s;}
 .nav a:hover{color:var(--ieee);text-decoration:none;}
 .nav a.active{color:var(--ieee);font-weight:700;}
 .nav .btn{margin-left:10px;padding:11px 20px;}
@@ -71,7 +71,7 @@ em{font-style:normal;color:var(--ieee);}
 .nav a.btn--solid:hover{color:#fff;background:var(--ieee-dark);}
 .navtoggle{display:none;margin-left:auto;background:none;border:2px solid var(--rule);border-radius:var(--radius);width:46px;height:40px;cursor:pointer;color:var(--ink);}
 .navtoggle svg{width:22px;height:22px;margin:auto;}
-@media(max-width:1060px){
+@media(max-width:1200px){
   .nav{position:fixed;inset:74px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:2px solid var(--rule);padding:10px 28px 20px;transform:translateY(-160%);transition:transform .3s ease;margin-left:0;}
   .nav.open{transform:translateY(0);}
   .nav a{padding:15px 6px;border-bottom:1px solid var(--line);font-size:.86rem;}
