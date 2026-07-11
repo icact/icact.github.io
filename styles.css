@@ -67,6 +67,8 @@ em{font-style:normal;color:var(--ieee);}
 .nav a:hover{color:var(--ieee);text-decoration:none;}
 .nav a.active{color:var(--ieee);font-weight:700;}
 .nav .btn{margin-left:10px;padding:11px 20px;}
+.nav a.btn--solid{color:#fff;}
+.nav a.btn--solid:hover{color:#fff;background:var(--ieee-dark);}
 .navtoggle{display:none;margin-left:auto;background:none;border:2px solid var(--rule);border-radius:var(--radius);width:46px;height:40px;cursor:pointer;color:var(--ink);}
 .navtoggle svg{width:22px;height:22px;margin:auto;}
 @media(max-width:1060px){
