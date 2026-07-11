@@ -121,8 +121,11 @@ em{font-style:normal;color:var(--ieee);}
 .ribbon__plate{background:#fff;border-radius:10px;padding:16px 26px;box-shadow:0 10px 28px rgba(0,0,0,.22);}
 .ribbon__plate img{height:58px;width:auto;display:block;}
 .ribbon__sect{font-family:var(--f-display);font-weight:800;font-size:1.5rem;letter-spacing:-.01em;color:#fff;margin:0;text-transform:uppercase;}
-.ribbon__note{max-width:58ch;margin:26px auto 0;font-size:.95rem;color:var(--sky-3);}
+.ribbon__note{max-width:62ch;margin:26px auto 0;font-size:.95rem;color:var(--sky-3);}
 .ribbon__note a{color:var(--sky-2);text-decoration:underline;}
+.ribbon__index{display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:22px;}
+.ribbon__index-lbl{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sky-2);}
+.ribbon__index img{height:24px;width:auto;display:block;}
 
 /* ---------- Blocks ---------- */
 .blk{padding:80px 0;border-bottom:2px solid var(--rule);}
