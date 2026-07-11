@@ -114,11 +114,14 @@ em{font-style:normal;color:var(--ieee);}
 
 /* ---------- IEEE ribbon ---------- */
 .ribbon{background:var(--ieee-dark);color:#fff;}
-.ribbon__in{display:flex;align-items:center;gap:30px;flex-wrap:wrap;padding:26px 0;}
-.ribbon img{height:38px;width:auto;flex:none;}
-.ribbon p{margin:0;font-size:.94rem;color:var(--sky-3);flex:1;min-width:280px;}
-.ribbon p b{color:#fff;}
-.ribbon a{color:var(--sky-2);text-decoration:underline;}
+.ribbon .wrap{padding:54px 28px;text-align:center;}
+.ribbon__spon{display:flex;flex-direction:column;align-items:center;gap:16px;}
+.ribbon__lbl{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sky-2);margin:0;}
+.ribbon__plate{background:#fff;border-radius:10px;padding:16px 26px;box-shadow:0 10px 28px rgba(0,0,0,.22);}
+.ribbon__plate img{height:58px;width:auto;display:block;}
+.ribbon__sect{font-family:var(--f-display);font-weight:800;font-size:1.5rem;letter-spacing:-.01em;color:#fff;margin:0;text-transform:uppercase;}
+.ribbon__note{max-width:58ch;margin:26px auto 0;font-size:.95rem;color:var(--sky-3);}
+.ribbon__note a{color:var(--sky-2);text-decoration:underline;}
 
 /* ---------- Blocks ---------- */
 .blk{padding:80px 0;border-bottom:2px solid var(--rule);}

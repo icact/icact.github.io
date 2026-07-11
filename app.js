@@ -71,7 +71,7 @@
           '<div class="foot__bot">' +
             "2026 IEEE 3rd International Conference on Advanced Computing Technologies (ICACT) · " +
             'IEEE Conference Record No. <a href="' + IEEE_REC + '" target="_blank" rel="noopener">70625</a> · ' +
-            "1–2 September 2026 · Hilton, Kathmandu, Nepal · Hybrid Mode · Technically sponsored by the IEEE Nepal Section.<br>" +
+            "1–2 September 2026 · Hilton, Kathmandu, Nepal · Hybrid Mode · Technically co-sponsored by the IEEE Nepal Section.<br>" +
             "© 2026 ICACT. All rights reserved. · " +
             '<a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a> · <a href="refund.html">Refund Policy</a> · ' +
             '<a href="mailto:secretaryicact@gmail.com">secretaryicact@gmail.com</a>' +
