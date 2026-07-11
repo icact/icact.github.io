@@ -60,8 +60,7 @@ em{font-style:normal;color:var(--ieee);}
 .brand-div{width:1px;height:36px;background:var(--line-2);flex:none;}
 .header-ieee{display:flex;align-items:center;flex:none;}
 .header-ieee:hover{text-decoration:none;}
-.header-ieee img{height:34px;width:auto;display:block;}
-@media(max-width:1120px){.header-ieee img{height:30px;}}
+.header-ieee img{height:38px;width:auto;display:block;}
 @media(max-width:600px){.brand-div,.header-ieee{display:none;}}
 .nav{display:flex;align-items:center;gap:2px;margin-left:auto;}
 .nav a{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;font-weight:400;color:var(--ink-2);padding:9px 12px;text-decoration:none;transition:color .15s;}
@@ -70,7 +69,7 @@ em{font-style:normal;color:var(--ieee);}
 .nav .btn{margin-left:10px;padding:11px 20px;}
 .navtoggle{display:none;margin-left:auto;background:none;border:2px solid var(--rule);border-radius:var(--radius);width:46px;height:40px;cursor:pointer;color:var(--ink);}
 .navtoggle svg{width:22px;height:22px;margin:auto;}
-@media(max-width:960px){
+@media(max-width:1060px){
   .nav{position:fixed;inset:74px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:2px solid var(--rule);padding:10px 28px 20px;transform:translateY(-160%);transition:transform .3s ease;margin-left:0;}
   .nav.open{transform:translateY(0);}
   .nav a{padding:15px 6px;border-bottom:1px solid var(--line);font-size:.86rem;}
@@ -114,7 +113,7 @@ em{font-style:normal;color:var(--ieee);}
 /* ---------- IEEE ribbon ---------- */
 .ribbon{background:var(--ieee-dark);color:#fff;}
 .ribbon__in{display:flex;align-items:center;gap:30px;flex-wrap:wrap;padding:26px 0;}
-.ribbon img{height:50px;width:auto;flex:none;}
+.ribbon img{height:38px;width:auto;flex:none;}
 .ribbon p{margin:0;font-size:.94rem;color:var(--sky-3);flex:1;min-width:280px;}
 .ribbon p b{color:#fff;}
 .ribbon a{color:var(--sky-2);text-decoration:underline;}
@@ -245,7 +244,7 @@ em{font-style:normal;color:var(--ieee);}
 @media(max-width:820px){.foot__top{grid-template-columns:1fr;gap:26px;}}
 .foot__brand .brand__txt b{color:#fff;}
 .foot__brand p{font-size:.9rem;color:var(--sky-3);max-width:40ch;margin-top:14px;}
-.foot__brand img.ieee{height:42px;margin-top:20px;}
+.foot__brand img.ieee{height:38px;margin-top:20px;}
 .foot__col h4{color:#fff;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;}
 .foot__col a{display:block;color:var(--sky-3);font-size:.9rem;padding:5px 0;text-decoration:none;}
 .foot__col a:hover{color:#fff;}

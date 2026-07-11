@@ -13,6 +13,7 @@
     ["committee", "committee.html", "Committee"],
     ["registration", "registration.html", "Registration"],
     ["venue", "venue.html", "Venue"],
+    ["archives", "archives.html", "Archives"],
     ["contact", "contact.html", "Contact"]
   ];
 
