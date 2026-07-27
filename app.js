@@ -6,6 +6,15 @@
   var IEEE_REC = "https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625";
   var page = document.body.getAttribute("data-page") || "";
 
+  /* Site-wide announcement bar. Set show:false to retire it; bump key when the
+     message changes so a dismissed bar comes back with the new text. */
+  var ANN = {
+    show: true,
+    key: "icact-ann-2026-notify",
+    msg: "&#9200; <b>Submission deadline passed.</b> Acceptance notifications go out <b>on or before 8 Aug 2026</b>. The portal remains open for late submissions.",
+    cta: "Submit now &rarr;"
+  };
+
   var NAV = [
     ["home", "./", "Home"],
     ["about", "about.html", "About"],
@@ -16,6 +25,18 @@
     ["archives", "archives.html", "Archives"],
     ["contact", "contact.html", "Contact"]
   ];
+
+  function annbarHTML() {
+    if (!ANN.show) return "";
+    try { if (sessionStorage.getItem(ANN.key) === "1") return ""; } catch (e) {}
+    return (
+      '<div class="annbar" id="annbar">' +
+        "<span>" + ANN.msg + "</span>" +
+        '<a href="' + SUBMIT + '" target="_blank" rel="noopener">' + ANN.cta + "</a>" +
+        '<button class="annbar__x" type="button" aria-label="Dismiss announcement">&times;</button>' +
+      "</div>"
+    );
+  }
 
   function headerHTML() {
     var links = NAV.map(function (n) {
@@ -82,9 +103,21 @@
   }
 
   var h = document.getElementById("site-header");
-  if (h) h.outerHTML = headerHTML();
+  if (h) h.outerHTML = annbarHTML() + headerHTML();
   var f = document.getElementById("site-footer");
   if (f) f.outerHTML = footerHTML();
+
+  /* Announcement bar dismiss — stays hidden for the rest of the session */
+  var ann = document.getElementById("annbar");
+  if (ann) {
+    var annX = ann.querySelector(".annbar__x");
+    if (annX) {
+      annX.addEventListener("click", function () {
+        ann.classList.add("annbar--hide");
+        try { sessionStorage.setItem(ANN.key, "1"); } catch (e) {}
+      });
+    }
+  }
 
   /* Mobile nav */
   var toggle = document.querySelector(".navtoggle");
