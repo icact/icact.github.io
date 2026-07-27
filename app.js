@@ -11,7 +11,7 @@
   var ANN = {
     show: true,
     key: "icact-ann-2026-notify",
-    msg: "&#9200; <b>Submission deadline passed.</b> Acceptance notifications go out <b>on or before 8 Aug 2026</b>. The portal remains open for late submissions.",
+    msg: "&#9200; <b>Submission deadline passed.</b> Acceptance notifications go out <b>on or before 8 Aug 2026</b>. Paper Submission Portal.",
     cta: "Submit now &rarr;"
   };
 
