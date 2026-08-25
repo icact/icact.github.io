@@ -1,0 +1,2719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conference Programme — ICACT 2026</title>
+<meta name="description" content="Session schedule for ICACT 2026, the 2026 IEEE 3rd International Conference on Advanced Computing Technologies, 1-2 September 2026, online. 262 papers in 31 sessions.">
+<meta name="theme-color" content="#00629B">
+<link rel="icon" href="assets/ieee-favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<style>
+:root{
+  --ground:#e6e4df; --paper:#ffffff; --shade:#eef1f4; --head:#dfe6eb;
+  --ink:#141414; --ink-2:#3c3c3c; --ink-3:#6a6a6a;
+  --line:#9aa8b2; --line-2:#c4ccd2;
+  --blue:#00629b; --blue-d:#004b77;
+  --serif:'Bookman Old Style','URW Bookman L',Bookman,Georgia,'Times New Roman',serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#171a1c; --paper:#20252a; --shade:#262c32; --head:#2c353d;
+    --ink:#eceff1; --ink-2:#c6ccd1; --ink-3:#9aa4ab;
+    --line:#4a555e; --line-2:#39424a;
+    --blue:#7fb9de; --blue-d:#a4cfec;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#171a1c; --paper:#20252a; --shade:#262c32; --head:#2c353d;
+  --ink:#eceff1; --ink-2:#c6ccd1; --ink-3:#9aa4ab;
+  --line:#4a555e; --line-2:#39424a;
+  --blue:#7fb9de; --blue-d:#a4cfec;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--serif); font-size:15px; line-height:1.5;
+}
+.doc{max-width:1080px; margin:0 auto; background:var(--paper); padding:0 56px 60px; border-left:1px solid var(--line-2); border-right:1px solid var(--line-2);}
+
+/* ---------- masthead ---------- */
+.head-rule{height:6px; background:var(--blue);}
+.masthead{display:flex; align-items:flex-start; justify-content:space-between; gap:28px; flex-wrap:wrap; padding:24px 0 18px;}
+.mark{display:block; width:150px; height:auto; flex:none;}
+.mark svg{width:100%; height:auto; display:block;}
+.sponsor{text-align:right; font-size:13px; line-height:1.45; color:var(--ink-2);}
+.sponsor b{display:block; font-size:15.5px; color:var(--blue); }
+.sponsor a{color:var(--blue);}
+
+.titleblock{text-align:center; border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); padding:22px 10px;}
+.titleblock .kicker{margin:0 0 10px; font-size:14px; letter-spacing:.06em; color:var(--ink-2); text-transform:uppercase;}
+.titleblock h1{margin:0; font-size:27px; font-weight:700; line-height:1.28; color:var(--ink);}
+.titleblock .sub{margin:9px 0 0; font-size:16px; color:var(--ink-2);}
+.titleblock .meta{margin:14px 0 0; font-size:14.5px; color:var(--ink);}
+.titleblock .meta span{white-space:nowrap;}
+.issued{margin:10px 0 0; font-size:12.5px; color:var(--ink-3); font-style:italic;}
+
+/* ---------- headings ---------- */
+h2{font-size:19px; font-weight:700; color:var(--blue-d); margin:38px 0 4px; padding-bottom:5px; border-bottom:1.5px solid var(--line);}
+h2 .n{color:var(--ink-3); font-weight:400;}
+.note-line{margin:8px 0 14px; font-size:14px; color:var(--ink-2);}
+
+/* ---------- guidelines ---------- */
+ol.guide{margin:0; padding-left:26px;}
+ol.guide > li{margin-bottom:13px; padding-left:4px;}
+ol.guide > li > b{display:block; font-size:15px; margin-bottom:3px;}
+ol.guide ul{margin:4px 0 0; padding-left:20px;}
+ol.guide li li{margin-bottom:3px; font-size:14px; color:var(--ink-2);}
+ol.guide strong{color:var(--ink);}
+ol.guide a{color:var(--blue);}
+.timing{border:1.5px solid var(--line); background:var(--shade); padding:12px 16px; margin:0 0 18px; font-size:15.5px;}
+.timing b{color:var(--blue-d);}
+
+/* ---------- tables ---------- */
+table{border-collapse:collapse; width:100%; font-size:13.5px;}
+.tw{overflow-x:auto;}
+th,td{border:1px solid var(--line); padding:6px 9px; text-align:left; vertical-align:top;}
+th{background:var(--head); font-weight:700; font-size:12.5px;}
+caption{caption-side:top; text-align:left; font-weight:700; font-size:15px; padding:0 0 6px; color:var(--ink);}
+
+table.glance{margin-bottom:6px;}
+table.glance th{white-space:nowrap;}
+table.glance td.slot{background:var(--shade); white-space:nowrap; font-size:12.5px;}
+table.glance a{color:var(--blue); text-decoration:none;}
+table.glance a:hover{text-decoration:underline;}
+table.glance .sn{font-weight:700; white-space:nowrap;}
+table.glance .cnt{color:var(--ink-3); white-space:nowrap;}
+#roster td,#zones td{font-size:12.5px;}
+#roster .cnt{color:var(--ink-3);}
+#roster a{color:var(--blue); font-weight:700;}
+#zones td.tm{white-space:nowrap;}
+#zones i{color:var(--ink-3); font-size:11px;}
+
+/* ---------- session ---------- */
+.session{margin:26px 0 0; page-break-inside:auto;}
+.session h3{margin:0 0 7px; font-size:16.5px; font-weight:700; color:var(--ink); border-left:5px solid var(--blue); padding-left:11px; line-height:1.35;}
+.session h3 em{font-style:normal; color:var(--blue-d);}
+table.detail{margin-bottom:0; border-bottom:0;}
+table.detail th{width:172px; background:var(--shade); font-weight:700;}
+table.detail td{color:var(--ink-2);}
+#roster .rule-blank,#zones .rule-blank{min-width:96px;}
+.rule-blank{display:inline-block; min-width:190px; border-bottom:1px solid var(--ink-3); height:1.1em; vertical-align:-.2em;}
+table.papers th.c1{width:38px;} table.papers th.c2{width:96px;} table.papers th.c3{width:82px;}
+table.papers td.num,table.papers td.tm,table.papers td.pid{white-space:nowrap;}
+table.papers td.pid{font-weight:700;}
+table.papers td.pres{width:172px;}
+.after{margin:6px 0 0; font-size:12.5px; color:var(--ink-3);}
+
+/* ---------- interval / ceremony ---------- */
+.interval{margin:20px 0 0; padding:9px 14px; background:var(--shade); border:1px solid var(--line-2); font-size:14.5px;}
+.interval b{margin-right:12px;}
+.dayhead{margin:40px 0 0; background:var(--head); border:1.5px solid var(--line); padding:11px 16px; font-size:17px; font-weight:700;}
+.dayhead span{font-weight:400; color:var(--ink-2); font-size:15px;}
+.slotlead{margin:22px 0 0; font-size:15px; font-weight:700; color:var(--blue-d);}
+.slotlead span{font-weight:400; color:var(--ink-2);}
+
+/* ---------- finder ---------- */
+.finder{border:1.5px solid var(--line); padding:16px 18px; margin-top:12px; background:var(--shade);}
+.finder label{display:block; font-weight:700; font-size:14.5px; margin-bottom:5px;}
+.finder p{margin:0 0 10px; font-size:13.5px; color:var(--ink-2);}
+#q{width:100%; max-width:460px; font-family:var(--serif); font-size:14.5px; padding:7px 9px; border:1px solid var(--line); background:var(--paper); color:var(--ink);}
+#q:focus{outline:2px solid var(--blue); outline-offset:1px;}
+#qres:not(:empty){margin-top:12px; background:var(--paper); border:1px solid var(--line-2); padding:4px 12px;}
+.hit{padding:9px 0; border-bottom:1px solid var(--line-2); font-size:13.5px;}
+.hit:last-child{border-bottom:0;}
+.hit b{color:var(--blue-d);}
+.hit i{font-style:normal; color:var(--ink-3);}
+.hit a{color:var(--blue);}
+.qnote{font-size:13px; color:var(--ink-3); padding:9px 0;}
+
+/* ---------- foot ---------- */
+.foot{margin-top:44px; border-top:2px solid var(--ink); padding-top:16px; font-size:13.5px; color:var(--ink-2);}
+.foot p{margin:0 0 6px;}
+.foot a{color:var(--blue);}
+.foot .sig{margin-top:14px; font-size:13px; color:var(--ink-3);}
+
+@media (max-width:860px){
+  .doc{padding:0 18px 40px;}
+  .masthead{flex-direction:column; align-items:flex-start;}
+  .sponsor{text-align:left;}
+  table.detail th{width:auto;}
+}
+@media print{
+  body{background:#fff; font-size:10.5pt;}
+  .doc{max-width:none; border:0; padding:0;}
+  .finder{display:none;}
+  .head-rule,th,.dayhead,.timing,td.slot{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  .session{page-break-inside:avoid;}
+  h2{page-break-after:avoid;}
+}
+</style>
+
+<div class="head-rule"></div>
+<div class="doc">
+
+  <div class="masthead">
+    <span class="mark" role="img" aria-label="IEEE — Advancing Technology for Humanity"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.61 34.68"><g fill="#00629B"><path d="m4.22 25.61-.65.01-.04-.04c-.02-.27-.02-.47-.05-.75l-.04-.53H1.93l-.24.45-.38.76-.02.06-.05.03-.63.01-.03-.06c.11-.2 1.75-3.1 2.32-4.2l.05-.03.85-.02.03.03c.03.51.25 2.81.42 4.24zm-.96-3.87L2.18 23.8l.41.01h.83zm0 0"/><path d="M7.2 25.6c-.2 0-.35 0-.56.02l-.03-.05.05-.23c-.2.14-.45.31-.87.31-.73 0-1.15-.54-1.15-1.21 0-.33.12-.77.32-1.1.51-.81 1.31-.91 1.92-.91l.42.01.3-1.5.04-.04.65-.11.03.04a91.08 91.08 0 0 0-1.07 4.73zM7.2 22.9a1.39 1.39 0 0 0-.28-.02c-.83 0-1.23.36-1.45.82-.04.1-.15.36-.15.65 0 .45.25.8.75.8.15 0 .53-.1.69-.3zm0 0"/><path d="m9.43 25.6-.7.03-.06-.04c-.05-.56-.28-2.42-.35-3.07l.03-.05c.23 0 .4 0 .62-.03l.04.04.07.93.15 1.7 1.33-2.62.06-.03h.56l.03.04-.6 1.03-.51.92-.62 1.12zm0 0"/><path d="M13.58 25.61h-.16l-.41.01-.03-.04.04-.24c-.28.23-.59.3-.88.3-.72 0-1.13-.53-1.13-1.18 0-.44.2-.86.29-1.02.5-.89 1.4-.99 2.04-.99l.9.01.03.04c-.5 2.15-.57 2.49-.65 3.07zm-1.17-.44c.19 0 .49-.08.7-.3.15-.62.27-1.26.44-1.95l-.26-.02c-.58 0-1.17.19-1.48.9a1.6 1.6 0 0 0-.13.62c0 .43.26.75.73.75"/><path d="M17.08 25.61c-.23 0-.38 0-.61.02l-.03-.05.26-1.07.14-.7c.02-.09.07-.28.07-.44 0-.45-.4-.47-.52-.47-.37 0-.66.22-.8.32-.17.78-.34 1.57-.49 2.35l-.04.04c-.23 0-.39 0-.62.02l-.03-.05c.2-.8.58-2.48.64-3.03l.04-.04.64-.1.03.03-.08.31c.44-.34.88-.37 1.02-.37.18 0 .87.03.87.81 0 .2-.07.6-.2 1.17l-.09.43c-.06.3-.11.5-.15.78zm0 0"/><path d="M20.17 25.51c-.21.12-.57.17-.78.17-.78 0-1.32-.59-1.32-1.36 0-.5.21-1.28.88-1.69.35-.21.72-.24.89-.24.42 0 .75.1.94.24l.01.04-.15.48-.06.02c-.1-.16-.36-.3-.68-.3-.76 0-1.17.8-1.17 1.4 0 .71.55.92.84.92.1 0 .42-.01.74-.29l.05.02c-.07.2-.1.34-.15.55zm0 0"/><path d="m21.32 25.6-.65.02-.03-.04c.2-.7.63-2.7.66-3.03l.04-.04c.25-.03.42-.05.66-.1l.03.05c-.03-.01-.53 2.3-.67 3.11zm.86-4-.63.1-.04-.06.13-.55.05-.05.63-.08.05.04-.14.56zm0 0"/><path d="M24.82 25.61c-.23 0-.39 0-.62.02l-.02-.05c.08-.4.17-.67.25-1.07l.15-.7c.02-.09.07-.28.07-.44 0-.45-.4-.47-.52-.47-.37 0-.66.22-.8.32-.17.78-.35 1.57-.5 2.35l-.03.04c-.23 0-.4 0-.62.02l-.03-.05c.2-.8.58-2.48.63-3.03l.05-.04.64-.1.03.03-.09.31c.45-.34.88-.37 1.02-.37.19 0 .88.03.88.81 0 .2-.08.6-.2 1.17l-.09.43c-.06.3-.11.5-.15.78zm0 0"/><path d="M29.05 22.5c-.17.68-.32 1.3-.46 1.99l-.17.8c-.22 1-.4 1.85-1.72 1.85-.36 0-.9-.08-1.25-.45v-.05c.1-.14.15-.24.24-.39h.05c.17.21.47.43.92.43.9 0 .97-.83 1.04-1.04l.06-.25c-.4.28-.76.29-.89.29-.71 0-1.09-.55-1.09-1.18 0-.15.02-.67.35-1.16.56-.88 1.48-.88 2.17-.88l.73-.02zm-.74.43h-.24c-.54 0-1.13.09-1.47.8-.14.32-.16.56-.16.7 0 .63.4.77.7.77.34 0 .59-.17.72-.3zm0 0"/><path d="m32.4 25.61-.64.01-.03-.04c.15-.59.83-3.4.88-3.75-.66 0-.95.02-1.24.03l-.03-.04c.05-.18.1-.3.13-.47l.05-.03a49.74 49.74 0 0 0 3.05-.01l.03.04-.14.47-.04.03c-.24-.02-.6-.02-1.13-.02-.12.4-.17.71-.27 1.14l-.3 1.38c-.1.41-.19.8-.26 1.22zm0 0"/><path d="M36.09 25.44c-.2.12-.52.24-.99.24-1.04 0-1.4-.62-1.4-1.31 0-1.06.64-1.98 1.7-1.98.7 0 1.22.33 1.22 1.13 0 .25-.06.46-.08.56l-.04.02h-1.42l-.74.01-.02.26c0 .8.69.82.9.82.51 0 .77-.2 1-.37l.06.03c-.07.2-.11.34-.16.55zm-.08-1.77.03-.26c-.01-.55-.47-.6-.62-.6-.7 0-.94.65-1 .87h1.6"/><path d="M39.04 25.51c-.2.12-.57.17-.78.17-.78 0-1.32-.59-1.32-1.36 0-.5.22-1.28.88-1.69.36-.21.72-.24.89-.24.42 0 .76.1.94.24l.02.04c-.07.18-.1.3-.15.48l-.06.02c-.1-.16-.37-.3-.69-.3-.76 0-1.17.8-1.17 1.4 0 .71.55.92.84.92.1 0 .42-.01.74-.29l.05.02c-.07.2-.1.34-.15.55zm0 0"/><path d="m42.2 25.61-.61.01-.03-.04.17-.7.17-.76c.04-.16.14-.63.14-.8 0-.42-.37-.43-.48-.43-.38 0-.74.25-.84.34l-.24 1.08c-.1.42-.17.83-.26 1.26l-.04.03-.61.02-.04-.04c.09-.39.92-3.74 1.01-4.65l.05-.03.66-.11.03.04c-.17.64-.3 1.27-.46 1.92.19-.13.55-.36 1.05-.36.16 0 .83.04.83.76 0 .27-.05.55-.1.77l-.17.73-.18.92zm0 0"/><path d="M45.71 25.61c-.23 0-.39 0-.61.02l-.03-.05c.08-.4.17-.67.25-1.07l.15-.7c.02-.09.07-.28.07-.44 0-.45-.4-.47-.52-.47-.37 0-.66.22-.8.32-.17.78-.34 1.57-.49 2.35l-.04.04c-.23 0-.39 0-.62.02l-.03-.05c.2-.8.58-2.48.63-3.03l.05-.04.64-.1.03.03-.08.31c.44-.34.88-.37 1.01-.37.19 0 .88.03.88.81 0 .2-.07.6-.2 1.17l-.09.43c-.06.3-.11.5-.15.78zm0 0"/><path d="M48.37 22.39c.75 0 1.3.38 1.3 1.19 0 .64-.3 2.1-1.73 2.1-.38 0-1.26-.09-1.26-1.21 0-.98.54-2.08 1.69-2.08m-.41 2.84c.91 0 1.06-1.48 1.06-1.68 0-.59-.35-.72-.63-.72-.83 0-1.06 1.25-1.06 1.68 0 .39.18.72.63.72"/><path d="M50.6 25.61c-.22 0-.39 0-.62.02l-.02-.04c.09-.49.74-3.15.95-4.66l.04-.04c.25-.03.42-.06.67-.11l.03.03c-.3 1.31-.92 4.2-1 4.76zm0 0"/><path d="M53.23 22.39c.75 0 1.3.38 1.3 1.19 0 .64-.3 2.1-1.72 2.1-.38 0-1.26-.09-1.26-1.21 0-.98.53-2.08 1.68-2.08m-.41 2.84c.92 0 1.07-1.48 1.07-1.68 0-.59-.36-.72-.63-.72-.84 0-1.07 1.25-1.07 1.68 0 .39.18.72.63.72"/><path d="M58.19 22.5c-.17.68-.33 1.3-.47 1.99l-.17.8c-.21 1-.39 1.85-1.72 1.85-.36 0-.9-.08-1.25-.45v-.05l.25-.39h.05c.16.21.46.43.91.43.9 0 .98-.83 1.05-1.04l.05-.25c-.4.28-.75.29-.89.29-.71 0-1.09-.55-1.09-1.18 0-.15.03-.67.35-1.16.57-.88 1.48-.88 2.17-.88l.73-.02zm-.75.43h-.24c-.54 0-1.13.09-1.46.8-.15.32-.17.56-.17.7 0 .63.4.77.71.77.34 0 .58-.17.71-.3zm0 0"/><path d="M61.47 22.5a95.3 95.3 0 0 0-2.66 4.55l-.05.03h-.27l-.36.01-.02-.04c.18-.27.78-1.2.93-1.47-.24-1.5-.46-3-.49-3.08l.04-.04c.23 0 .4-.01.63-.03l.05.03c.03.34.05.57.1.9l.17 1.43.59-1.04c.23-.4.46-.82.68-1.26l.04-.03h.2l.4-.01zm0 0"/><path d="M23.15 33.07c-.23 0-.39 0-.61.02l-.03-.04c.21-.98.1-.4.59-2.67h-.46l-.04-.03.11-.4.05-.05a5 5 0 0 0 .43.02l.09-.44c.13-.65.25-1.2 1.1-1.2.21 0 .35.04.44.06l.03.05-.11.41-.05.04c-.04 0-.12-.04-.23-.04-.39 0-.45.25-.56.73l-.08.39h.58l.03.04c-.05.12-.08.24-.12.39l-.05.04-.53-.01c-.2.96-.4 1.7-.53 2.65zm0 0"/><path d="M25.98 29.85c.75 0 1.3.38 1.3 1.19 0 .63-.3 2.1-1.73 2.1-.38 0-1.26-.1-1.26-1.21 0-.99.54-2.08 1.69-2.08m-.41 2.84c.91 0 1.06-1.48 1.06-1.69 0-.58-.35-.71-.63-.71-.83 0-1.07 1.24-1.07 1.68 0 .39.19.72.64.72"/><path d="M28.18 33.07h-.63l-.03-.03c.25-.95.6-2.51.66-3.03l.04-.04.66-.1.03.04-.14.53c.1-.15.36-.6.8-.6.13 0 .21.03.27.07l.02.05c-.1.22-.15.37-.24.6l-.06.01a.46.46 0 0 0-.25-.08c-.17 0-.54.08-.73.87-.06.23-.3 1.27-.35 1.66zm0 0"/><path d="m34.77 33.06-.66.01-.02-.03.47-2.04H33.3c-.26 0-.45 0-.72.02-.17.66-.3 1.34-.43 2.01l-.05.04h-.65l-.03-.03c.07-.28.82-3.47.95-4.22l.04-.04.65-.01.03.03c-.17.73-.16.62-.4 1.7h.42c.54 0 1.15 0 1.56-.02l.36-1.66.04-.04.65-.01.03.03c-.38 1.64-.8 3.47-.94 4.22zm0 0"/><path d="m38.3 33.06-.6.02-.03-.04.07-.29c-.31.26-.66.38-.99.38-.74 0-.9-.5-.9-.83 0-.22.05-.45.16-.93l.13-.57.17-.83.04-.04c.23 0 .38-.02.61-.03l.03.04c-.22.92-.47 1.88-.47 2.16 0 .17.05.52.52.52.27 0 .55-.12.8-.35.32-1.42.46-2.1.49-2.3l.05-.04c.22 0 .38-.02.61-.03l.03.04c-.2.71-.62 2.67-.68 3.08zm0 0"/><path d="M43.6 33.07H43l-.04-.03c.1-.36.18-.73.26-1.08l.11-.47c.09-.36.12-.6.12-.71 0-.4-.35-.42-.45-.42-.38 0-.68.22-.81.33 0 .13-.04.42-.13.8l-.14.64c-.07.3-.13.59-.18.9l-.04.04h-.61l-.03-.04c.1-.37.47-1.86.47-2.24 0-.4-.34-.43-.46-.43-.32 0-.62.23-.73.32l-.2.9c-.12.54-.2.91-.3 1.45l-.04.03c-.23 0-.38 0-.6.02l-.04-.04c.23-.9.58-2.53.64-3.04l.04-.03.64-.1.04.04-.08.3a1.7 1.7 0 0 1 1.04-.36c.14 0 .5.04.66.44.5-.4.98-.44 1.14-.44.45 0 .83.24.83.74 0 .2-.05.43-.1.67l-.1.46c-.12.48-.17.82-.27 1.31zm0 0"/><path d="M47.1 33.07H46.54l-.03-.03.04-.24c-.29.23-.59.3-.89.3-.71 0-1.12-.53-1.12-1.18 0-.45.2-.87.29-1.02.5-.89 1.4-1 2.03-1l.9.02.04.04c-.5 2.14-.57 2.49-.65 3.07zm-1.17-.44c.2 0 .5-.09.7-.3.16-.62.28-1.26.45-1.96h-.27c-.58 0-1.17.17-1.47.9-.03.08-.13.32-.13.6 0 .44.25.76.72.76"/><path d="m50.61 33.07-.62.01-.02-.04c.08-.4.17-.68.25-1.08l.15-.69c.02-.09.06-.28.06-.45 0-.45-.39-.46-.51-.46-.37 0-.66.21-.8.32-.17.78-.35 1.56-.5 2.35l-.04.04-.61.01-.03-.04c.2-.8.58-2.48.63-3.03l.05-.04.64-.11.03.04-.09.31c.45-.34.88-.37 1.02-.37.18 0 .88.03.88.8 0 .2-.08.61-.2 1.18l-.09.43c-.06.29-.11.49-.15.78zm0 0"/><path d="M52.1 33.06c-.24 0-.41 0-.65.02l-.03-.04c.2-.7.63-2.7.66-3.03l.04-.04.66-.1.03.04c-.03 0-.53 2.3-.67 3.12zm.86-4-.63.09-.04-.05.13-.56.05-.04.63-.08.05.04-.14.55zm0 0"/><path d="M54.25 33.05c-.2.05-.36.06-.44.06-.57 0-.72-.3-.72-.6 0-.23.13-.77.3-1.5l.16-.63h-.44l-.03-.04.1-.4.05-.03h.42c.07-.27.1-.47.16-.75l.05-.04.63-.15.03.03-.13.45-.11.47.66-.01.03.04-.13.4-.04.04-.62-.01-.33 1.37c-.03.12-.12.5-.12.62 0 .2.14.26.3.26.16 0 .3-.06.36-.08l.03.03-.13.43zm0 0"/><path d="M57.95 29.96a96.54 96.54 0 0 0-2.66 4.54l-.05.04h-.63l-.02-.04c.18-.26.78-1.2.92-1.46-.23-1.5-.45-3-.48-3.08l.04-.04c.23 0 .4-.01.63-.03l.05.03.09.9.18 1.43.58-1.05c.23-.4.47-.81.68-1.25l.05-.04H57.92zm0 0"/><path d="M20.59 2.5h3.75v13.54h-3.75zm0 0"/><path d="M26.3 16.04V2.5h10.33v2.62h-6.57v2.8h6.04v2.63h-6.04v2.87h6.57v2.62zm0 0"/><path d="M38.73 16.04V2.5h10.31v2.62h-6.56v2.8h6.04v2.63h-6.04v2.87h6.56v2.62zm0 0"/><path d="M51.15 16.04V2.5h10.31v2.62H54.9v2.8h6.04v2.63H54.9v2.87h6.56v2.62zm0 0"/><path d="M8.55 2.65c.6-.47 1.35-.08 1.85.35.53.4 1.08.86 1.56 1.33l.09.05a25.93 25.93 0 0 1 3.6 4.06c.16.26.3.55.21.88-.34.85-1.03 1.53-1.63 2.27A27.5 27.5 0 0 1 10 15.44c-.32.22-.74.42-1.11.25-1.13-.6-2.1-1.57-3.08-2.46a21.34 21.34 0 0 1-3.18-3.61c-.13-.18-.17-.4-.17-.65.12-.45.42-.82.72-1.2a29.6 29.6 0 0 1 3.56-3.7l.14-.11c.54-.48 1.09-.9 1.66-1.31m1.75-1.37L9.63.32C9.54.27 9.44.2 9.35.16c-.2-.08-.42.02-.58.15L7.55 1.9A33 33 0 0 1 .7 8.34c-.2.16-.5.31-.56.57-.07.23.06.43.2.57a33.35 33.35 0 0 1 5.7 4.96c.31.32.56.64.86.95.51.67 1.1 1.35 1.57 2.07.15.16.17.4.4.48.18.06.4.1.57 0l.17-.17a33.9 33.9 0 0 1 7.75-7.82c.3-.27.87-.36.88-.86a.78.78 0 0 0-.35-.58h-.05a30.13 30.13 0 0 1-4.31-3.57L12.05 3.4c-.6-.67-1.19-1.41-1.75-2.12M8.77 3.02c.61-.42 1.16.16 1.63.5a24.66 24.66 0 0 1 4.88 5.07c.17.24.24.62.1.9-.35.57-.8 1.1-1.24 1.62v.03a32.86 32.86 0 0 1-3.49 3.33c-.6.37-1.16 1.18-1.94.68a28.14 28.14 0 0 1-4.93-4.65c-.24-.39-.62-.7-.8-1.13-.23-.58.3-1 .6-1.45 1.46-1.81 3.3-3.6 5.19-4.9m.39 1.2-.17.52-.83 2.39c.2.02.47 0 .67.02v.02l-.12 2.7.02.02c.27.03.6.04.87 0v-.05l-.11-2.61.02-.09.73-.01c-.37-.97-.72-1.94-1.06-2.92ZM6.33 7.93c-.47.24-1.15.6-1.08 1.23.1.35.48.58.78.72 1.65.73 3.85.75 5.6.21.42-.17 1-.4 1.08-.94 0-.43-.46-.7-.8-.87v-.02c.12-.05.25-.1.37-.1v-.02c-.58-.1-1.15-.25-1.71-.4.1.25.18.5.27.77.18-.06.35-.1.53-.12.3.11.73.28.77.65.04.35-.35.52-.59.66a6.85 6.85 0 0 1-4.06.16c-.36-.12-.9-.27-.94-.74.26-.61.94-.74 1.5-.9-.29-.18-.58-.35-.87-.56-.3.02-.58.15-.85.27m2.36 2.69c-.05.96-.06 1.84-.13 2.8.38.03.8.07 1.2.01l-.11-2.67-.02-.13c-.31.01-.6.02-.94-.01"/><path d="M12.22 16.1c-.33 0-.63.23-.63.63s.3.63.63.63a.6.6 0 0 0 .63-.63.6.6 0 0 0-.63-.63m0 1.11c-.25 0-.45-.19-.45-.48s.2-.48.45-.48.45.2.45.48c0 .29-.2.48-.45.48m.28-.61c0-.16-.1-.2-.27-.2h-.26v.67h.15v-.29h.07l.15.29h.17l-.17-.3c.1 0 .16-.05.16-.17m-.25.07h-.13v-.17h.1c.05 0 .13.01.13.08 0 .08-.04.09-.1.09"/></g></svg></span>
+    <div class="sponsor">
+      Technically Co-Sponsored by the<br>
+      <b>IEEE Nepal Section</b>
+      <a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/70625" target="_blank" rel="noopener">IEEE Conference Record No. 70625</a>
+    </div>
+  </div>
+
+  <div class="titleblock">
+    <p class="kicker">Conference Programme</p>
+    <h1>The 2026 IEEE 3rd International Conference on<br>Advanced Computing Technologies</h1>
+    <p class="sub">ICACT 2026</p>
+    <p class="meta"><span>1&ndash;2 September 2026</span> &nbsp;&middot;&nbsp; <span>Online</span> &nbsp;&middot;&nbsp; <span>10:00 a.m. &ndash; 3:00 p.m. Nepal Time</span></p>
+    <p class="issued" id="ver">&nbsp;</p>
+  </div>
+
+  <h2><span class="n">1.</span> Programme at a Glance</h2>
+  <p class="note-line">Eight sessions run in parallel in each slot, each on its own joining link. Session names are links to the full paper list further down.</p>
+  <div class="tw"><table class="glance" id="glance"></table></div>
+
+  <div class="finder">
+    <label for="q">Find your paper</label>
+    <p>Type your Paper ID, a word from the title, or an author name.</p>
+    <input id="q" type="search" placeholder="e.g. 3494, federated learning, Kamruddin" autocomplete="off">
+    <div id="qres"></div>
+  </div>
+
+  <h2><span class="n">2.</span> Local Times for Overseas Authors</h2>
+  <p class="note-line">The conference runs to Nepal Time. Authors joining from outside Nepal and India are requested to note their own local time below and to allow for it when planning their day.</p>
+  <div class="tw"><table id="zones"></table></div>
+  <p class="note-line"><b>Authors in North America please note:</b> these sittings fall in the small hours of your morning. If this is not workable for you, please write to the committee well in advance so that your paper can be considered for a different slot.</p>
+
+  <h2><span class="n">3.</span> Guidelines for Presenting Authors</h2>
+  <p class="timing">Each paper is allotted <b>12 minutes</b> in total &mdash; <b>10 minutes</b> for the presentation and <b>2 minutes</b> for questions. The session chair will indicate the eight-minute mark and will close the presentation at ten minutes. Please keep strictly to time so that the session does not run over.</p>
+
+  <ol class="guide">
+    <li><b>Presentation format</b>
+      <ul>
+        <li>Slides may be in Microsoft PowerPoint (PPT/PPTX) or PDF, prepared in 16:9 and tested on both Windows and Mac.</li>
+        <li>Ten to twelve slides are appropriate for ten minutes.</li>
+        <li>Authors share their own screen. Please keep the file open before the session begins.</li>
+        <li>All presentations must be delivered in <strong>English</strong>.</li>
+      </ul>
+    </li>
+    <li><b>Joining the session</b>
+      <ul>
+        <li>Please join <strong>ten minutes before</strong> the session start time using the link given against your session.</li>
+        <li>Rename yourself in the format <strong>PaperID &ndash; AuthorName</strong>. Chairs admit participants from the waiting room by this name.</li>
+        <li>The <strong>camera must remain on</strong> throughout the presentation, with a clear background.</li>
+        <li>Authors are requested to remain for the full session and not only for their own slot.</li>
+      </ul>
+    </li>
+    <li><b>Attendance and presentation</b>
+      <ul>
+        <li><strong>At least one author of every paper must present.</strong> This is a requirement of IEEE and not of the organisers.</li>
+        <li>A paper that is not presented will be <strong>withdrawn from the IEEE Xplore submission</strong>. No refund is admissible and authors will not be eligible for any claim.</li>
+        <li>Presenting authors are expected to attend the Valedictory Session.</li>
+        <li>Certificates will be issued in the name of the presenting author recorded in this programme.</li>
+      </ul>
+    </li>
+    <li><b>Technical arrangements</b>
+      <ul>
+        <li>Please test audio, video and internet connectivity well in advance. A headset and a stable connection are recommended.</li>
+        <li>Any failure of audio, video or internet at the author's end will be <strong>treated as absence</strong>.</li>
+        <li>Authors are advised to keep a co-author on standby who is able to present.</li>
+        <li>If disconnected during the talk, please rejoin immediately. The chair will accommodate you at the end of the session if time permits.</li>
+      </ul>
+    </li>
+    <li><b>Recording</b>
+      <ul>
+        <li>All sessions will be recorded for the conference record.</li>
+        <li>Authors having any objection to being recorded are requested to inform the committee <strong>in writing and in advance</strong>.</li>
+        <li>Participants may not record or circulate another author's presentation.</li>
+      </ul>
+    </li>
+    <li><b>Assistance during the conference</b>
+      <ul>
+        <li>The <strong>Session Coordinator</strong> named against each session is the first point of contact on the day for links, admission and technical difficulty.</li>
+        <li>The <strong>Session Chair</strong> conducts the session, maintains time and moderates the discussion.</li>
+        <li>Sessions and links are subject to change. Authors are advised to check the conference website before their day.</li>
+        <li>For any other matter, please write to <a href="mailto:secretaryicact@gmail.com">secretaryicact@gmail.com</a>.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2><span class="n">4.</span> Session Chairs and Session Coordinators</h2>
+  <p class="note-line">Each room needs one Session Chair and one Session Coordinator for the duration of a slot. Because the four slots run at different times, <b>one person may take the same room through all four slots</b>. The conference therefore needs a minimum of <b>eight chairs and eight coordinators</b>, or sixteen of each if the committee prefers two shifts, one for each day.</p>
+  <div class="tw"><table id="roster"></table></div>
+  <p class="note-line">Names entered against a session in the schedule below appear here automatically.</p>
+
+  <h2><span class="n">5.</span> Session Schedule</h2>
+  <p class="note-line">All timings are in Nepal Time (NPT, UTC+05:45). Indian Standard Time is fifteen minutes behind the timings shown.</p>
+  <div id="programme"></div>
+
+  <div class="foot">
+    <p><b>Organising Committee, ICACT 2026</b></p>
+    <p>Correspondence: <a href="mailto:secretaryicact@gmail.com">secretaryicact@gmail.com</a> &nbsp;&middot;&nbsp; Website: <a href="https://icact.github.io/">icact.github.io</a></p>
+    <p>All registered and presented papers will be submitted to the IEEE Xplore&reg; Digital Library, subject to meeting IEEE's scope and quality requirements. IEEE Conference Record No. 70625.</p>
+    <p class="sig">Session chairs, session coordinators and joining links will be filled in and circulated before the conference.</p>
+  </div>
+
+</div>
+
+<script>
+/* =====================================================================
+   ICACT 2026 - Session Schedule
+   TALK and QA below decide every timing printed in this document.
+   To record a chair, coordinator or joining link, fill in "chair",
+   "coordinator" or "link" against the session in DATA. Anything left
+   blank is printed as a ruled space to be completed by hand.
+   ===================================================================== */
+
+const TALK = 10;
+const QA   = 2;
+
+const DATA = {
+ "rooms": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H"
+ ],
+ "version": "First issue, 25 August 2026",
+ "days": [
+  {
+   "tag": "Day one",
+   "date": "1 September 2026",
+   "weekday": "Tuesday",
+   "blocks": [
+    {
+     "type": "ceremony",
+     "start": "10:00",
+     "end": "10:35",
+     "title": "Inaugural Session",
+     "link": "",
+     "chair": "",
+     "coordinator": "",
+     "run": [
+      {
+       "t": "10:00",
+       "d": "Welcome of the dignitaries"
+      },
+      {
+       "t": "10:04",
+       "d": "<b>Welcome address</b> &mdash; Organising Chair, ICACT 2026"
+      },
+      {
+       "t": "10:10",
+       "d": "<b>About ICACT 2026</b> &mdash; Conference Chair, on the submissions, the review and the two days ahead"
+      },
+      {
+       "t": "10:17",
+       "d": "<b>Address</b> &mdash; IEEE Nepal Section"
+      },
+      {
+       "t": "10:24",
+       "d": "<b>Inaugural address</b> &mdash; Chief Guest"
+      },
+      {
+       "t": "10:32",
+       "d": "<b>Vote of thanks</b> &mdash; Organising Secretary"
+      }
+     ]
+    },
+    {
+     "type": "break",
+     "start": "10:35",
+     "label": "Interval, and authors move to their session rooms"
+    },
+    {
+     "type": "sessions",
+     "start": "10:45",
+     "slot": 1,
+     "end": "12:45",
+     "sessions": [
+      {
+       "num": 1,
+       "anchor": "s01",
+       "room": "A",
+       "family": "health",
+       "title": "Medical Image Segmentation & Ensemble Diagnostics",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "549871",
+         "title": "BraTS: Brain Tumor Segmentation Using 2D U-Net with a Flask-Based Real-Time Web Interface",
+         "presenter": "Ayushi",
+         "authors": "Vishan Kumar Gupta (Amity University Punjab Mohali, Punjab); Ayushi (Amity University Punjab Mohali, Punab, India); Manish Mahajan (Amity University Punjab, Mohali); Harish Tiwari (Sir Padampat Singhania University Udaipur, Rajasthan); Vishwanath Bijalwan (Amity University Punjab, Mohali); Paras Jain (VIT Bhopal University Kothrikalan, Sehore, MP)"
+        },
+        {
+         "id": "765689",
+         "title": "Deep Learning Architectures for MRI Brain Tumor Segmentation: A Comparative Review of Convolutional, Attention-Based, and Hybrid Models",
+         "presenter": "Shivam Agarwal",
+         "authors": "Shivam Agarwal (Banasthali Vidyapith); Yogesh Kumar Gupta (Banasthali Vidyapith)"
+        },
+        {
+         "id": "585673",
+         "title": "DeiT-XGB Fusion: Hybrid Transformer and Gradient Boosting Framework for Brain Tumor MRI Classification",
+         "presenter": "N V M BINDU",
+         "authors": "N. V. Madhu Bindu (Amrita Vishwa Vidyapeetham, Amaravati, India); Balaji T.K (Amrita Vishwa Vidyapeetham, Amaravati, India); Kamepalli S.L. Prasanna (Amrita Vishwa Vidyapeetham, Amaravati, India)"
+        },
+        {
+         "id": "651021",
+         "title": "Hybrid VGG19–ResNet50 with Cross-Attention Gated Fusion and Swin UNetR Decoder for Brain Tumor Segmentation and Localization",
+         "presenter": "Sri Lakshmi M",
+         "authors": "SRI LAKSHMI M (School of Computer Science & Artificial Intelligence, SR University, Warangal, Telangana-506371, India); Deepthi Kothapeta (School of Computer Science & Artificial Intelligence, SR University, Warangal, Telangana-506371, India); Vijaya Kumar koppula (Department of Computer Science and Engineering, Koneru Lakshmaiah Education Foundation, Bowrampet, Hyderabad-500043, Telangana, India)"
+        },
+        {
+         "id": "493132",
+         "title": "A Hybrid Quantum Machine Learning Framework Based on Quantum Support Vector Machines and Variational Quantum Circuits for Accurate Breast Cancer Classification and Prediction Using Clinical Diagnostic Dataset",
+         "presenter": "Prakash Bethapudi",
+         "authors": "Prakash Bethapudi (School of CS & AI, SR University, Warangal, Telangana, India); Durgesh Nandan (School of CS & AI, SR University, Warangal, Telangana, India)"
+        },
+        {
+         "id": "248301",
+         "title": "Histopathology Classification using Xception and custom statistical aggregators",
+         "presenter": "Abishek J",
+         "authors": "Abishek J (St. Joseph's College of Engineering); Diviyan Frank Jeyasingh (St. Joseph's College of Engineering); Umayal A R (St. Joseph's College of Engineering)"
+        },
+        {
+         "id": "327760",
+         "title": "YOLOv11-GAT: An Explainable Hybrid Deep Learning Framework for Skin Cancer Diagnosis",
+         "presenter": "Anil D",
+         "authors": "Satyajee Srivastava (School of Engineering & Technology Manav Rachna International Institute of Research & Studies (Deemed to be University), Faridabad, Haryana, India); Dr. Ajay Prakash Pasupulla (Oral & Maxillo Facial Pathologist College of Health Sciences, School of Medicine, Wachemo University, Hosanna, Ethiopia); Soumya George (Dayananda Sagar Academy of Technology and Management Bangalore, India); Preethi (School of Computer Science and Engineering REVA University Bangalore, India); Manjula M (Department of Computer Science and Engineering (Data Science) Dayananda Sagar University Bangalore, India); Anil D (Department of CSBS Dayananda Sagar College of Engineering Bengaluru, India)"
+        },
+        {
+         "id": "421231",
+         "title": "A Confidence-Weighted Ensemble of Lightweight CNN and Transformer Models for Nuclei Instance Segmentation",
+         "presenter": "Gogineni Saikiran",
+         "authors": "Saikiran Gogineni (Malla Reddy (MR) Deemed to be university)"
+        },
+        {
+         "id": "686328",
+         "title": "Adaptive Multimodel Feature Extraction For Automated Radiological Diagnosis Using Hybrid Deep Learing",
+         "presenter": "Avvari Pavithra",
+         "authors": "Avvari Pavithra (Department of Computer Science and Engineering S R University, Warangal, India); Durgesh Nandan (School of Computer Science and Engineering S R University, Warangal, India)"
+        },
+        {
+         "id": "585027",
+         "title": "An Ensemble Deep Learning Framework for Accurate Pulmonary Disease Detection from Chest X-Ray Images Using ResNet, DenseNet, and EfficientNet",
+         "presenter": "Prashant Raj",
+         "authors": "Prashant Raj (Department of Computer Science Chandigarh University Mohali, India); Ajay Pal Singh (Department of Computer Science Chandigarh University Mohali, India); Gagan Bansal (Department of Computer Science Chandigarh University Mohali, India); Bhaskar Raj (Department of Computer Science Chandigarh University Mohali, India); Abhay Raj (Department of Computer Science Chandigarh University Mohali, India)"
+        }
+       ]
+      },
+      {
+       "num": 2,
+       "anchor": "s02",
+       "room": "B",
+       "family": "ai",
+       "title": "Visual Recognition: Faces, Gestures & Sign Language",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "537178",
+         "title": "ADBIS: An IoT-Enabled Multi-Sensor Fusion Framework for Intelligent Drainage Blockage Detection and Predictive Maintenance in Smart Cities",
+         "presenter": "John T Mesia Dhas",
+         "authors": "John T Mesia Dhas (Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology)"
+        },
+        {
+         "id": "908970",
+         "title": "Hybrid Deep Learning and Ensemble-based Fault Detection in IoT-Enabled Smart Grids using DNN–XGBoost",
+         "presenter": "Om Prakash Suthar",
+         "authors": "Om Prakash Suthar (Marwadi University, Rajkot, Gujarat, India); Isha Makwana (Marwadi University, Rajkot, Gujarat, India); Nausheen Khilji (Dept.of CSE JIET, Jodhpur Rajasthan, India); Rahul Bhandari (Dept. of CSE Chandigarh University Mohali, India); Daulat Sihag (Dept. of CSE Chandigarh University Mohali, India); Piyush kumar singh (Dept. of CSE Chandigarh University Mohali, India)"
+        },
+        {
+         "id": "877691",
+         "title": "IoT-Based SCADA System for Real-Time Industrial Condition Monitoring and Fault Diagnostics",
+         "presenter": "Prabhat Kumar Chaudhary",
+         "authors": "Prabhat Kumar Chaudhary (Nepal Engineering College, Pokhara University); Abinash Kumar Chaudhary (Cullen College of Engineering, University of Houston); Ramhari Poudyal (Himalayan Institute of Science and Technology, Purbanchal University)"
+        },
+        {
+         "id": "415273",
+         "title": "Physics-Informed Neural Networks for Real-Time Seismological Inversion with Sparse Sensor Data",
+         "presenter": "Swaminath Pal",
+         "authors": "R. Naveenkumar (Dept of C.S.E School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "61825",
+         "title": "Securing The Edge: Automating The Digital Certificate Lifecycle Via Resilient OTA Mechanisms in IoT Networks",
+         "presenter": "Marshal R",
+         "authors": "M Vellaipandi (Sathyabama University & Standardization Testing and Quality Certification Directorate); B Bharathi (Sathyabama University); Marshal R (Indian Computer Emergency Response Team (CERT-In)); Gobinath K (Indian Computer Emergency Response Team (CERT-In))"
+        },
+        {
+         "id": "508206",
+         "title": "Smart Ration Track: IoT Enabled Anti-Theft Detection and FIFO Inventory System for PDS",
+         "presenter": "Parameswaran Ramesh",
+         "authors": "Gangarani N (Paavai Engineering College Namakkal, India); Gowthaman V (SenguntharEngineering College (Autonomous), Tiruchengode); Caroline Priyanka Evelyne P (Sathyabama Institute of Science and Technology); Ponnusamy A (Vinayaka Mission’s Kirupananda Variyar Engineering College, Vinayaka Mission’s Research Foundation (DU)); Purnima R G (Vinayaka Mission’s Kirupananda Variyar Engineering College, Vinayaka Mission’s Research Foundation (DU)); Parameswaran Ramesh (Sathyabama Institute of Science and Technology); Praveena S (Paavai Engineering College Namakkal, India); Delma Jones Rufina R (Sathyabama Institute of Science and Technology)"
+        },
+        {
+         "id": "916651",
+         "title": "AI and Machine Learning-Based Analysis of Malnutrition and Obesity: A Survey-Based Predictive Study",
+         "presenter": "LAKSHMI J V N",
+         "authors": "Lakshmi J V N (Associate Professor, REVA University); Nagaraj C (Assistant professor, Parul University); Rajasekaran S (University of Technology and Applied Sciences, Ibri); Prabhu S (Government Arts and Science College Thittamalai, Erode, India); Rajat Kapoor (Chandigarh University, Mohali)"
+        },
+        {
+         "id": "718980",
+         "title": "AI-Driven Surface Wettability and Morphological Characterization of Laser-Modified Dental Implant Interfaces Using Machine Learning Pattern Recognition",
+         "presenter": "MD Jalaluddin",
+         "authors": "MD Jalaluddin (Department of Periodontics and Implantology, Kalinga Institute of Dental Sciences (KIDS), Campus-5, KIMS, KIIT Deemed University)"
+        },
+        {
+         "id": "584559",
+         "title": "An Integrated Explainable Ensemble CNN Framework for Real-Time Facial Emotion Recognition",
+         "presenter": "Ketan Mathur",
+         "authors": "Ketan Mathur (Manipal University Jaipur Jaipur, Rajasthan, India); Rohit Kumar Gupta (Manipal University Jaipur Jaipur, Rajasthan, India)"
+        },
+        {
+         "id": "506571",
+         "title": "EngageX-Real-Time Attention Monitoring System Using Computer Vision and Deep Learning",
+         "presenter": "Deepali Vora",
+         "authors": "Avikshit Kumar (Symbiosis Institute of Technology (SIT) Pune, Symbiosis International (Deemed University), Pune, India); Mishti Kinker (Symbiosis Institute of Technology (SIT) Pune, Symbiosis International (Deemed University), Pune, India); Sanchita Arora (Symbiosis Institute of Technology (SIT) Pune, Symbiosis International (Deemed University), Pune, India); Vineet Kumar (Symbiosis Institute of Technology (SIT) Pune, Symbiosis International (Deemed University), Pune, India); Deeplai Vora (Symbiosis Institute of Technology (SIT) Pune, Symbiosis International (Deemed University), Pune, India)"
+        }
+       ]
+      },
+      {
+       "num": 3,
+       "anchor": "s03",
+       "room": "C",
+       "family": "society",
+       "title": "Financial Analytics, Fraud & Risk Intelligence",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "755251",
+         "title": "A Survey on Forecasting Stock Market Prices Using Machine Learning and Deep Learning Models",
+         "presenter": "MD Asim",
+         "authors": "MD Asim (Mr)"
+        },
+        {
+         "id": "752796",
+         "title": "An Ensemble Learning Approach for Real-Time Fraud Detection in Digital Payments",
+         "presenter": "Indrajeet Singh",
+         "authors": "JANANI M (Department of Computing Technologies SRM Institute of Science and Technology Chennai, Tamil Nadu, India); Indrajeet Singh (Department of Computing Technologies SRM Institute of Science and Technology Chennai, Tamil Nadu, India); Arijeet Kumar (Department of Computing Technologies SRM Institute of Science and Technology Chennai, Tamil Nadu, India)"
+        },
+        {
+         "id": "946247",
+         "title": "COGNITIVE MULTI-LAYER REVIEW AUTHENTICITY FRAMEWORK (CMRAF) FOR AI-BASED FAKE REVIEW PREVENTION IN E-COMMERCE SYSTEMS",
+         "presenter": "KEERTHIHAA SRI P",
+         "authors": "Ananthi S (M.Kumarasamy College of Engineering); Keerthihaa Sri P (M.Kumarasamy College of Engineering); Lakshana V (M.Kumarasamy College of Engineering); Mekadharshini S (M.Kumarasamy Collge of Engineering)"
+        },
+        {
+         "id": "507760",
+         "title": "Hierarchical Bandit Models for Adaptive Real-Time Dynamic Pricing Systems",
+         "presenter": "A Divya Bharathi",
+         "authors": "A Divya Bharathi (Assistant Professor, Department of CSE, CMR Technical Campus, Hyderabad, Telangana, India); M Ashwitha (Associate Professor, Department of CSE, CMR Engineering College, Hyderabad, Telangana, India); Ch Sankar Rao (Associate Professor, Department of EEE, CMR College of Engineering Technology, Hyderabad, Telangana, India); Anitha (Assistant Professor, Department of CSE(AI&ML),CMR Institute of Technology, Hyderabad, Telangana, India); G Sherlin Shobitha (Assistant Professor, ECE Department, Stanley College of Engineering and Technology for Women(A))"
+        },
+        {
+         "id": "288238",
+         "title": "LoanPalz: Explainable and Adaptive AI for Credit Risk Assessment",
+         "presenter": "Angelina Anthony",
+         "authors": "Angelina Anthony (Vishwakarma Institute of Technology); Nilesh Sable (Vishwakarma Institute of Technology); Aakash Darda (Vishwakarma Institute of Technology); Sanika Pravin Akulwar (Vishwakarma Institute of Technology); Anvi Doshi (Vishwakarma Institute of Technology)"
+        },
+        {
+         "id": "980039",
+         "title": "LoanPalz: Explainable and Adaptive AI for Credit Risk Assessment",
+         "presenter": "Angelina Anthony",
+         "authors": "Angelina Anthony (Vishwakarma Institute of Technology, Pune, India); Nilesh Sable (Vishwakarma Institute of Technology, Pune, India); Aakash Darda (Vishwakarma Institute of Technology, Pune, India); Sanika Akulwar (Vishwakarma Institute of Technology, Pune, India); Anvi Doshi (Vishwakarma Institute of Technology, Pune, India)"
+        },
+        {
+         "id": "989736",
+         "title": "Retrieval-Augmented Generation-Based Intelligent Decision Support Systems in Financial Services: A Quantitative Study",
+         "presenter": "Dr Pankaj Adatiya",
+         "authors": "Dr Pankaj Adatiya (School of Commerce, Jain (Deemed to be University), Bengaluru, Karnataka, india); Dr. Nethravathi K (School of Commerce, Jain (Deemed to be University), Bengaluru, Karnataka, india)"
+        },
+        {
+         "id": "981737",
+         "title": "From Darkweb Markets to Business Losses:How Cybercrime-as-a-Service Threaten Small Businesses",
+         "presenter": "Kishan Makadiya",
+         "authors": "Nidhi Akbari (Marwadi University); Bansi Tanna (Marwadi University); Kishan Makadiya (Marwadi University); Yash Vasoya (Marwadi University)"
+        }
+       ]
+      },
+      {
+       "num": 4,
+       "anchor": "s04",
+       "room": "D",
+       "family": "systems",
+       "title": "Quantum & Neuromorphic Computing",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "466603",
+         "title": "ALLOWING PROTOTYPING OF APPLICATIONS RUNNING ON HETEROGENEOUS HARDWARE USING ELASTIC NEUROMORPHIC CLOUDS",
+         "presenter": "Misha Goel",
+         "authors": "Misha Goel (Amity University, UP); Shilpi Sharma (Amity University, UP)"
+        },
+        {
+         "id": "337273",
+         "title": "MODEL-PYSCHOSIS: Psychosis Subtype Classification Using Neuromorphic Spiking Networks with Hebbian Plasticity",
+         "presenter": "Varun kumar B",
+         "authors": "varun kumar (St. Joseph's college of Engineering); rishi lakshan (St. Joseph's college of Engineering); Dr.G.Manikandan (St. Joseph's college of Engineering)"
+        },
+        {
+         "id": "116446",
+         "title": "Next generation Gate all around Nano-wire Negative Capacitance MOSFET for Neuromorphic functions",
+         "presenter": "Arkopriya Bhowmick",
+         "authors": "Brinda Bhowmick (professor)"
+        },
+        {
+         "id": "532176",
+         "title": "Quantum Classical Optimization for MPPT Using Genetic Algorithm and Support Vector Machine Biasing",
+         "presenter": "Rashmi M C",
+         "authors": "Rashmi M C (REVA University); Raghu C N (REVA University); Ritesh Dash (REVA University)"
+        },
+        {
+         "id": "129449",
+         "title": "Quantum-Enhanced Multi-Disease Risk Prediction Using Hybrid Quantum Convolutional Neural Networks",
+         "presenter": "INCHARA B N",
+         "authors": "INCHARA B N (BNM INSTITUTE OF TECHNOLOGY); Jyoti R Munavalli (BNM INSTITUTE OF TECHNOLOGY); Meghana C (BNM INSTITUTE OF TECHNOLOGY); Harshita (BNM INSTITUTE OF TECHNOLOGY)"
+        },
+        {
+         "id": "484383",
+         "title": "Scalable Noise-Resilient Quantum Convolutional Neural Network Architecture for Large-Scale Image Classification on NISQ Device",
+         "presenter": "Abburi Srirama Kanaka Ratnam",
+         "authors": "Abburi Srirama Kanaka Ratnam (School of CS & AI, SR University, Warangal, 506371, Telangana, India); Durgesh Nandan (School of CS & AI, SR University, Warangal, 506371, Telangana, India)"
+        },
+        {
+         "id": "717958",
+         "title": "A Sketch Calibrated Cascade for Cost Bounded Text Classification on Large Review Streams",
+         "presenter": "G. SURYANARAYANA",
+         "authors": "Yuvaraju Chinnam (Malla Reddy (MR) Deemed to be university); Mannava Yesubabu (Anurag University); N Swapna (Vijay Rural Engineering College); Ranganadham T N (Annamacharya University); Saikiran Gogineni (Malla Reddy (MR) Deemed to be university); G. Suryanarayana (Symbiosis Institute of Technology, Hyderabad)"
+        }
+       ]
+      },
+      {
+       "num": 5,
+       "anchor": "s05",
+       "room": "E",
+       "family": "security",
+       "title": "Blockchain Systems, Digital Twins & Trust Infrastructure",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "511617",
+         "title": "An Adaptive Digital Twin Framework for Intelligent Enterprise Resource Management",
+         "presenter": "Madasamy Raja G",
+         "authors": "Dr.Madasamy Raja, G (Professor & Head Department of Computer Science and Engineering Agni College of Technology, Chennai Tamilnadu- 600 130)"
+        },
+        {
+         "id": "438314",
+         "title": "Application-Domain Taxonomy and Comparative Framework for Blockchain-Enabled E-Voting Systems",
+         "presenter": "Rahul",
+         "authors": "Rahul (Department of Computer Science & Applications, Maharshi Dayanand University, Rohtak, Haryana, India); Preeti Gulia (Department of Computer Science & Applications, Maharshi Dayanand University, Rohtak, Haryana, India); Nasib Singh Gill (Department of Computer Science & Applications, Maharshi Dayanand University, Rohtak, Haryana, India)"
+        },
+        {
+         "id": "472224",
+         "title": "Cryptographic Hash Function as Security Primitives in Blockchain Technology: A Comprehensive Analysis",
+         "presenter": "Yash Vasoya",
+         "authors": "Bansi Tanna (Marwadi University); Nidhi Akbari (Marwadi University); Yash Vasoya (Marwadi University); Kishan Makadiya (Marwadi University)"
+        },
+        {
+         "id": "396464",
+         "title": "DESIGNING A TRUST-DRIVEN IDENTITY AUTHENTICATION PROTOCOL FOR ZERO-TRUST CLOUD ARCHITECTURES",
+         "presenter": "Govind Venugopal",
+         "authors": "Govind Venugopal; Prithvi Kumar Badiga; Venkat Teja Gadda"
+        },
+        {
+         "id": "220606",
+         "title": "Impact of Patent Law and TRIPS on Public Health Using a Comparative Doctrinal and Policy Analytics Framework",
+         "presenter": "Esther. V",
+         "authors": "Dr.S.Thangamayan (Saveetha School of Law, Saveetha Institute of Medical and Technical Sciences, Chennai-77.)"
+        },
+        {
+         "id": "978314",
+         "title": "Q-MEMShield: A Quantum-Resilient Mempool Architecture for Secure Blockchain Transaction Propagation",
+         "presenter": "FAHAD RAHMAN, SAJJAD WAQAR AHMED",
+         "authors": "Sajjad Waqar Ahmed (STC Saudi Arabia); Muhammad Rashid Anwar (STC Saudi Arabia); Rabi Iqbal Rana (STC Saudi Arabia); Fahad Rahman (Universit'e Paris Cit'e, France)"
+        },
+        {
+         "id": "63201",
+         "title": "Self-Regulating AI Model Governance using Blockchain-Anchored Auditing System",
+         "presenter": "Krishnamoorthy R",
+         "authors": "P. Pakutharivu (Anna Adarsh College For Women); V.Anitha lakshmi (Prathyusha Engineering College); Madhubala C (Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College); K.Venkataramanan (Prathyusha Engineering College); R.Krishnamoorthy (Chennai Institute of Technology); R.Thiagarajan (Veltech Multitech Dr.Rangarajan Dr.Sakunthala Engineering College)"
+        },
+        {
+         "id": "84347",
+         "title": "System-Level BER Analysis for RIS-Aided Hamming-Coded STBC Systems",
+         "presenter": "Nguyen Anh Thien",
+         "authors": "Nguyen Anh Thien (VNUHCM - University of Science, Ho Chi Minh City, Vietnam); Phan Thi Phuong Truc (VNUHCM - University of Science, Ho Chi Minh City, Vietnam); Vu Thanh Dat (VNUHCM - University of Science, Ho Chi Minh City, Vietnam); Nguyen Thi Xuan Uyen (VNUHCM - University of Science, Ho Chi Minh City, Vietnam); Dang Le Khoa (VNUHCM - University of Science, Ho Chi Minh City, Vietnam)"
+        }
+       ]
+      },
+      {
+       "num": 6,
+       "anchor": "s06",
+       "room": "F",
+       "family": "health",
+       "title": "Neuro-Imaging, Retinal & Multimodal Diagnostics",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "810939",
+         "title": "Comparative Analysis of Quantum and Classical Image Segmentation Methods",
+         "presenter": "Dr.D.Subhashini",
+         "authors": "Dr.Dasari.Subhashini (JNTUH)"
+        },
+        {
+         "id": "894659",
+         "title": "Conformal Prediction Sets for Imbalanced Tabular Classification: A Study of Score Functions and Calibration Schemes",
+         "presenter": "G Suryanarayana",
+         "authors": "Yuvaraju Chinnam (Malla Reddy (MR) Deemed to be university); N Swapna (Vijay Rural Engineering College); Surendra Tripathi (Bennett University); Mannava Yesubabu (Anurag University); Saikiran Gogineni (Malla Reddy (MR) Deemed to be university); G. Suryanarayana (Symbiosis Institute of Technology, Hyderabad)"
+        },
+        {
+         "id": "671246",
+         "title": "Design and Retrospective Evaluation of S4FO: An AI Procurement Orchestration Framework for SAP S/4HANA",
+         "presenter": "Manykandaprebou VAITINADIN",
+         "authors": "Manykandaprebou VAITINADIN (Independent Researcher, California, USA); Dhanalakshmi Manykandaprebou (Independent Researcher, CA, USA); Elayaraja Subbaiah (Independent Researcher, Pheonix, USA); Elavarasi Kesavan (Independent Researcher, Arizona, USA)"
+        },
+        {
+         "id": "672944",
+         "title": "Development of a Deep Learning Based Dental Caries Detection System Using Optical Coherence Tomography Imaging with Convolutional Neural Network Architecture",
+         "presenter": "Ipseeta Menon",
+         "authors": "Ipseeta Menon (Dept. of Public Health Dentistry, KIDS, KIIT Deemed to be University Bhubaneswar, India)"
+        },
+        {
+         "id": "284730",
+         "title": "Machine Learning-Guided Formulation and Mechanical Optimization of Nano-Hydroxyapatite Reinforced Dental Composites",
+         "presenter": "Gaurav Patri",
+         "authors": "Gaurav Patri (Professor, Kalinga Institute of Dental Sciences, KIIT Deemed to be University, Bhubaneswar, Odisha, India.)"
+        },
+        {
+         "id": "846265",
+         "title": "PORTABLE X-RAY IMAGE ENHANCEMENT SOFTWARE",
+         "presenter": "R.PRIYADARSINI",
+         "authors": "R.priyadarsini (paper); Maheshwari.s (paper)"
+        },
+        {
+         "id": "958184",
+         "title": "Robust Glaucoma Detection from Retinal Fundus Images Using Attention-Based CNN with Uncertainty Estimation",
+         "presenter": "Ms. Neha Dhavale",
+         "authors": "Ms. Neha Dhavale (Career Point University); Dr.Awanit Kumar (Career Point University)"
+        },
+        {
+         "id": "253984",
+         "title": "Smart Dental Diagnostics: Machine Learning Models for Predicting Treatment Outcomes in General Dentistry",
+         "presenter": "Rakesh Mutha",
+         "authors": "Rakesh Mutha (Associate Professor, Department of Periodontology, D Y Patil Dental School, Pune, Maharashtra, India)"
+        },
+        {
+         "id": "759969",
+         "title": "Transformer-Driven Hyperspectral Image Restoration: Beyond Pixels Toward Spectral Intelligence",
+         "presenter": "Pujari Suresh Kumar",
+         "authors": "Pujari Suresh Kumar (Koneru Lakshmaiah Education Foundation,)"
+        }
+       ]
+      },
+      {
+       "num": 7,
+       "anchor": "s07",
+       "room": "G",
+       "family": "society",
+       "title": "Water Quality, Sustainability & Green Computing",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "788160",
+         "title": "A Low-Cost ESP32-Based Autonomous Environmental Inspection and Monitoring Vehicle",
+         "presenter": "Md. Habibur Rahman Habib",
+         "authors": "Md. Habibur Rahman Habib (Independent University, Bangladesh); Shahriar Khan (Independent University, Bangladesh)"
+        },
+        {
+         "id": "300925",
+         "title": "A Smart Water Safety Kit Using IoT and Machine Learning for Real-Time Water Potability Prediction",
+         "presenter": "Vishal K",
+         "authors": "P Komaleeswari (Professor); Aishwarya N (Professor); Gayathri M (Professor); T Durga Sai Deeraj (Student); Vishal K (Student); Sai Krishna S (Student)"
+        },
+        {
+         "id": "327835",
+         "title": "AI for Sustainable Diversity, Equity, and Inclusion: Advancing SDGs in the Workplace",
+         "presenter": "Dr. Namrata Tapaswi",
+         "authors": "Dr, Namrata Tapaswi (Acropolis Institute of Technology and Reserach, Indore,M.P.,India)"
+        },
+        {
+         "id": "86725",
+         "title": "AI-Powered Waste Segregation using Computer Vision & Machine Learning",
+         "presenter": "Dhara Joshi",
+         "authors": "Preya Sanghvi (Marwadi University); Mitrajsinh Jadeja (Marwadi University); Vidhisha Maradiya (Marwadi University); Dhara Joshi (Marwadi University)"
+        },
+        {
+         "id": "30531",
+         "title": "Advancement in Artificial Intelligence for Apple Disease Detection",
+         "presenter": "Anjana Sharma",
+         "authors": "Anjana Sharma (Lovely Professional University-India); Vishal (Lovely Professional University-India); Shalini Puri (Manipal University Jaipur-India)"
+        },
+        {
+         "id": "675317",
+         "title": "An Edge-Assisted IoT Framework for Intelligent Water Quality Anomaly Detection and Early Warning in Bangladesh Aquaculture",
+         "presenter": "Md. Mahibullah",
+         "authors": "Sunnymoon Rafi (Khulna University of Engineering & Technology); Md. Mahibullah (Military Institute of Science and Technology); Kazi Wakilur Rahman Rumman (Military Institute of Science and Technology); Shah Muhammad Azmat Ullah (Khulna University of Engineering & Technology); Gazi Muhammad Abdullah Mahfuz (Khulna University of Engineering & Technology); Toufik Ahmed (chittagong University of Engineering & Technology)"
+        },
+        {
+         "id": "672679",
+         "title": "Attention-Modulated One-Stage Detection for Remote Sensing-Based Marine Organism Recognition in Brackish Coastal Waters",
+         "presenter": "Bollineni Venugopal Rao",
+         "authors": "Bollineni Venugopal Rao (Nehru Technological University, Anantapur.)"
+        },
+        {
+         "id": "846347",
+         "title": "From Campus Validation to Preliminary Quarry Deployment: Evaluation of a Lightweight IoT Environmental Monitoring System",
+         "presenter": "Jieling Wu",
+         "authors": "Jieling Wu (Suwa University of Science)"
+        }
+       ]
+      },
+      {
+       "num": 8,
+       "anchor": "s08",
+       "room": "H",
+       "family": "health",
+       "title": "Foundation Models & Privacy-Preserving Clinical AI",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:45",
+       "papers": [
+        {
+         "id": "545312",
+         "title": "AI-Driven Thermal and Computational Analysis of Laser-Assisted Root Canal Disinfection Techniques for Enhanced Endodontic Therapy with Predictive Optimization",
+         "presenter": "Prasanti Pradhan",
+         "authors": "Prasanti Pradhan (Professor, Department of Conservative Dentistry and Endodontics, Kalinga Institute of Dental Sciences, Kalinga Institute of Industrial Technology (Deemed to be University), Bhubaneswar, Odisha, India)"
+        },
+        {
+         "id": "118762",
+         "title": "An AI-Driven Business Healthcare Platform Integrating Deep Learning-Based Melanoma Detection, Intelligent Queue Prediction, and Cybersecurity",
+         "presenter": "Mohammad Yasin",
+         "authors": "Mohammad Yasin (Master of Business Administration, Westcliff University, Irvine, California, USA); Mahzabin Binte Rahman (MS in Business Analytics, Trine University Detroit, Michigan, USA); Salman Mohammad Abdullah (MS in Information Technology, Washington University of Science and Technology, Washington, USA); Md Sajedul Karim Chy (Washington University of Science and Technology, Washington, USA); Mahbub Ahmed Nabil (Master of Science in Information Technology, Washington University of Science and Technology, Washington, USA); Kabita shamia akter (Master of Science in Information Technology, Washington University of Science and Technology, Washington, USA)"
+        },
+        {
+         "id": "51389",
+         "title": "An Explainable AI Approach for Root Cause Analysis and Decision-Making in Prognostic Health Management (PHM) of Aircraft Engines",
+         "presenter": "Senthil Kumar A",
+         "authors": "Selvaraj Kesavan (DXC Technology); Senthilkumar J (Sona College of Technology); Senthil Kumar A (Dayanantha Sagar University)"
+        },
+        {
+         "id": "333480",
+         "title": "An Explainable Deep Learning Framework for Rapid Brain Tumor Detection",
+         "presenter": "Deepthi Tabitha Bennet",
+         "authors": "Deepthi Tabitha Bennet (Thiagarajar College of Engineering); Vijayalakshmi M (Thiagarajar College of Engineering)"
+        },
+        {
+         "id": "598018",
+         "title": "Breast Cancer Analysis Using Thermal Imaging & Artificial Intelligence",
+         "presenter": "Pradnya Narkhede",
+         "authors": "Riya Sunil Gedam (Tulsiramji Gaikwad Patil College of Engineering and Technology, Nagpur); Radhika Arun Tulaskar (Tulsiramji Gaikwad Patil College of Engineering and Technology, Nagpur); Pradnya Narkhede (Pimpri Chinchwad College of Engineering , Pune)"
+        },
+        {
+         "id": "618748",
+         "title": "CardioXAI: A Statistical Framework for Evaluating Explanation Stability in Clinical Machine Learning Models",
+         "presenter": "Pranali Dasharath Yelavikar",
+         "authors": "Vikrant Kadam (Vishwakarma Institute Of Technology, Pune); Viomesh Singh (Vishwakarma Institute Of Technology, Pune); Janhavi Pagare (Vishwakarma Institute Of Technology, Pune); Kartik Pagariya (Vishwakarma Institute Of Technology, Pune); Aditya Dengale (Vishwakarma Institute Of Technology, Pune); Pranali Yelavikar (Vishwakarma Institute Of Technology, Pune)"
+        },
+        {
+         "id": "549680",
+         "title": "Cognitive Computing in Real-Time Disease Diagnosis and Decision Support",
+         "presenter": "R.E. Ugandar",
+         "authors": "R.E. Ugandar (Santhiram College of Pharmacy); Samson Isaac (Karunya Institute of Technology and Sciences); Amuthachenthiru K (R.M.D Engineering College); Madhavi Karumudi (Koneru Lakshmaiah Education Foundation); P S S N Mowlika (S.R.K.R Engineering College); R. Jeyalakshmi (R.M.K.Engineering College)"
+        },
+        {
+         "id": "590897",
+         "title": "Enhancing Neonatal Eye Care Through Intelligent Retinopathy Of Prematurity Screening",
+         "presenter": "Preethi Samantha Bennet",
+         "authors": "Preethi Samantha Bennet (Thiagarajar College of Engineering); Leena Sri R (Thiagarajar College of Engineering)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "break",
+     "start": "12:45",
+     "label": "Lunch"
+    },
+    {
+     "type": "sessions",
+     "start": "13:10",
+     "slot": 2,
+     "end": "15:00",
+     "sessions": [
+      {
+       "num": 9,
+       "anchor": "s09",
+       "room": "A",
+       "family": "systems",
+       "title": "Autonomous Vehicles, UAVs & Intelligent Mobility",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "853158",
+         "title": "A Comparative Study of Multi-Objective Traffic Signal Optimization Using NSGA-II andReinforcement Learning",
+         "presenter": "Nitesh Gupta",
+         "authors": "Prarthana Nagol (R V Institute of Technology and Management, Bengaluru, India); Nidhi Yogeesha (R V Institute of Technology and Management, Bengaluru, India); Nitesh Gupta (R V Institute of Technology and Management, Bengaluru, India); Gaurav S Shekhawat (R V Institute of Technology and Management, Bengaluru, India); Malini M Patil (R V Institute of Technology and Management, Bengaluru, India)"
+        },
+        {
+         "id": "774961",
+         "title": "A Study of Kinematic Modeling and Trajectory Tracking Control for ABB GoFa CRB 15000 Collaborative Robot",
+         "presenter": "Thanh Van Vo",
+         "authors": "Thanh Van Vo (Posts and Telecommunications Institute of Technology (PTIT)); Vy Phuc Thach Le (Posts and Telecommunications Institute of Technology (PTIT)); Thien-Quang Nguyen (VinDynamics); Vong Le Cong Ky (Posts and Telecommunications Institute of Technology (PTIT)); Thanh-Tung Nguyen (Ho Chi Minh City Bach Nghe College); Minh-Tai Vo (Posts and Telecommunications Institute of Technology (PTIT))"
+        },
+        {
+         "id": "668063",
+         "title": "Edge-Deployable CNN for UAV Visibility Proxy Classification with Reliability Evaluation",
+         "presenter": "Abhay Saxena",
+         "authors": "Abhay Saxena (School of Electrical and Computer Sciences, Indian Institute of Technology Bhubaneswar, India); Himanshu Kumar (School of Electrical and Computer Sciences, Indian Institute of Technology Bhubaneswar, India)"
+        },
+        {
+         "id": "605021",
+         "title": "Hybrid Gate Recurrent Unit and Particle Swarm Optimization Framework for State of Charge Estimation of Lithium-Ion Batteries",
+         "presenter": "M Surendar",
+         "authors": "M Surendar (Swarnandhra College of Engineering & Technology)"
+        },
+        {
+         "id": "23800",
+         "title": "Intelligent Interference Cancellation Algorithm for Autonomous Vehicle Communication Units",
+         "presenter": "MD Asma",
+         "authors": "MD Asma (Assistant Professor, Department of CSE, CMR Technical Campus, Hyderabad, Telangana, India); Bommireddy Prasanthi (Assistant Professor, Department of ECE, CMR Engineering College, Hyderabad, Telangana, India); Dr R Ravi Kumar (Associate Professor, Department of CSE, CMR College of Engineering Technology, Hyderabad, Telangana, India); Wudharu Sravani (Assistant Professor, Department of CSE, CMR Institute of Technology, Hyderabad,Telangana,India); Dr. V. Maheshwar Reddy (Associate Professor, IT Department, Stanley College of Engineering and Technology for Women(A))"
+        },
+        {
+         "id": "960868",
+         "title": "Intelligent Multi-Agent Learning for Real-Time Urban Traffic Optimisation Using Deep Bandit Strategies",
+         "presenter": "CH Sirisha",
+         "authors": "CH Sirisha (Assistant Professor, Department of CSE, CMR Technical Campus, Hyderabad, Telangana, India); A. Pramod Kumar (Associate Professor, Department of CSE (AI&ML), CMR Engineering College, Hyderabad, Telangana, India); S Krishnaveni (Assistant Professor, Department of ECE, CMR College of Engineering Technology, Hyderabad, Telangana, India); K Mouneshwari (Assistant Professor, Department of CSE(AI&ML),CMR Institute of Technology, Hyderabad, Telangana, India); Y Chandini (Assistant Professor, CME Department, Stanley College of Engineering and Technology for Women(A))"
+        },
+        {
+         "id": "569338",
+         "title": "Neuro-Symbolic Deep Learning for Robust Decision-Making in Autonomous Edge Robotics",
+         "presenter": "Mamta Bansal",
+         "authors": "R. Naveenkumar (Dept of Computer Science and Engineering, School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "886812",
+         "title": "Energy Efficient IoT Smart Multimedia Notice Board Using RaspberryPi4 with Ultrasonic Based Adaptive Display Control",
+         "presenter": "Parameswaran Ramesh",
+         "authors": "Parameswaran Ramesh (Sathyabama Institute of Science and Technology); Baranitharan S (Madras Institute of Technology, Anna University); Jeya Anbu Tephillah J (Madras Institute of Technology, Anna University); Suba Ranjani M (Madras Institute of Technology, Anna University); Kaviya V (Madras Institute of Technology, Anna University); P T V Bhuvaneswari (Madras Institute of Technology, Anna University)"
+        }
+       ]
+      },
+      {
+       "num": 10,
+       "anchor": "s10",
+       "room": "B",
+       "family": "security",
+       "title": "AI-Driven Cyber Threat Detection & Response",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "262450",
+         "title": "Assessment of DDoS Attack Detection in Software-Defined Networking through K-Nearest Neighbor Optimization",
+         "presenter": "Sudhir Bhagat",
+         "authors": "Sudhir Bhagat (Research Scholar, AMity university, Noida (U.P), india); Himanshu Gupta (AMity university, Noida (U.P), india); Ashish Seth (Centre for Research & Development, Sri Eshwar College of Engineering, Coimbatore, Tamil Nadu,)"
+        },
+        {
+         "id": "110895",
+         "title": "Concept Drift and Adaptive Defence: A Review of Reinforcement Learning for Non-Stationary Intrusion Detection",
+         "presenter": "ARUN KUMAR B.S",
+         "authors": "ARUN KUMAR BS (ALLIANCE UNIVERSITY); Rathnakar Achary (Alliance University)"
+        },
+        {
+         "id": "452187",
+         "title": "Deep Learning-Enhanced Cybersecurity Model for Detecting Advanced Network Intrusions",
+         "presenter": "Dr. M.V. Siva Prasad",
+         "authors": "Dr. M.V. Siva Prasad (Professor, School of Computer Science and Engineering, S R University,Warangal - 506371, Telangana, India.); Dr. Suresh Kumar Mandala (School of Computer Science and Engineering, SR University, Warangal-506371, Telangana, India.); Dr. Amitava kar (Associate Professor, CSE department, Gopal Narayan Singh University, Jamuhar, Bihar-821305.); Ms. Warisa Nusrat (Assistant Professor, CSE department, Gopal Narayan Singh University, Jamuhar, Bihar-821305.); Mihir Harishbhai Rajyaguru (Assistant Professor, Department of Computer Engineering, GIDC Phase IV, New Vallabh Vidyanagar, Anand, Pin: 388121, Gujarat, Madhuben and Bhanubhai Patel Institute of Technology (MBIT) - The Charutar Vidya Mandal (CVM) University, India.); Gudipati Vamsikrishna (Assistant Professor, Department of Electrical and Electronics Engineering, Sanskrithi School of Engineering, ‎Beedupalli Knowledge Park, Behind SSSIHMS, Puttaparthi, Sri Sathya Sai District, Andhra Pradesh – 515134)"
+        },
+        {
+         "id": "26507",
+         "title": "Explainable and Leakage-Free Intrusion Detection for EV Charging Station Authentication Attacks",
+         "presenter": "Isratul Ibnat Orpa",
+         "authors": "Nahian Islam Rishad (Department of Computer Science, American International University-Bangladesh); Faysal Mahmud (Department of Computer Science, American International University-Bangladesh); Isratul Ibnat Orpa (Department of Computer Science, American International University-Bangladesh); Rifat Al Mamun Rudro (Department of Computer Science, American International University-Bangladesh); Kamruddin Nur (Department of Computer Science, American International University-Bangladesh)"
+        },
+        {
+         "id": "3921",
+         "title": "Falcon AI: An AI-Based Intrusion Detection and Intelligent Alert System for Restricted Zones",
+         "presenter": "Vaibhav S",
+         "authors": "Calabe P S (Dr. Ambedkar Institute of Technology, Bengaluru, India); Asha K N (Dr. Ambedkar Institute of Technology, Bengaluru, India); Vaibhav S (Dr. Ambedkar Institute of Technology, Bengaluru, India); Rahul (Dr. Ambedkar Institute of Technology, Bengaluru, India); Prajwal Suresh Bhandi (Dr. Ambedkar Institute of Technology, Bengaluru, India)"
+        },
+        {
+         "id": "337856",
+         "title": "GSTG-IDS: A Generative Spatio-Temporal Graph Framework for Multiclass Intrusion Detection",
+         "presenter": "Neeraj Sagar",
+         "authors": "Neeraj Sagar (Delhi Technological University); Prashant Giridhar Shambharkar (Delhi Technological University); Pawan Singh Mehra (Delhi Technological University)"
+        },
+        {
+         "id": "559652",
+         "title": "Precision, Placement and Calibration: What Quantisation Actually Costs an Edge Intrusion Detector",
+         "presenter": "Ninni Singh",
+         "authors": "Ninni Singh (Department of Computer Science and Engineering Madan Mohan Malaviya University of Technology Gorakhpur Uttar Pradesh); Vinit Kumar Gunjan (Department of Computer Science and Engineering CMR Unjiversity of Technology Hyderabad Telangana); Vijender Kumar Solanki (Department of Computer Engineering Marwadi university, Rajkot, Gujarat); Amit Kumar (Department of Computer Science and Engineering Graphic Era (Deemed to be) University, Dehradun, India)"
+        },
+        {
+         "id": "423767",
+         "title": "A Cost Aware Cascade with Conformal Abstention for Phishing Website Detection",
+         "presenter": "G. SURYANARAYANA",
+         "authors": "Yuvaraju Chinnam (Malla Reddy (MR) Deemed to be university); N Swapna (Vijay Rural Engineering College); Mannava Yesubabu (Anurag University); Ranganadham T N (Annamacharya University); Saikiran Gogineni (Malla Reddy (MR) Deemed to be university); G. Suryanarayana (Symbiosis Institute of Technology, Hyderabad)"
+        },
+        {
+         "id": "219974",
+         "title": "A Standardised Reference Architecture for Digital Forensic Investigations: Integrating IEEE and ISO/IEC/IEEE Frameworks",
+         "presenter": "Sushama Kumari",
+         "authors": "Sushama Kumari; Rahul Rishi; Raj Kumar Yadav"
+        }
+       ]
+      },
+      {
+       "num": 11,
+       "anchor": "s11",
+       "room": "C",
+       "family": "society",
+       "title": "Environmental Monitoring & Disaster Intelligence",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "664634",
+         "title": "A Scalable and Energy-Efficient Frugal AI Framework for IoT-Based Air Pollution Monitoring",
+         "presenter": "Jyoshika Vyshnavi. V. V. L",
+         "authors": "J R K KUMAR DABBAKUTI (Koneru Lakshmaiah Education Foundation); Venkateswara Rao Musala (Dhanekula Institute of Engineering and Technology); Jyoshika Vyshnavi. V. V. L (Koneru Lakshmaiah Education Foundation); Siva Praneeth. R (Koneru Lakshmaiah Education Foundation); Netaji. G (Koneru Lakshmaiah Education Foundation); Shailaja Kotte (Kakatiya Institute of Technology and Science, Warangal 506015, India)"
+        },
+        {
+         "id": "612211",
+         "title": "BioSentinel: A Multimodal Deep Learning Framework for Animal Bioacoustic-Driven Predictive Maintenance and Risk Assessment in Natural Disaster Monitoring",
+         "presenter": "Dannuri Mounika",
+         "authors": "Dannuri Mounika (Research Scholar School of Computer Science and Artificial Intelligence SR University Warangal, India-506371 & Assistant Professor Department of CSE(AI&ML) TKR College of Engineering and Technology Hyderabad, India-500097); Johnson Kolluri (Assistant Professor School of Computer Science and Artificial Intelligence SR University Warangal, India-506371); Sunil Srinivas (Professor Department of CSE(AI&ML) TKR College of Engineering and Technology Hyderabad, India-500097)"
+        },
+        {
+         "id": "302248",
+         "title": "Climate Change and Environmental Pollution: The Role of Green Technology",
+         "presenter": "T.Sheela &amp; G.Sureshkumar",
+         "authors": "Dr . A Padma (Chaitanya Bharathi institute of technology , Hyderabad, Telangana)"
+        },
+        {
+         "id": "132981",
+         "title": "Nature’s Early Warning System: Integrating Nature withTechnology Using a Decision Tree-Based Disaster Prediction Framework and IOT",
+         "presenter": "Rohith William G",
+         "authors": "Rohith William G (B.Tech - IT); Prabhu J K (B.Tech - IT); Manju T (St. Joseph's Institute of Technology)"
+        },
+        {
+         "id": "248593",
+         "title": "An AI-Driven Plant Disease Detection & Management: Integrating Time Series Modelling & using VGG 19",
+         "presenter": "Keshav singh",
+         "authors": "Ajay Pal Singh (University Institute of Engineering Chandigarh University Mohali, India); Keshav Singh (University Institute of Engineering Chandigarh University Mohali, India); Amit Kumar Jaiswal (Department of CSE Chandigarh University Unnao, UP, India)"
+        },
+        {
+         "id": "74394",
+         "title": "An Adaptive Expert-Based Agricultural Phenomics Framework for Trustworthy Crop Disease Diagnosis Using ConvNeXt V2",
+         "presenter": "Dr Varshali Jaiswal",
+         "authors": "Dr. Varshali Jaiswal (Indian Institute of Management Indore)"
+        },
+        {
+         "id": "358947",
+         "title": "Comparative Evaluation of Transfer Learning CNN Models for Tomato Leaf Disease Classification",
+         "presenter": "Simranpreet Kaur",
+         "authors": "Simranpreet Kaur (Assistant professor); Amar Singh (Professor)"
+        },
+        {
+         "id": "525396",
+         "title": "Crop Disease Forecasting Using Bayesian Deep Learning and IoT-Driven Environmental Data",
+         "presenter": "R C Jeni Gracia",
+         "authors": "Dayalin Leena G( (Department of Artificial Intelligence and Data Science, Rajalakshmi Engineering College, Thandalam, Chennai - 602105); G JulinLeeya (Department of Computer Science and Engineering, Rajalakshmi Institute of Thechnology , Chennai - 602105); R.S.Arunkumar (Department of Computer Science and Engineering, Saveetha School of Engineering, Saveetha Institute of Medical and Technical Science,); Mahalakshmi S (Computer Science and Engineering, VIT Chennai Campus, Chennai – 600127); Jeni Gracia R C (Department of Computer Science and Engineering Saveetha School of Engineering, Saveetha Institute of Medical Science and Technical Science, Thandalam, Chennai-602105)"
+        },
+        {
+         "id": "964676",
+         "title": "CropCast: Climate-Grounded Ensemble Learning for Crop and Fertilizer Recommendation",
+         "presenter": "Md. Tanbin Islam",
+         "authors": "Md. Tanbin Islam (American International University - Bangladesh); Nur Hasin Ahammad (American International University - Bangladesh); Md. Atiq Al Ishraq (American International University - Bangladesh); Sadman Sakib Chowdhury (American International University - Bangladesh); Sharfuddin Mahmood (American International University - Bangladesh)"
+        }
+       ]
+      },
+      {
+       "num": 12,
+       "anchor": "s12",
+       "room": "D",
+       "family": "systems",
+       "title": "Cloud-Edge Scheduling & Resource Optimization",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "732838",
+         "title": "A Unified Framework for Energy-Aware Resource Allocation and Task Scheduling in Multi-Domain Edge Computing Using Double Auctions and  PSO-MCT Optimization",
+         "presenter": "SATHYANARAYANA S",
+         "authors": "Sathyanarayana S (JNNCE, Shimoga, VTU, Belagavi.); Poornima K M (JNNCE, Shimoga, VTU, Belagavi.)"
+        },
+        {
+         "id": "746142",
+         "title": "Abstraction-First Scheduling for Energy and SLA-Aware Workload Placement in Cloud–Edge Computing",
+         "presenter": "Manish Kumar",
+         "authors": "Manish Kumar (AMD, India)"
+        },
+        {
+         "id": "85184",
+         "title": "An AI-Powered Self-Healing Container Framework",
+         "presenter": "Santusht Joshi",
+         "authors": "Santusht Joshi (SIES Graduate School of Technology Navi Mumbai, India); Shubhashri Sriram (SIES Graduate School of Technology Navi Mumbai, India); Shruti Subramanian (SIES Graduate School of Technology Navi Mumbai, India); Dr. Vidya Keshwani (SIES Graduate School of Technology Navi Mumbai, India)"
+        },
+        {
+         "id": "971078",
+         "title": "Decoupled Multi-Agent Reinforcement Learning for Adaptive Cloud Load Balancing and Autoscaling",
+         "presenter": "Nidhi Yogeesha, Prarthana Nagol, Gaurav Singh",
+         "authors": "Mallanagouda Patil (RV Institute of Technology and Management); Nidhi Yogeesha (RV Institute of Technology and Management); Gaurav Singh Shekhawat (RV Institute of Technology and Management); Prarthana Nagol (RV Institute of Technology and Management)"
+        },
+        {
+         "id": "235921",
+         "title": "Machine Learning–Based Load Balancing for Efficient Task Scheduling in Cloud Computing Environments",
+         "presenter": "Ramesh",
+         "authors": "Senbagavalli M (Alliance University); Gokulakrishnan G (Jayalakshmi Institute of Technology); Sumathi D (CMR Institute of Technology); Kannammal A (Jayalakshmi Institute of Technology); Ramesh Sekaran (Dayananda Sagar University); Senthil Kumar A (Dayananda Sagar University)"
+        },
+        {
+         "id": "445999",
+         "title": "A Generative Autoencoder Framework for High Fidelity Image Denoising in Advanced  Communication and Intelligent Systems",
+         "presenter": "Resha Shrestha",
+         "authors": "Resha Shrestha"
+        },
+        {
+         "id": "469708",
+         "title": "A Multi-Agent LangGraph Framework for Natural Language to SQL with Tool-Augmented PostgreSQL Execution",
+         "presenter": "Gogineni saikiran",
+         "authors": "Saikiran Gogineni (Malla Reddy (MR) Deemed to be university)"
+        },
+        {
+         "id": "888804",
+         "title": "AI Adaptive Interview System using Concept Graph and Structured Memory",
+         "presenter": "Kingsy Grace R",
+         "authors": "Kingsy Grace R (Sri Ramakrishna Engineering College); Sachin D R (Sri Ramakrishna Engineering College); Dhinesh V (Sri Ramakrishna Engineering College); Sanjay Karthikeyan R G (Sri Ramakrishna Engineering College)"
+        }
+       ]
+      },
+      {
+       "num": 13,
+       "anchor": "s13",
+       "room": "E",
+       "family": "health",
+       "title": "Explainable Deep Learning in Clinical Diagnosis",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "30375",
+         "title": "Cure-Blend AI: An Explainable Dual-Mode Health Recommendation System with Herbal and Pharmaceutical Guidance",
+         "presenter": "C Vishwak Sena",
+         "authors": "Roma Abhay Kudale (CMR Institute of Technology, Bengaluru, India)"
+        },
+        {
+         "id": "162744",
+         "title": "Explainable Breast Cancer Molecular Subtype Classification Using Extra Trees Classifier and SHAP",
+         "presenter": "Gopika R",
+         "authors": "38"
+        },
+        {
+         "id": "735436",
+         "title": "Federated Self-Supervised Learning for Privacy-Preserving Genomic Data Analysis",
+         "presenter": "Jini Kumari M",
+         "authors": "R. Naveenkumar (Dept of Computer Science and Engineering, School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "872",
+         "title": "Precision Healthcare Data-Driven iPSC Models of Disease Prediction and Drug Discovery",
+         "presenter": "Jaishree Meena",
+         "authors": "Jaishree Meena (Galgotias University Greater Noida, UP, India); Kokila Kokila (School of Finance and Commerce Galgotias University Greater Noida, UP, India); Ram Kishan Dewangan (Bennett University Greater Noida, UP, India); Vishan Kumar Gupta (Amity University Punjab Mohali, India); Paras Jain (VIT Bhopal University Kothrikalan, Sehore, MP, India); Vishwanath Bijalwan (Amity University Punjab Mohali, India)"
+        },
+        {
+         "id": "153014",
+         "title": "Automatic Threshold Discovery in Lipid Ratios for Diabetes Risk Using Explainable ML",
+         "presenter": "Md. Shihab Uddin",
+         "authors": "Md. Shihab Uddin (American International University-Bangladesh); Adrika Saha (American International University-Bangladesh); Farhan Chowdhury (American International University-Bangladesh); Kamruddin Nur (American International University-Bangladesh)"
+        },
+        {
+         "id": "865685",
+         "title": "Haze Optimization–Driven Transformer–CNN Framework for Automated Liver Tumor Nuclei Segmentation and Classification",
+         "presenter": "Dhwarithaa R",
+         "authors": "Dhwarithaa R (Department of Data Science and Business Systems, SRM Institute of Science and Technology, Kattankulathur, Tamil Nadu, India); Balasubramanian Prabhu kavin (Department of Data Science and Business Systems, SRM Institute of Science and Technology, Kattankulathur, Tamil Nadu, India)"
+        },
+        {
+         "id": "976246",
+         "title": "Smart Public Nutrition Deficiency Tracking System: A Cloud-Based AI Platform for Child Malnutrition Surveillance",
+         "presenter": "Deepan S",
+         "authors": "Deepan S (Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Avadi, Chennai, Tamilnadu, India); Aathmanesan T (Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Avadi, Chennai, Tamilnadu, India); Aakash S S (Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Avadi, Chennai, Tamilnadu, India); Rohith Kumar S (Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Avadi, Chennai, Tamilnadu, India); Albert A (Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Avadi, Chennai, Tamilnadu, India)"
+        },
+        {
+         "id": "224206",
+         "title": "AI-Powered IoT-Enabled Smart Toothbrush for Real-Time Plaque Detection and Oral Hygiene Monitoring Using Edge Machine Learning",
+         "presenter": "Kunal Jha",
+         "authors": "Kunal Jha (Dept. of Public Health Dentistry Kalinga Institute of Dental Sciences (KIDS) KIIT Deemed to be University Bhubaneswar, India)"
+        },
+        {
+         "id": "542768",
+         "title": "Development of a Wearable Sensor-Based System for Monitoring Bruxism Activity During Sleep",
+         "presenter": "Gaurav Jain",
+         "authors": "Gaurav Jain (Professor, Department of Conservative Dentistry and Endodontics, Saraswati Dental College & Hospital, Lucknow – 226028, Uttar Pradesh, India.)"
+        }
+       ]
+      },
+      {
+       "num": 14,
+       "anchor": "s14",
+       "room": "F",
+       "family": "ai",
+       "title": "Multilingual NLP & Social Media Analytics",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "566235",
+         "title": "Persistent Long-Term Memory in Conversational AI Agents: Retrieval Thresholds as a Dominant Determinant of Memory Quality",
+         "presenter": "Subodh Kumar Nannapaneni",
+         "authors": "Subodh Kumar Nannapaneni (LehtAI Technologies); Jyothi Nannapaneni (LehtAI Technologies)"
+        },
+        {
+         "id": "492138",
+         "title": "A FinBERT-Assisted Transformer--GRU Framework for Sentiment-Guided Stock Closing Price Prediction",
+         "presenter": "Rajat Jaiswal",
+         "authors": "Rajat Jaiswal (Maulana Azad National Institute of Technology, Bhopal, India); Namita Srivastava (Maulana Azad National Institute of Technology, Bhopal, India); Manoj Jha (Maulana Azad National Institute of Technology, Bhopal, India)"
+        },
+        {
+         "id": "534455",
+         "title": "BeSeM: Classifying Sentiment Integrating Textual and Visual Features through Multimodal Fusion",
+         "presenter": "Mohammed Moshiul Hoque",
+         "authors": "Md. Safiul Alam Sarker (Chittagong University of Engineering & Technology (CUET)); Kawser Ahmed Shamim (Chittagong University of Engineering & Technology (CUET)); Mohammed Moshiul Hoque (Chittagong University of Engineering & Technology (CUET))"
+        },
+        {
+         "id": "503930",
+         "title": "Constitutional Embedding for Predictive Analysis of Matrimonial Rights in Queer Communities",
+         "presenter": "S. Jayasaranya",
+         "authors": "S. Jayasaranya (Saveetha School of Law Saveetha Institute of Medical and Technical Sciences (SIMATS) Chennai.)"
+        },
+        {
+         "id": "957056",
+         "title": "Deep Residual Convolutional Architecture for Robust Text Representation Learning",
+         "presenter": "T. Aditya Sai Srinivas",
+         "authors": "T. Aditya Sai Srinivas (Computer Science and Engineering, Ravindra College of Engineering for Women, Kurnool, AP); Madri Vijaya Raju (Dept. Of Data Science, Malla Reddy University, Telangana, India); Sagar Choudhary (School of AI and Emerging Technologies Lovely Professional University, Phagwara Punjab, India); Gamidelli Yedukondalu (Department of CSE CVR College of Engineering, Mangalapally village, Rangareddy district, Hyderabad, Telangana, India); K.Sridevi (Department of Information Technology S R K R Engineering College, Bhimavaram -AP, India); Sudha Ashok Shende (Department of Computer Science and Engineering, Yeshwantrao Chavhan College of Engineering, Wanadongri Hingna Road, Nagpur, India)"
+        },
+        {
+         "id": "841168",
+         "title": "Election Sentiment Analysis: A Systematic Review of AI-Driven Public Opinion Mining",
+         "presenter": "Jainee kumari",
+         "authors": "Jainee kumari (Symbiosis Institute of Technology, Pune Campus, Symbiosis International (Deemded University), (SIU) Pune, India); Durgesh Nandan (School of CS & AI SR University Warangal, India); Mangal Singh (Department of E & TC Symbiosis Institute of Technology, Pune Campus, Symbiosis International (Deemded University), (SIU))"
+        },
+        {
+         "id": "204593",
+         "title": "Movie Hub: A Web-Based Mood-Aware Personalized Movie Recommendation and Discovery Platform",
+         "presenter": "ATHULKRISHNA P S",
+         "authors": "ATHULKRISHNA P S (St.Joseph's College Of Engineering); DHIVAGAR SJ (St.Joseph's College Of Engineering); SENTHIL KUMAR D (St.Joseph's College Of Engineering)"
+        },
+        {
+         "id": "836137",
+         "title": "Multilingual Text-to-SQL Framework for Natural Language Database Interaction",
+         "presenter": "Swathi Kothapallli",
+         "authors": "K. Swathi (Chaitanya Bharati Institute of Technology); Kolluru Arun Kaushik (Chaitanya Bharati Institute of Technology); Konda Abhiram Goud (Chaitanya Bharati Institute of Technology); M. Manobhirami Reddy (Chaitanya Bharati Institute of Technology)"
+        }
+       ]
+      },
+      {
+       "num": 15,
+       "anchor": "s15",
+       "room": "G",
+       "family": "health",
+       "title": "Clinical Risk Prediction & Decision Support",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "293436",
+         "title": "IoT-Enabled Remote Health Monitoring for Chronic Disease Management",
+         "presenter": "Vanitha V",
+         "authors": "Vanitha V (Technology, Vadapalani Campus); P. Arunachalam (R&D Institute of Science and Technology); Dinesh Dattatraya Rankhamb (Shri Tuljabhavani College of Engineering & Technology); Thinesh Kumar R (R.M.K. Engineering College); J.Megala (S.A Engineering College); Joshuva Arockia Dhanraj (Lovely Professional University)"
+        },
+        {
+         "id": "758635",
+         "title": "Real-Time Stretcher Location and Occupancy Monitoring System for Hospital Emergency Response",
+         "presenter": "Sushant Yadav",
+         "authors": "Sushant Yadav (Babu Banarasi Das Northern India Institute of Technology, Lucknow, Uttar Pradesh, India); Dr. Abhishek Kumar Singh (Hiralal Ramniwas Inter College, Khalilabad, Sant Kabir Nagar, Uttar Pradesh, India)"
+        },
+        {
+         "id": "496145",
+         "title": "Sensing Data Clustering for Hybrid Cellular-Vehicular Networks",
+         "presenter": "Mandavi Dubey",
+         "authors": "Mandavi Dubey (National Chung Hsing University, Taichung, Taiwan); Mei-Chen Chen (National Chung Hsing University, Taichung, Taiwan); Pi-Chung Wang (National Chung Hsing University, Taichung, Taiwan)"
+        },
+        {
+         "id": "996795",
+         "title": "Enhancing Hospital Waste Management: An Automated System for Segregating Hazardous Medical Waste Streams",
+         "presenter": "Aryan Dalvi, Santwana Gudadhe, Atharva Gonde",
+         "authors": "Atharva Nitin Gonde; Aryan Rajendra Dalvi; Rohit Uday Shetty; Tejaswini Omnath Burkule; Santwana Gudadhe; Pallavi Nikumbh"
+        },
+        {
+         "id": "749125",
+         "title": "GPS Network Tracking and Alerts for Blood Donations Blood Connect Medical Services and Hospitals",
+         "presenter": "A. Malarvizhi,B N Arathi,Jyothi D ,Peddinti Neeraja,Dr.M. Sathana Priya ,Nishika M,Dr.A Padma",
+         "authors": "A Padma (Chaitanya Bharathi institute of technology , Hyderabad,)"
+        },
+        {
+         "id": "697563",
+         "title": "MedDelta-RAG: A Comparability-First Retrieval Architecture for Evidence-Linked Temporal Change Detection in Longitudinal Clinical Records",
+         "presenter": "Sakshi Gajanan Kumbhar",
+         "authors": "Prathamesh P Koli (Dept. of Computer Science and Engineering, D. Y. Patil College of Engineering & Technology, India); Sakshi G Kumbhar (Dept. of Computer Science and Engineering (AIML), D. Y. Patil College of Engineering & Technology, India)"
+        },
+        {
+         "id": "692704",
+         "title": "Optimizing the Health-Checkup Patient Journey with a Messaging Communication Platform Workflow and BLE-Beacon Indoor Positioning: System Development and Technical Validation",
+         "presenter": "SUNG HUAI HSIEH",
+         "authors": "Shang-Chen Hsieh; Sung-Huai Hsieh; Tang-Chuan Wang; Chien-Yi Ho; Bing-Chen Hsieh; Kai-Ting Chuang; Shin-Huan Chen; You-Cheng Yu; Po-Hsun Cheng; Tzu-Liang Chen"
+        },
+        {
+         "id": "607105",
+         "title": "A Hybrid Multi-Classifier Machine Learning Framework for Symptom-Based Clinical Decision Support and Medication Recommendation",
+         "presenter": "ANJLI BARMAN",
+         "authors": "ANJLI BARMAN (Atal Bihari Vajpayee University Bilaspur, Chhattisgarh, India); RICHA HANDA (D.P. Vipra College Bilaspur (C.G.),India); H.S. HOTA (Atal Bihari Vajpayee University Bilaspur, Chhattisgarh, India)"
+        },
+        {
+         "id": "3494",
+         "title": "A Multimodal Deep Learning Framework for Mental Health Prediction Using Social Media Text and Facial Images",
+         "presenter": "Sheikh Muhummad Jadid",
+         "authors": "Sheikh Muhummad Jadid (American International University-Bangladesh); MD. Sifat Hosen (American International University-Bangladesh); M M A Mahamud Khan Uday (American International University-Bangladesh); Kazi Tanvir (American International University-Bangladesh); Kamruddin Nur (American International University-Bangladesh)"
+        }
+       ]
+      },
+      {
+       "num": 16,
+       "anchor": "s16",
+       "room": "H",
+       "family": "health",
+       "title": "Precision Medicine, Genomics & Treatment Recommendation",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "13:10",
+       "papers": [
+        {
+         "id": "905982",
+         "title": "Evaluating TRIPS and Patent Law in Protecting Health Rights Through a Multi Dimensional Legal Impact Assessment Model",
+         "presenter": "Esther. V",
+         "authors": "Dr.S.Thangamayan (Saveetha School of Law, Saveetha Institute of Medical and Technical Sciences, Chennai-77.)"
+        },
+        {
+         "id": "879252",
+         "title": "Explainable Artificial Intelligence for Medical Diagnosis and Decision Support Systems",
+         "presenter": "Ikjyot Singh Gujral",
+         "authors": "Ikjyot Singh Gujral (Principal Software Engineer Independent Researcher New York, NY, USA)"
+        },
+        {
+         "id": "218955",
+         "title": "Explainable Artificial Intelligence for Risk Prediction and Personalized Treatment in Glaucoma, Cataract and Vitrectomy Surgeries",
+         "presenter": "RANJITH D",
+         "authors": "D RANJITH (Vels Institute of Science Technology and Advacne Studies Chennai, India); S RANI (Vels Institute of Science Technology and Advacne Studies Chennai, India); M SAKTHI VANITHA (Vels Institute of Science Technology and Advacne Studies Chennai, India)"
+        },
+        {
+         "id": "763304",
+         "title": "Feature-Level Fusion Strategies for Robust Parkinson’s Disease Detection from Hand-drawn Motor Tasks",
+         "presenter": "Munzir Hubiba",
+         "authors": "MUNZIR HUBIBA BASHIR (National Institute of Technology, Srinagar); Tawseef Ayoub Shaikh (National Institute of Technology, Srinagar)"
+        },
+        {
+         "id": "487568",
+         "title": "Federated Knowledge Graphs for Cross-Institutional Clinical Decision Support",
+         "presenter": "Rama Krishna KumarLingamgunta",
+         "authors": "Rama Krishna KumarLingamgunta (AI center of enablement, Cigna Evernorth Services Inc, Raleigh, North Carolina, USA); Krishna Chaitanya Bandaru (Software Engineering Advisor EVICORE HEALTHCARE , 730 Cool Springs Boulevard, Suite 800, Franklin, Tennessee ,37067, USA); Himaja Vankayala (Sr. Application Developer Baltimore City Office of Information & Technology (BCIT), Maryland, USA.)"
+        },
+        {
+         "id": "439647",
+         "title": "Machine Learning-Based Pneumonia Prediction from Structured Clinical Data: A Comparative Study of Classification Algorithms",
+         "presenter": "Meghna Modi",
+         "authors": "Meghna Modi"
+        },
+        {
+         "id": "31492",
+         "title": "Machine Learning-Enhanced Computational Fluid Dynamics Analysis of Irrigant Flow Behaviour in Minimally Invasive Endodontic Access Cavities",
+         "presenter": "Priyankaa Das",
+         "authors": "Priyankaa Das (Asst. Professor Department of Conservative Dentistry & Endodontics Hi-Tech Dental College & Hospital, Odisha University of Health Sciences Bhubaneswar, Odisha, India)"
+        },
+        {
+         "id": "869462",
+         "title": "Machine Learning-Enhanced Computational Fluid Dynamics Analysis of Irrigant Flow Behaviour in Minimally Invasive Endodontic Access Cavities",
+         "presenter": "Swagat Panda",
+         "authors": "Swagat Panda (Department of Conservative Dentistry & Endodontics, Hi-Tech Dental College & Hospital, Odisha University of Health Sciences, Bhubaneswar, Odisha, India)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ceremony",
+     "start": "15:00",
+     "title": "Close of day one",
+     "subtitle": "Session chairs send their attendance and presentation reports to the organising committee.",
+     "run": []
+    }
+   ]
+  },
+  {
+   "tag": "Day two",
+   "date": "2 September 2026",
+   "weekday": "Wednesday",
+   "blocks": [
+    {
+     "type": "sessions",
+     "start": "10:00",
+     "slot": 3,
+     "end": "12:00",
+     "sessions": [
+      {
+       "num": 17,
+       "anchor": "s17",
+       "room": "A",
+       "family": "security",
+       "title": "Federated Learning & Privacy-Preserving Intelligence",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "553583",
+         "title": "A Federated Causal Digital Twin Framework for Privacy-Preserving Personalized Heart Disease Prediction",
+         "presenter": "Arockia Raj A.",
+         "authors": "Arockia Raj A. (Madanapalle Institute of Technology & Science (MITS),); M.Arivukarasi (SIMATS)"
+        },
+        {
+         "id": "424130",
+         "title": "A Federated Decision Framework for Secure Enterprise Performance Management",
+         "presenter": "Purushotham Endla",
+         "authors": "Dr A.Kanagaraj (Department of Computer Science, Kristu Jayanti (Deemed to be University), Bengaluru-560077.)"
+        },
+        {
+         "id": "791865",
+         "title": "Adaptive Federated Stream Processing Model for Real-Time Distributed Intelligence",
+         "presenter": "Koripalli Nagamani",
+         "authors": "Koripalli Nagamani (Assistant Professor, Department of CSE (AI&ML), CMR Technical Campus, Hyderabad, Telangana, India); Prathima lingala (Assistant Professor, Department of ECE, CMR Engineering College, Hyderabad, Telangana, India); B Tejaswi (Assistant Professor, Department of CSE, CMR College of Engineering Technology, Hyderabad, Telangana, India); ⁠ E Divya (Assistant Professor, Department of CSE(AI&ML),CMR Institute of Technology, Hyderabad, Telangana, India); Y Gnyana Deepa (Assistant Professor, AI&DS Department, Stanley College of Engineering and Technology for Women(A))"
+        },
+        {
+         "id": "95378",
+         "title": "FedClinicalBERT: A Privacy-Preserving Federated Learning Framework for Collaborative EHR Analysis Across Healthcare Institutions Using Differential Privacy and Secure Aggregation",
+         "presenter": "Koochana Navya",
+         "authors": "Koochana Navya (Department of Computer Science & Artificial Intelligence SR University Warangal Telangana India-506371); Dr.Johnson Kolluri (School of Computer Science and Artificial Intelligence SR University,Warangal,Telangana,India-506371)"
+        },
+        {
+         "id": "82340",
+         "title": "Federated Transformer Networks for Privacy-Preserving Clinical Analytics in Distributed Cloud Environments",
+         "presenter": "Krishnamoorthy R",
+         "authors": "J.Rajesh (Prathyusha Engineering College); Sathish Kumar S (K.L.N College of Engineering); T.Suganya (K.L.N College of Engineering); S.Johnpaul (Veltech Multitech Dr.Rangarajan Dr.Sakunthala Engineering College); G.Kotteeswaran Rangasamy (St.Joseph's College of Engineering); Krishnamoorthy R (Chennai Institute of Technology)"
+        },
+        {
+         "id": "204696",
+         "title": "Privacy-Preserving Federated and Split Learning for Heart Disease Prediction with Differential Privacy and Audit Trails",
+         "presenter": "Shubham Sindhe",
+         "authors": "N.Kalaiyarasi (Assistant Professor); Vedanth Dama; Shubham Gajanan Shinde"
+        },
+        {
+         "id": "264039",
+         "title": "What Actually Helps in Federated GNN Intrusion Detection for Heterogeneous IoT? An Empirical Study on TON IoT",
+         "presenter": "Vidhyadharan B",
+         "authors": "Vidhyadharan B (Vellore Institute of Technology, Chennai); B Aswathi (Vellore Institute of Technology, Chennai); R. Suganya (Vellore Institute of Technology, Chennai)"
+        },
+        {
+         "id": "581475",
+         "title": "A Unified Blockchain Framework for Sensitive Data Protection Integrating Hybrid Access Control, Consortium Consensus and AI-Driven Intrusion Detection",
+         "presenter": "Kishan Makadiya",
+         "authors": "Kishan Makadiya (Marwadi University); Roy Flomo (Marwadi University); Varun Thacker (Marwadi University)"
+        },
+        {
+         "id": "470654",
+         "title": "AI Powered Cyber Security Using Blockchain based on Multi Factor Authentication for Securing privacy records in Healthcare Sector",
+         "presenter": "Jarabala Ranga",
+         "authors": "Jarabala Ranga (Professor Department of CSE Ramachandra College of Engineering, Eluru)"
+        },
+        {
+         "id": "365001",
+         "title": "AI-Based Feedback and Classification Framework for Enhancing ESL Learners' Writing Performance",
+         "presenter": "Ms. N. Saraswathi",
+         "authors": "Ms. N. Saraswathi (Research Scholar, Department of English, Kalasalingam Academy of Research and Education, Tamil Nadu, India – 626126); Dr. K. Gurusamy (Associate Professor, Department of English, Kalasalingam Academy of Research and Education, Tamil Nadu, India – 626126.)"
+        }
+       ]
+      },
+      {
+       "num": 18,
+       "anchor": "s18",
+       "room": "B",
+       "family": "systems",
+       "title": "Low-Power Circuits, Energy Systems & EV Infrastructure",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "893180",
+         "title": "Approximate Multipliers in Error-Resilient Arithmetic: Methods, Metrics, and Applications",
+         "presenter": "Rajesh Babu Nemani",
+         "authors": "Rajesh Babu Nemani (Ph.D. Scholar, Department of Electronics & Communication Engineering, Rabindranath Tagore University, Bhopal, Madhya Pradesh, India); Jitendra Ahir (Assistant Professor, Department of Electronics & Communication Engineering, Rabindranath Tagore University, Bhopal, Madhya Pradesh, India); Laxmi Singh (Professor, Department of Electronics & Communication Engineering, Rabindranath Tagore University, Bhopal, Madhya Pradesh, India); Durgesh Nandan (Professor, School of CS & AI, SR University, Warangal, Telangana, India)"
+        },
+        {
+         "id": "428917",
+         "title": "Design and Analysis of Different Ternary SRAM Cells using TIGFET Technology",
+         "presenter": "Dr Srinivas Talasila",
+         "authors": "Rajendra Prasad Somineni (VNR Vignana Jyothi Institute of Engineering and Technology); P Kishore (VNR Vignana Jyothi Institute of Engineering and Technology); Veeramosu Priyanka Brahmaiah (VNR Vignana Jyothi Institute of Engineering and Technology); J Chinna Babu (Annamacharya University); Srinivas Talasila (VNR Vignana Jyothi Institute of Engineering and Technology)"
+        },
+        {
+         "id": "440126",
+         "title": "EV Charging Station with Integrated Hybrid Power Generation",
+         "presenter": "Jagatha Jagadeeswar",
+         "authors": "Madhu Valavala (Swarnandhra College of Engineering & Technology, India)"
+        },
+        {
+         "id": "553457",
+         "title": "FROM SOCIAL INFLUENCE TO SUSTAINABLE MOBILITY: AN AI-DRIVEN FRAMEWORK LINKING INFLUENCER MARKETING, ELECTRIC VEHICLE ADOPTION, AND RENEWABLE ENERGY INTEGRATION",
+         "presenter": "B.Ramesh Kanna",
+         "authors": "Dr.D.Umamaheswari (Dept of Commerce Periyar Maniammai Institute of Science & Technology); B.Ramesh Kanna (Dept of Commerce Periyar Maniammai Institute of Science & Technology)"
+        },
+        {
+         "id": "785733",
+         "title": "Quantum Computing for Enhancing Power System Stability in Smart Grids",
+         "presenter": "Sandip D Satav",
+         "authors": "Sandip D Satav (JSPM’s JSCOE); Mahendra Kumar B (Dayananda Sagar College of Engineering); P. Lakshmi Prabha (Shrimati Indira Gandhi College); V.Anantha Krishna (Sridevi Women's Engineering college); Ghanta Rajeswari Mallika (SRKR Engineering College); S.Anita (R.M.K. Engineering College)"
+        },
+        {
+         "id": "773602",
+         "title": "Reinforcement Learning for Cost-Oriented Battery Scheduling in Residential Grid-Connected Solar PV Systems: A Systematic Review with Implications for Sri Lanka",
+         "presenter": "Hasanthi Randeepa Weerasuriya",
+         "authors": "Hasanthi Randeepa Weerasuriya (Department of Computational Mathematics, General Sir John Kotelawala Defence University, Sri Lanka)"
+        },
+        {
+         "id": "117538",
+         "title": "SmartSpend AI: An Intelligent Personal Expense Management Application",
+         "presenter": "Aditya Thakare",
+         "authors": "Prajakta Musale (Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning) Vishwakarma Institute of Technology Pune, India); Aditya Thakare (Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning) Vishwakarma Institute of Technology Pune, India); Sairaj Thorat (Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning) Vishwakarma Institute of Technology Pune, India); Apurva Shisode (Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning) Vishwakarma Institute of Technology Pune, India); Mihika Talegaonkar (Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning) Vishwakarma Institute of Technology Pune, India); Swara Meshram (Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning) Vishwakarma Institute of Technology Pune, India)"
+        }
+       ]
+      },
+      {
+       "num": 19,
+       "anchor": "s19",
+       "room": "C",
+       "family": "society",
+       "title": "Human Behaviour, Education & Conversational Systems",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "656907",
+         "title": "A Pre-Development Evaluation of a Conversational User Interface for English Learning among Bangladeshi University Students",
+         "presenter": "Sinthia Chowdhury",
+         "authors": "Deawan Rakin Ahamed Remal (CCDS, Independent University, Bangladesh (IUB)); Sinthia Chowdhury (CCDS, Independent University, Bangladesh (IUB)); Jahanggir Hossain Setu (CCDS, Independent University, Bangladesh (IUB)); Ashraful Islam (CCDS, Independent University, Bangladesh (IUB)); M. Ashraful Amin (CCDS, Independent University, Bangladesh (IUB))"
+        },
+        {
+         "id": "937816",
+         "title": "A TimesNet-Based Framework for Behavioural Bot Detection and User Profiling",
+         "presenter": "Kethari Karthik",
+         "authors": "J R K KUMAR DABBAKUTI (Koneru Lakshmaiah Education Foundation); Venkateswara Rao Musala (Dhanekula Institute of Engineering and Technology); Tangudu Yoganand Swagath (Koneru Lakshmaiah Education Foundation); K.Avinay kumark (Koneru Lakshmaiah Education Foundation); Kethari Karthik (Koneru Lakshmaiah Education Foundation); Shailaja Kotte (Kakatiya Institute of Technology and Science)"
+        },
+        {
+         "id": "945240",
+         "title": "Caption Array for Social Media",
+         "presenter": "Hiyaa Malik",
+         "authors": "Hiyaa Malik (Department of Artificial Intellegence, Amity University Noida, Uttar Pradesh); Praveen Pandey (Department of Artificial Intellegence, Amity University Noida, Uttar Pradesh); Sofia Singh (Department of Artificial Intelligence Amity University Noida, Uttar Pradesh, India); Rahul Agrawal (Associate Professor, G H Raisoni College of Engineering, Nagpur, India); Praveen Kumar Dhankar (Symbiosis Institute of Technology, Nagpur Campus, Symbiosis International (Deemed University), Pune-440008, India); Purushottam Shobhane (Symbiosis Institute of Technology, Nagpur Campus,Symbiosis International (Deemed University) Pune, India)"
+        },
+        {
+         "id": "165342",
+         "title": "Digital Twin-Driven Multimodal Deep Learning with Continuous Synchronization for Athlete Performance Prediction and Quantitative Sports Assessment",
+         "presenter": "Ajay Kumar Bansa",
+         "authors": "Ajay Kumar Bansa (Chandigarh University, Mohali, India); Kirti Walia (Chandigarh University, Mohali, India)"
+        },
+        {
+         "id": "611020",
+         "title": "Multimodal Deep Learning for Adolescent Schizophrenia Detection Using Dynamic Functional Connectivity and Graph Convolutional Networks",
+         "presenter": "Reetha L",
+         "authors": "Dr. R.Gnanajeyaraman (Saveetha School of Engineering, Saveetha Institute of Medical and Technical Sciences, Deemed University); L. Reetha (Saveetha school of Engineering, Saveetha institute of Medical and Technical Sciences, Deemed University)"
+        },
+        {
+         "id": "795982",
+         "title": "Simulation-Driven Multi-Class Misbehavior Detection in V2V Communication Using Ensemble Learning",
+         "presenter": "tejinder",
+         "authors": "tejinder (mmdu)"
+        },
+        {
+         "id": "491641",
+         "title": "Stress level prediction using behavioural and lifestyle factors with machine learning",
+         "presenter": "Radhika V",
+         "authors": "Radhika V (Sri Ramakrihna Engineering College); Harish S P (Sri Ramakrihna Engineering College); Sivaganesh M (Sri Ramakrihna Engineering College); Akilan B (Sri Ramakrihna Engineering College)"
+        },
+        {
+         "id": "701227",
+         "title": "Surpassing Technical and Teaching Constraints: A Review of Intelligent Tutoring Systems, Existing Limitations and Future Research Directions",
+         "presenter": "Sukhmani Kaur Ahluwalia",
+         "authors": "Sukhmani Kaur Ahluwalia (Graphic Era deemed to be University, Dehradun, India); Varshika Saini (Graphic Era deemed to be University Dehradun, India); Akshay Rajput (Graphic Era deemed to be University Dehradun, India); Amit Kumar (Graphic Era deemed to be University Dehradun, India)"
+        }
+       ]
+      },
+      {
+       "num": 20,
+       "anchor": "s20",
+       "room": "D",
+       "family": "systems",
+       "title": "Antenna Design & Next-Generation Wireless Systems",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "443290",
+         "title": "A Compact 4 Port MIMO Antenna for 29GHz mmWave Applications",
+         "presenter": "Manjunath M N",
+         "authors": "MANJUNATH M N (Nagarjuna college of engineering and technology)"
+        },
+        {
+         "id": "501712",
+         "title": "AI-Augmented Multiband Filter Design for Next-Gen Satellite Signal Optimisation",
+         "presenter": "B Mohan Babu",
+         "authors": "B Mohan Babu (Assistant Professor, Department of CSE (Data Science), CMR Technical Campus, Hyderabad, Telangana, India); Raghunath Reddy (Professor, Department of CSE, CMR Engineering College, Hyderabad, Telangana, India); Dr Abdul Subahmi Shaik (Associate Professor, Department of ECE, CMR College of Engineering Technology, Hyderabad, Telangana, India); P.Deekshith Chary (Assistant Professor, Department of CSE (Data Science), CMR Institute of Technology, Hyderabad,Telangana,India); Saba Fatima (Assistant Professor, CSE- AI&ML Department, Stanley College of Engineering and Technology for Women(A))"
+        },
+        {
+         "id": "465574",
+         "title": "AI-Controlled Modulation Recognition System for Dynamic Multi-Service Telecom Networks",
+         "presenter": "S Ramchandrareddy",
+         "authors": "S Ramchandrareddy (Assistant Professor, Department of CSE (AI&ML), CMR Technical Campus, Hyderabad, Telangana, India); Ballakonda Pallavi (Assistant Professor, Department of CSE, CMR Engineering College, Hyderabad, Telangana, India); B Vamsi Krishna (Assistant Professor, Department of ECE, CMR College of Engineering Technology, Hyderabad, Telangana, India); A Bhuvaneshwari (Assistant Professor, Department of CSE, CMR Institute of Technology, Hyderabad,Telangana,India); S Debora (Assistant Professor, H&S Department, Stanley College of Engineering and Technology for Women(A))"
+        },
+        {
+         "id": "921329",
+         "title": "Beam Steering and Side-Lobe Reduction in Linear Phased Array Antenna Using Hamming Window",
+         "presenter": "Kazi Wakilur Rahman Rumman",
+         "authors": "Md. Mahibullah (Military Institute of Science and Technology (MIST)); Kazi Wakilur Rahman Rumman (Military Institute of Science and Technology (MIST)); Md Hossam-E-Haider (Military Institute of Science and Technology (MIST))"
+        },
+        {
+         "id": "569734",
+         "title": "Deep Unsupervised Learning for Joint Hybrid Beamforming and Power Allocation in Mixed-Field Massive MIMO-NOMA",
+         "presenter": "Le Duong Cong",
+         "authors": "Nguyen Dung; Nguyen Hoang Khanh Phuong; Le Duong Cong; Ngo Minh Nghia; Dang Le Khoa"
+        },
+        {
+         "id": "11120",
+         "title": "Evaluating Augmented Reality-Based Indoor Positioning Systems: A Comprehensive Review of Localization Technologies, Challenges, and Future Directions",
+         "presenter": "Parul Sharma",
+         "authors": "Parul Sharma (Silver Oak University); Dr. Vikas Tulshyan (Silver Oak University); Dr. Rahul Vaghela (SKIPS University)"
+        },
+        {
+         "id": "680258",
+         "title": "GridWatch - Online Monitoring System for Unauthorized Construction Using Satellite-Based Geospatial Change Detection",
+         "presenter": "Yash Mishra",
+         "authors": "Dr Mahendra Sawane (G H Raisoni College of engineering and Management Pune); Yash Mishra (G H Raisoni College of engineering and Management Pune); Vedang Choudhari (G H Raisoni College of engineering and Management Pune); Umesh Vishnoi (G H Raisoni College of engineering and Management Pune)"
+        },
+        {
+         "id": "334269",
+         "title": "Multiband Patch Antenna for 5G NR (New Radio) Base Stations and Satellite Communication Systems",
+         "presenter": "Mrs. Monali Sonawane.",
+         "authors": "Monali Rajendra sonawane (JSPM University Pune); Dr. Arjuna Muduli (JSPM University Pune)"
+        }
+       ]
+      },
+      {
+       "num": 21,
+       "anchor": "s21",
+       "room": "E",
+       "family": "ai",
+       "title": "Vision-Based Inspection & IoT Fault Detection",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "372469",
+         "title": "HC-CAIN: Interpretable Spatial Cross-Attention for Still-Image Human Action Recognition",
+         "presenter": "Pavan M",
+         "authors": "Pavan M (Jawaharlal Nehru New College of Engineering (JNNCE), Affiliated to VTU); Jyothi K (Jawaharlal Nehru New College of Engineering (JNNCE), Affiliated to VTU)"
+        },
+        {
+         "id": "232352",
+         "title": "Indian Sign Language Translator with Animated Gesture Visualization",
+         "presenter": "Shreya Kokate",
+         "authors": "Ashwini Deshpande (Cummins College of Engg. for Women, Pune); Prachi Waghmare (Cummins College of Engg. for Women, Pune); Eshita Kasodekar (Cummins College of Engg. for Women, Pune); Shreya Kokate (Cummins College of Engg. for Women, Pune); Saujanya Kosalge (Cummins College of Engg. for Women, Pune); Kirti Kukreja (Cummins College of Engg. for Women, Pune)"
+        },
+        {
+         "id": "456881",
+         "title": "MDVSIG: Multi-Model Dance Video Synchronization and Intelligent Feedback Generation",
+         "presenter": "Hithesh Amin",
+         "authors": "Hithesh . (Mangalore Institute of Technology & Engineering); Shylesh B C (Mangalore Institute of Technology & Engineering)"
+        },
+        {
+         "id": "442184",
+         "title": "Multi-Resolution Feature Integration Framework with CNN for Bengali Handwriting Quality Assesment",
+         "presenter": "Shamik Mondal",
+         "authors": "Shamik Mondal (Fab Lab IUB, Dept. of CSE Independent University, Bangladesh); Sadman Sakib (Fab Lab IUB, Dept. of CSE Independent University, Bangladesh); Meraj Ahmed Mozumder (Fab Lab IUB, Dept. of CSE Independent University, Bangladesh); Shipra Banik (Fab Lab IUB, Dept. of CSE Independent University, Bangladesh); Md. Tarek Habib (Fab Lab IUB, Dept. of CSE Independent University, Bangladesh)"
+        },
+        {
+         "id": "446941",
+         "title": "Persistent Belief Stores and Evidence Alignment for Hallucination-Resistant RAG in Long-Horizon Conversations",
+         "presenter": "Dinesh P",
+         "authors": "Dinesh P (St. Joseph's College of Engineering); Don Christ G (St. Joseph's College of Engineering); Thiraviaselvi G (St. Joseph's College of Engineering); Adlin Layola J A (St. Joseph's College of Engineering)"
+        },
+        {
+         "id": "842905",
+         "title": "Real-Time Bangla Sign Language Interpretation Using Vision Transformers and Micro-Gesture Analysis",
+         "presenter": "Jahanggir Hossain Setu",
+         "authors": "Jahanggir Hossain Setu (CCDS, Independent University, Bangladesh (IUB)); Anika Jasim Ema (CCDS, Independent University, Bangladesh (IUB)); Mst. Aysa Siddika Meem (CCDS, Independent University, Bangladesh (IUB)); Ashraful Islam (CCDS, Independent University, Bangladesh (IUB)); Rashedur Rahman (CCDS, Independent University, Bangladesh (IUB)); M. Ashraful Amin (CCDS, Independent University, Bangladesh (IUB) and George Mason University, USA)"
+        },
+        {
+         "id": "684599",
+         "title": "Smart Safety Mask Wi-Fi Enabled and Real-Time Health and Gas Monitoring in Underground Mines",
+         "presenter": "Adeeb T",
+         "authors": "Gerardine Immaculate Mary (School of Electronics Engineering, Vellore Institute of Technology, Vellore, India); Anitha Julian (Computer Science and Engineering, Saveetha Engineering College, Chennai, Tamilnadu, India); Adeeb T (School of Electronics Engineering,Vellore Institute of Technology, Vellore, India)"
+        },
+        {
+         "id": "534752",
+         "title": "Vision Transformer-Based Diagnosis of Banana Leaf Diseases Using the BananaLSD Image Benchmark",
+         "presenter": "Parav",
+         "authors": "Narinder Kaur (chandigarh University, gharuan)"
+        },
+        {
+         "id": "908844",
+         "title": "Wayside Optoelectronic Inspection System for Parallel Macro-Wear and Micro-Crack 3D Wheel Profiling",
+         "presenter": "Noti Gayatri",
+         "authors": "Boosi Reddy Prasad Reddy; Noti Gayatri; Anushree Rao; Priyanga P"
+        }
+       ]
+      },
+      {
+       "num": 22,
+       "anchor": "s22",
+       "room": "F",
+       "family": "systems",
+       "title": "Software Engineering, Agentic AI & Governance",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "245158",
+         "title": "AI-Enabled Board Reporting 3.0: An Interactive Data Visualization and Governance Framework for Director Decision Support",
+         "presenter": "Anjali Kale",
+         "authors": "Anjali Kale (USA)"
+        },
+        {
+         "id": "776098",
+         "title": "Assessing the Stability of Machine Learning Models for Cross-Project Software Defect Prediction",
+         "presenter": "Kaushik Biswas",
+         "authors": "Niloy Kanti Paul (American International University-Bangladesh); Dipanwita Saha (American International University-Bangladesh); Kaushik Biswas (American International University-Bangladesh); Fahmida Rashid (American International University-Bangladesh); Kazi Tanvir (American International University-Bangladesh); Kamruddin Nur (American International University-Bangladesh)"
+        },
+        {
+         "id": "723568",
+         "title": "Balancing Autonomy and Oversight: A Predictive Framework for Agentic AI Adoption",
+         "presenter": "Sunjeta Jahan Snegdha",
+         "authors": "Sunjeta Jahan Snegdha (Department of Computer Science, American International University-Bangladesh); Tahsin Ahmed Fahim (Department of Computer Science, American International University-Bangladesh); Rifat Al Mamun Rudro (Department of Computer Science, American International University-Bangladesh); Taufique Sayeed (School of Business, Emporia State University); Kamruddin Nur (Department of Computer Science, American International University-Bangladesh)"
+        },
+        {
+         "id": "912822",
+         "title": "Cross-Lingual Document Understanding System",
+         "presenter": "Aryan Gaikwad",
+         "authors": "Prof. Prajkta Dandavate (Vishwakarma Institute of Technology, Pune, India); Aryan Gaikwad (Vishwakarma Institute of Technology, Pune, India); Arnav Jain (Vishwakarma Institute of Technology, Pune, India); Ashikaa Verma (Vishwakarma Institute of Technology, Pune, India); Vaidehi Pattarkine (Vishwakarma Institute of Technology, Pune, India)"
+        },
+        {
+         "id": "6199",
+         "title": "HyperCortex: Adaptive Enterprise AI Runtime for Policy-Governed Multi-Agent Workflow Execution",
+         "presenter": "Anmol Panwar",
+         "authors": "Anmol Panwar (UIE Chandigarh University, Mohali, Punjab); Shailja Saini (UIE Chandigarh University, Mohali, Punjab); Nisha Chauhan (UIE Chandigarh University, Mohali, Punjab); Ritik Gupta (UIE Chandigarh University, Mohali, Punjab); Japsimar Singh Makkar (UIE Chandigarh University, Mohali, Punjab); Shashwat Singh (UIE Chandigarh University, Mohali, Punjab)"
+        },
+        {
+         "id": "78673",
+         "title": "LLM Agent Runtime Security: A Reference Monitor Framework for Confined AI Agents",
+         "presenter": "Asha Joseph",
+         "authors": "Asha Joseph (New Horizon College of Engineering, Bangalore, India); Arun AnandhaKrishnan (ARBA Development Studio Pvt Ltd)"
+        },
+        {
+         "id": "473368",
+         "title": "The Hidden Risks in SAP Hyperscaler Migration: What Enterprises Get Wrong About High Availability",
+         "presenter": "Poli Reddy Basani",
+         "authors": "Poli Reddy Basani (SAP America Inc); Naveen Kumar Reddy Chichili (doTERRA); Pavan Manjunath (Jain University)"
+        },
+        {
+         "id": "396224",
+         "title": "WipeSure - Certified Erasure Made Simple",
+         "presenter": "Dharun Kasi Raja P",
+         "authors": "Dharun Kasi Raja P (Department of Computer Science and Engineering (Cyber Security), Dr. N.G.P. Institute of Technology, Coimbatore, Tamil Nadu, India.); I. Mettildha Mary (Department of Computer Science and Engineering (Cyber Security), Dr. N.G.P. Institute of Technology, Coimbatore, Tamil Nadu, India.); Kavya S (Department of Computer Science and Engineering (Cyber Security), Dr. N.G.P. Institute of Technology, Coimbatore, Tamil Nadu, India.); Divya Ruba M (Department of Computer Science and Engineering (Cyber Security), Dr. N.G.P. Institute of Technology, Coimbatore, Tamil Nadu, India.); Sharu Praba K (Department of Computer Science and Engineering (Cyber Security), Dr. N.G.P. Institute of Technology, Coimbatore, Tamil Nadu, India.)"
+        }
+       ]
+      },
+      {
+       "num": 23,
+       "anchor": "s23",
+       "room": "G",
+       "family": "security",
+       "title": "Digital Forensics, Phishing & Generative Threat Models",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "73889",
+         "title": "An Intelligent AI-Driven Framework for Cyber Attack Detection in Wi-Fi Networks Using Machine Learning and Deep Learning",
+         "presenter": "Kruti Patel",
+         "authors": "Kruti Patel (Silver Oak University); Dr. Vikas Tulshyan (Silver Oak University); Dr. Rahul vaghela (SKIPS University)"
+        },
+        {
+         "id": "740034",
+         "title": "Causal Neuro-Symbolic Intelligence for Attribution of Zero-Day Cyberattacks",
+         "presenter": "G. Gokulakrishnan",
+         "authors": "R. Naveenkumar (Dept of C.S.E School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "120481",
+         "title": "Cyber Attack Attribution Analysis using Soft-Voting Ensemble Model for IoT System",
+         "presenter": "Govind P Gupta",
+         "authors": "Govind P Gupta (NIT Raipur); Surya Kiran Mahato (NIT Raipur)"
+        },
+        {
+         "id": "970046",
+         "title": "Designing Web-Based Record Management System for Indigenous Peoples in Nueva Ecija",
+         "presenter": "Ronnie Camilo F. Robles",
+         "authors": "Ronnie Camilo F. Robles (Central Luzon State University); Niño Emmanuel S. Tadeo (Central Luzon State University); Krisha Manahan (Central Luzon State University); Angelika S. Balagot (Central Luzon State University); Marycris A. Manalang (Central Luzon State University); Christine Joy Duatin (Central Luzon State University)"
+        },
+        {
+         "id": "155538",
+         "title": "Graph Neural Attack-Path Intelligence for Cyber-Risk Prediction and Containment in Connected QSR Payment Ecosystems",
+         "presenter": "Siddharth Pani",
+         "authors": "Siddharth Pani (University of the Cumberlands Williamsburg, Kentucky, USA)"
+        },
+        {
+         "id": "657591",
+         "title": "HybridFin An Explainable Rule-Guided LLM Framework for Real-Time Personal Finance Anomaly Detection",
+         "presenter": "Saunil Bajpai, Rohit Kumar Gupta, Gauransh Kalla",
+         "authors": "Saunil Bajpai (Manipal University Jaipur, Jaipur, India); Rohit Kumar Gupta (Manipal University Jaipur, Jaipur, India); Gauransh Kalla (Manipal University Jaipur, Jaipur, India)"
+        },
+        {
+         "id": "544136",
+         "title": "NeoTrust-Q: An Autonomous AI-Quantum-Resilient Cyber Defense Grid with Adaptive Zero Trust and Self-Healing Intelligence",
+         "presenter": "Md. Shihab Uddin",
+         "authors": "Aishee Debnath (American International University-Bangladesh); Uthso Nandy (Space Innovation Camp); Md. Shihab Uddin (American International University-Bangladesh); Kamruddin Nur (American International University-Bangladesh)"
+        },
+        {
+         "id": "219703",
+         "title": "TrapVerse AI: An AI-Powered Real-Time Honeypot Monitoring and Threat Classification Framework",
+         "presenter": "Fizza Nigar",
+         "authors": "Dr Rinisha Bagaria (CMR Institute of Technology, Bengaluru); Fizza N (CMR Institute of Technology, Bengaluru); Chaarvi Naidu Noolu (CMR Institute of Technology, Bengaluru); Gogula Reddy Yashaswini (CMR Institute of Technology, Bengaluru)"
+        }
+       ]
+      },
+      {
+       "num": 24,
+       "anchor": "s24",
+       "room": "H",
+       "family": "health",
+       "title": "Connected Health: Remote Monitoring & Hospital Systems",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "10:00",
+       "papers": [
+        {
+         "id": "777320",
+         "title": "Machine Learning–Based Prediction of Sports Injury Risk Using Athlete Workload and Physiological Data",
+         "presenter": "Md Azmain Inkiad",
+         "authors": "Mahatab Islam Mridul (American International University-Bangladesh(AIUB)); Amit Datta Dip (American International University-Bangladesh(AIUB)); Md Azmain Inkiad (American International University-Bangladesh(AIUB)); S.F Sheikh Saddi (American International University-Bangladesh(AIUB)); Kazi Tanvir (American International University-Bangladesh(AIUB)); Kamruddin Nur (American International University-Bangladesh(AIUB))"
+        },
+        {
+         "id": "524838",
+         "title": "Medical Prescription Recognition using Machine Learning",
+         "presenter": "Neduncheralathan SA",
+         "authors": "SA neduncheralathan (St.joseph's college of engineering); KAMALESSH E R (St.joseph's college of engineering)"
+        },
+        {
+         "id": "216543",
+         "title": "Next Gen Technology based Privacy Preserving models for Medical Applications",
+         "presenter": "Ravinder Singh",
+         "authors": "Ravinder Singh (Department of Artificial Intelligence Amity School of Engineering and Technology Noida,Uttar Pradesh, India); Sofia Singh (Department of Artificial Intelligence, ASET Amity University, Noida, India); Smriti Mahajan (Department of Artificial Intelligence Amity School of Engineering and Technology Noida,Uttar Pradesh, India); Urvashi Agrawal (Department of Electronics & Telecommunication Engineering, Jhulelal Institute of Technology, Nagpur, India); Praveen Kumar Dhankar (Symbiosis Institute of Technology, Nagpur Campus, Symbiosis International (Deemed University), Pune-440008, India); Smriti Mahajan (Symbiosis Institute of Technology, Nagpur Campus, Symbiosis International (Deemed University) Pune, India)"
+        },
+        {
+         "id": "815016",
+         "title": "Reasoning-Augmented Retrieval for Clinical Question Answering",
+         "presenter": "Gogineni Saikiran",
+         "authors": "Saikiran Gogineni (Malla Reddy (MR) Deemed to be university)"
+        },
+        {
+         "id": "836462",
+         "title": "Retrieval-Augmented Clinical Foundation Model with Neuro-Symbolic Reasoning for Precision Healthcare",
+         "presenter": "A.Kanagaraj",
+         "authors": "R. Naveenkumar (Dept of Computer Science and Engineering, School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "57849",
+         "title": "Smart Surveillance System for Public Mental Health Well Being",
+         "presenter": "Keerthana R",
+         "authors": "Lavanya Santhosh (Dr.Ambedkar Institute of Technology); Keerthana R (Dr.Ambedkar Institute of Technology); Asha K N (Dr.Ambedkar Institute of Technology); Veena Potdar (Dr.Ambedkar Institute of Technology); Kavya Shree R (Dr.Ambedkar Institute of Technology); Likitha H.M. (Dr.Ambedkar Institute of Technology)"
+        },
+        {
+         "id": "666684",
+         "title": "Spatial-GCN with Functional Connectivity for Robust Seizure Screening in Imbalanced Clinical EEG",
+         "presenter": "Tatapudi Prem Kumar",
+         "authors": "POLISETTI NARENDRA (Department of Computer Science and Engineering, Swarnandhra College of Engineering & Technology (Autonomous), Narsapur, Andhra Pradesh, India); Tatapudi Premkumar (Department of Computer Science and Engineering, Swarnandhra College of Engineering & Technology (Autonomous), Narsapur, Andhra Pradesh, India); Gubbala Vani (Department of Computer Science and Engineering, Swarnandhra College of Engineering & Technology (Autonomous), Narsapur, Andhra Pradesh, India); Gopinath Siddan (Department of CSE (IOT, Cyber Security Including Block Chain Technology), Yenepoya Institute of Technology, Mangalore, India); John Bunyan Vadlapati (Department of Computer Science and Engineering, Swarnandhra College of Engineering & Technology (Autonomous), Narsapur, Andhra Pradesh, India); Veerendra Kumar Gogulamanda (Department of Artificial Intelligence and Machine Learning Vishnu Institute of Technology, Bhimavaram, Andhra Pradesh, 534205, India)"
+        },
+        {
+         "id": "443245",
+         "title": "The Effect of Grouping Features Based on Clinical Knowledge on the Improvement of Multiclass Severity Classification",
+         "presenter": "Tumpa Rani Shaha",
+         "authors": "Tumpa Rani Shaha (Department of Computer Science and Engineering, Dhaka University of Engineering & Technology, Gazipur, Bangladesh); Abdullah Al Mamun (Department of Computer Science and Engineering, Dhaka University of Engineering & Technology, Gazipur, Bangladesh); Momotaz Begum (Department of Computer Science and Engineering, Dhaka University of Engineering & Technology, Gazipur, Bangladesh)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "break",
+     "start": "12:00",
+     "label": "Lunch"
+    },
+    {
+     "type": "sessions",
+     "start": "12:25",
+     "slot": 4,
+     "end": "14:15",
+     "sessions": [
+      {
+       "num": 25,
+       "anchor": "s25",
+       "room": "A",
+       "family": "health",
+       "title": "Cardiovascular Disease Prediction & Clinical Digital Twins",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "317813",
+         "title": "A Causal Digital Twin Framework for Personalized Heart Disease Prediction and Explainable Clinical Decision Support",
+         "presenter": "Arockia Raj A.",
+         "authors": "Arockia Raj A. (Madanapalle Institute of Technology & Science (MITS)); M.Arivukarasi (SIMATS)"
+        },
+        {
+         "id": "674646",
+         "title": "A Comparative Study of Machine Learning Approaches for Heart Disease Prediction Using Multimodal Medical Data Data",
+         "presenter": "Rishitha Rasineni",
+         "authors": "Rishitha Rasineni (VTU); Sayeed Baig (VTU); Sowmya P R (VTU); Akash Hiremath (VTU)"
+        },
+        {
+         "id": "960818",
+         "title": "Adaptive Clinical Intelligence using CardioFusionNet for Graph Attention Transformer-Based Heart Disease Prediction",
+         "presenter": "Javvaji Venkatarao",
+         "authors": "Javvaji Venkatarao (Department of Computing Technologies, School of computing,SRM Institute of Science and Technology, Kattankulathur -603203, Tamil Nadu,India.); DEEBAN CHAKRAVARTHY V (Department of Computing Technologies, School of computing,Faculty of Engineering and Technology SRM Institute of Science and Technology, Kattankulathur -603203, Tamil Nadu,India); Kallam Suresh (Department of Computer Science and Engineering, Sree Vidyanikethan Engineering College, A.Rangampeta – 517102, Andhra Pradesh, India.)"
+        },
+        {
+         "id": "115005",
+         "title": "Counterfactual Uncertainty-Enhanced Explainability Framework for Trustworthy Heart Disease Prediction Using Deep Learning",
+         "presenter": "Arockia Raj A.",
+         "authors": "Arockia Raj A. (Madanapalle Institute of Technology & Science (MITS),); M.Arivukarasi (SIMATS)"
+        },
+        {
+         "id": "634931",
+         "title": "Deep Learning for Predicting Heart Disease Risk Using Medical Imaging",
+         "presenter": "Sandip D Satav",
+         "authors": "Sandip D Satav (JSPM’s JSCOE); M.Jalasri (University of Technology and Applied science); G Ravi Chandra (Chalapathi Institute of Engineering and Technology); Rajesha N (Sri Eshwar College of Engineering); C. Kalpana (NPR College of Engineering & Technology); G.Indra (RMK College of Engineering and Technology)"
+        },
+        {
+         "id": "36914",
+         "title": "Federated Learning-Based Framework for Heart Attack Risk Prediction",
+         "presenter": "Javvaji Venkatarao",
+         "authors": "Javvaji Venkatarao (Department of Computing Technologies, School of computing,SRM Institute of Science and Technology, Kattankulathur -603203, Tamil Nadu,India.); DEEBAN CHAKRAVARTHY V (Department of Computing Technologies, School of computing,Faculty of Engineering and Technology SRM Institute of Science and Technology, Kattankulathur -603203, Tamil Nadu,India); Kallam Suresh (Department of Computer Science and Engineering, Sree Vidyanikethan Engineering College, A.Rangampeta – 517102, Andhra Pradesh, India.)"
+        },
+        {
+         "id": "630512",
+         "title": "A Multi-Population Assistive Navigation Robot with UWB/RGB-D Relative Localization and On-Device Generative AI for Hospital Environments",
+         "presenter": "SUNG HUAI HSIEH",
+         "authors": "Shang-Chen Hsieh; Sung-Huai Hsieh; Tang-Chuan Wang; Chien-Yi Ho; Bing-Chen Hsieh; Kai-Ting Chuang; Shin-Huan Chen; You-Cheng Yu; Po-Hsun Cheng; Tzu-Liang Chen"
+        },
+        {
+         "id": "798023",
+         "title": "AI-Driven Genetic Classification via Distributed Bioimpedance Spectroscopy on Automated, Thermally-Stabilized DNA-Cellulose Substrates",
+         "presenter": "MANSA DEVI K",
+         "authors": "S.Mangai (Professor & Head); S.Maheswari (Assistant Professor); K.Mansa Devi (Student); K.Bhuvaneshwari (Student); A.Kiruthika (Student); S.Kavinkumar (Student)"
+        },
+        {
+         "id": "443380",
+         "title": "AI-Enabled Approaches for Toxicity Prediction \r\n of Small Drug Molecules: A Comprehensive Review and Its Legal Consequences",
+         "presenter": "Vishan Kumar Gupta",
+         "authors": "Vishan Kumar Gupta (Amity University Punjab Mohali); Anupriya Sharma Ghai (Graphic Era Hill University Dehradun, UK); Gurudev Sahil (Dayananda Sagar University Bengaluru, Karnataka); Vivek Shukla (SVKM'S NMIMS DEEMED to be University, Chandigarh); Munish Swaroop (ICFAI Foundation for Higher Education, Hyderabad, India); Vishwanath Bijalwan (Amity University Punjab Mohali, India)"
+        }
+       ]
+      },
+      {
+       "num": 26,
+       "anchor": "s26",
+       "room": "B",
+       "family": "ai",
+       "title": "Explainable & Trustworthy AI Across Domains",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "250205",
+         "title": "An Imbalance-Aware and Explainable XGBoost Framework for Road-Collision Severity Prediction Using STATS19 Data",
+         "presenter": "V. Shobha Rani",
+         "authors": "V Shobha Rani (SR University)"
+        },
+        {
+         "id": "905043",
+         "title": "Evidence-Aligned Explainable and Controllable Image Captioning",
+         "presenter": "Eranti Divya",
+         "authors": "Eranti Divya (School of Computer Science and Artificial Intelligence, SR University, Warangal, Telangana, India-506371); Johnson Kolluri (School of Computer Science and Artificial Intelligence, SR University, Warangal, Telangana, India-506371); Kiran Siripuri (Symbiosis Institute of Technology Hyderabad Campus Symbiosis International (Deemed University), Pune, India)"
+        },
+        {
+         "id": "998552",
+         "title": "Explainable AI in Predicting Thermal Performance of Heat Exchangers",
+         "presenter": "T. Subba Reddy",
+         "authors": "T. Subba Reddy (Andhra Loyola Institute of Engineering and Technology, Vijayawada); J Pavanu Sai (Vikas College of Engineering and Technology); Jeswin Arputhabalan (Sri Sairam Engineering College); Sandeep Varma Kuchampudi (Sagi Rama Krishnam Raju Engineering College); Rajakumar Awaradi (CMR University,); Joshuva Arockia Dhanraj (Lovely Professional University)"
+        },
+        {
+         "id": "377374",
+         "title": "Explainable Student Dropout Prediction Using CatBoost with Hybrid Resampling and Feature Selection",
+         "presenter": "Nguyen Tran My Duyen",
+         "authors": "Nguyen Tran My Duyen; Vu Thao Vi"
+        },
+        {
+         "id": "222709",
+         "title": "Haversine Inverse Distance Weighting Spatial Consolidation-Interpolation with Adaptive Renormalization and Machine Learning for the Reconstruction of Historical Rainfall Data",
+         "presenter": "Zanya Reubenne D Omadlao",
+         "authors": "Zanya Reubenne D Omadlao (University of the Cordilleras); Anna Rhodora M Quitaleg (University of the Cordilleras)"
+        },
+        {
+         "id": "463884",
+         "title": "Physics Guided Machine Learning for Accurate GSM Prediction in Single Jersey Knit Fabric: An In-Depth Comparative Analysis with Explainable AI",
+         "presenter": "Md. Ataur Rahman",
+         "authors": "Md. Jariful Abedin Ovi (Fab Lab IUB, Dept. of CSE, Independent University, Bangladesh); Azaz Ahmed Eraj (Fab Lab IUB, Dept. of CSE, Independent University, Bangladesh); Pial Mondol (Fab Lab IUB, Dept. of CSE, Independent University, Bangladesh); Md. Ataur Rahman (Fab Lab IUB, Dept. of CSE, Independent University, Bangladesh); Shahriar Khan (Fab Lab IUB, Dept. of EEE, Independent University, Bangladesh); Md. Tarek Habib (Fab Lab IUB, Dept. of EEE, Independent University, Bangladesh)"
+        },
+        {
+         "id": "97130",
+         "title": "Smart Multimodel Local RAG Based Question Answer Assistant",
+         "presenter": "Nivetha K , Prathyshaa K",
+         "authors": "Nivetha K (St.Joseph's Institute of Technology); Prathyshaa K (St.Joseph's Institute of Technology); Gowri vidhya N (St.Joseph's Institute of Technology)"
+        },
+        {
+         "id": "950935",
+         "title": "TRACER: A Dedicated Transparency, Reasoning Audit, and Compliance Evaluation Router for Trustworthy Transformer-Based AI Systems",
+         "presenter": "Mohammed Abdul Rafe Sajid",
+         "authors": "Mohammed Abdul Rafe Sajid (Chaitanya Bharathi Institute of Technology); Laksh Jain (Chaitanya Bharathi Institute of Technology); Abdul Raheem (Chaitanya Bharathi Institute of Technology); Mubashir Shahwez (Chaitanya Bharathi Institute of Technology); Akber Hussain (Chaitanya Bharathi Institute of Technology); Ramakrishna Kolikipogu (Chaitanya Bharathi Institute of Technology)"
+        },
+        {
+         "id": "188307",
+         "title": "Varicose Veins Prediction Using MobileNetV2 Model",
+         "presenter": "Moddannagari Yoganand",
+         "authors": "Moddannagari Yoganand (Vardhaman college of engineering); Ganesh Regulwar B (Vardhaman college of engineering); Chatla Dhikshitha (Vardhaman college of engineering); Kokapet Akhil Sai (vardhaman college of engineering); Dr. Saravanam M (Sri Eshwar College Of engineering, Coimbatore); P. Neelima (Narasaraopeta Engineering College); Granthik Regulwar (Vardhaman college of engineering)"
+        }
+       ]
+      },
+      {
+       "num": 27,
+       "anchor": "s27",
+       "room": "C",
+       "family": "ai",
+       "title": "Sentiment Analysis & Text Classification",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "10466",
+         "title": "A Context-Adaptive Large Language Model Framework for Fine-Grained Text Understanding",
+         "presenter": "Sudha Ashok Shende",
+         "authors": "Sudha Ashok Shende (Department of Computer Science and Engineering Yeshwantrao Chavhan College of Engineering, wanadongri Hingna road Nagpur, India); Priyanka Radheshyam Chaumwal (dept. of Data Science Malla Reddy University Telangana, India); Krishna Dheeravath (dept. of CSE(AI&ML) CVR College of Engineering Telangana, India); Madri Vijaya Raju (dept. of Data Science Malla Reddy University Telangana, India); G. Anusha (dept. of CSE Malla Reddy Deemed To Be University Maisammaguda, Telangana, India); P Vanitha (dept. of Information Technology S R K R Engineering College Bhimavaram, AP, India)"
+        },
+        {
+         "id": "354112",
+         "title": "An Empirical Evaluation of Cost-Efficient Large Language Models on Algorithmic Programming Tasks",
+         "presenter": "Chandimal Adikari",
+         "authors": "Chandimal Adikari (University of Wollongong, Australia); Nandika Herath"
+        },
+        {
+         "id": "902638",
+         "title": "Impact of ChatGPT (and LLMs) on Authoring University Textbooks: The Future of Academic Publishing",
+         "presenter": "Shahriar Khan",
+         "authors": "Shahriar Khan (Independent University, Bangladesh)"
+        },
+        {
+         "id": "980268",
+         "title": "Lie Detector by ChatGPT and AI: Exploring Large Language Models for Determining Truthfulness or Deception",
+         "presenter": "Shahriar Khan",
+         "authors": "Shahriar Khan (Independent University, Bangladesh)"
+        },
+        {
+         "id": "638234",
+         "title": "Lightweight Transformer Models for Prompt Injection Detection: A Comparative Study of TinyBERT and ALBERT",
+         "presenter": "J. M. Sadik-Ul Islam Smaron",
+         "authors": "Jahanggir Hossain Setu (CCDS, Independent University, Bangladesh (IUB)); J. M. Sadik-Ul Islam Smaron (CCDS, Independent University, Bangladesh (IUB)); Ashraful Islam (CCDS, Independent University, Bangladesh (IUB)); Rashedur Rahman (CCDS, Independent University, Bangladesh (IUB)); M. Ashraful Amin (CCDS, Independent University, Bangladesh (IUB) and George Mason University, USA)"
+        },
+        {
+         "id": "367527",
+         "title": "Retrieval-Augmented Large Language Models for Contract Risk Identification in Legal Documents",
+         "presenter": "A.Kanagaraj",
+         "authors": "R. Naveenkumar (Dept of Computer Science and Engineering, School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "65026",
+         "title": "Trial by Jury of ChatGPT: Using Large Language Models to Find Guilty or Not Guilty",
+         "presenter": "Shahriar Khan",
+         "authors": "shahriar khan (Independent University Bangladesh)"
+        },
+        {
+         "id": "892029",
+         "title": "A Human-Centered Conversational AI Framework for Accessibility and Digital Inclusion of Persons with Disabilities",
+         "presenter": "Paras Datt",
+         "authors": "Paras Datt (University Institute of Legal Studies, Chandigarh University, Mohali-140413, Punjab, India); Dr. Vinit Kumar Sharma (University Institute of Legal Studies, Chandigarh University, Mohali-140413, Punjab, India)"
+        },
+        {
+         "id": "94986",
+         "title": "An Intelligent Speech Assistance Framework for Multiclass Stuttering Detection using Wav2Vec2 and BiLSTM",
+         "presenter": "Rishika A S, Neha Sabari Sree A",
+         "authors": "Rishika A S (St. Joseph’s Institute of Technology); Neha Sabari Sree A (St. Joseph’s Institute of Technology); Niroshini Infantia H (St. Joseph’s Institute of Technology); Vinisha J (St. Joseph’s Institute of Technology)"
+        }
+       ]
+      },
+      {
+       "num": 28,
+       "anchor": "s28",
+       "room": "D",
+       "family": "society",
+       "title": "Crop Health, Soil & Precision Agriculture",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "155909",
+         "title": "Cross-Dataset Generalization of Transfer-Learning Models for Cotton Leaf Disease Classification",
+         "presenter": "J.E.N. Abhilash",
+         "authors": "Boyina Subrahmanyeswara Rao (Swarnandhra College of Engineering &Technology, Narsapur, Andhra Pradesh, India); J.E.N. Abhilash (Swarnandhra College of Engineering &Technology Narsapur, Andhra Pradesh, India); Bomma Rama Krishna (Swarnandhra College of Engineering &Technology, Narsapur, Andhra Pradesh, India); Mutyala Durga Rao (Swarnandhra College of Engineering &Technology, Narsapur, Andhra Pradesh, India); J.V. Rama Kumar (Sagi Rama Krishnnam Raju Engineering College (A), Bhimavaram, Andhra Pradesh, India); M.S.V.K.V.Prasad (Swarnandhra College of Engineering &Technology, Narsapur, Andhra Pradesh, India)"
+        },
+        {
+         "id": "168611",
+         "title": "Cross-Domain Ensemble Transfer Learning for Efficient and Generalized Plant Disease Detection",
+         "presenter": "Madhumita P",
+         "authors": "Kothai G (SRM Institute of Science and Technology); Madhumita P (SRM Institute of Science and Technology); Reswant Raja S (SRM Institute of Science and Technology)"
+        },
+        {
+         "id": "901550",
+         "title": "Digital Twin and Multimodal Sensor Fusion Framework for Autonomous Electric Agricultural Harvesting Systems",
+         "presenter": "Perarasi M",
+         "authors": "Perarasi M (BEST Centre, SASTRA Deemed to be University, Thanjavur, Tamil Nadu, India); T. Karthick (BEST Centre, SASTRA Deemed to be University, Thanjavur, Tamil Nadu, India); N. Manoj Kumar (Department of Electrical and Electronics Engineering, Panimalar Engineering College, Tamil Nadu, India); V. Karthika (Department of Science & Humanities Engineering, R.M.K. Engineering College, Kavaraipettai, Tamil Nadu, India)"
+        },
+        {
+         "id": "994012",
+         "title": "Digital twin-based predictive maintenance for water pumps in smart irrigation systems",
+         "presenter": "Nadeeshani Lakmali Aththanagoda",
+         "authors": "Nisini Nadara (Rajarata University of Sri Lanka); Nadeeshai Aththanagoda (Rajarata University of Sri Lanka); Sivaraj Nimishan (Sabaragamuwa University of Sri Lanka); Thashmi De Silva (Rajarata University of Sri Lanka); Pawani Sithma (Rajarata University of Sri Lanka); Kavindya Jayakody (Rajarata University of Sri Lanka)"
+        },
+        {
+         "id": "282858",
+         "title": "Graph Neural Network-Based Multi-Domain Learning for Mapping Plant Phenotypes and Biomedical Biomarkers",
+         "presenter": "Gosula Balakrishna Yadav",
+         "authors": "Gosula Balakrishna Yadav (SR University, Warangal, Telangana-506371, India); Deepthi Kothapeta (SR University, Warangal, Telangana-506371, India)"
+        },
+        {
+         "id": "867957",
+         "title": "Machine Learning-Based Evaluation of Environmental Sustainability and Agricultural Benefits of Organic Farming in Selected Crops of Kolhapur",
+         "presenter": "Poonam patil",
+         "authors": "Poonam Pandurang Patil (Department of management studies Bharati Vidyapeeth (Deemed to be University) Pune, India)"
+        },
+        {
+         "id": "685042",
+         "title": "Self-Calibrating Gradient Boosting for Dynamic Crop Yield Prediction Under Climate Variability and Soil Heterogeneity",
+         "presenter": "Geetanjali Vivek Kale",
+         "authors": "R. Naveenkumar (Dept of Computer Science and Engineering, School of Engineering and Technology, CGC University Mohali-140307, Punjab India.)"
+        },
+        {
+         "id": "727024",
+         "title": "Towards Sustainable Experimental Analysis of Cherry Tomatoes Grown in Soil and Vertical Hydroponics",
+         "presenter": "Vidhika Mahajan",
+         "authors": "Vidhika Mahajan (Student)"
+        }
+       ]
+      },
+      {
+       "num": 29,
+       "anchor": "s29",
+       "room": "E",
+       "family": "security",
+       "title": "Intrusion Detection & Adaptive Cyber Defence",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "989998",
+         "title": "FOEP : Open-Source Intelligence to Digital Evidence Forensic Pipeline",
+         "presenter": "Bathina Bharath Kumar",
+         "authors": "Bathina Bharath Kumar (Department of Networking and Communications, School of Computing, Faculty of Engineering and Technology, SRM Institute of Science and Technology, Kattankulathur - 603203, Tamil Nadu, India); Mrs. Subha K J (Department of Networking and Communications, School of Computing, Faculty of Engineering and Technology, SRM Institute of Science and Technology, Kattankulathur - 603203, Tamil Nadu, India)"
+        },
+        {
+         "id": "982825",
+         "title": "Generative AI Framework for Enhancing Software Vulnerability Detection",
+         "presenter": "Vinay R",
+         "authors": "Vinay R (Senior Assistant Professor, New Horizon College of Engineering); Kunal Hossain (Assistant Professor, Department of BFA (DFM & VFX), Techno India University, EM-4, Sector-V, Salt Lake, Kolkata – 700091.); Nayani Sateesh (Senior Assistant Professor, Department of Computer Science and Engineering, CVR College of Engineering Ibrahimpatnam – 501510.); Vaibhav Sharma (Department of Information Technology, School of Engineering & Technology, Shri Guru Ram Rai University, Dehradun, Uttarakhand-248001, India .); Punith Kumar (Assistant Professor, Computer Science and Engineering, Dayanandasagar College of Engineering, Kumara Swamy Layout, Jayaprakash Narayan Nagar, Bangalore, Bangalore Urban, Karnataka – 560078.); Vallamkonda Jyothi (Assistant Professor, Department of CSE, Mohan Babu University, Srisainath Nagar, 517102, Tirupati, Andhra Pradesh, India.)"
+        },
+        {
+         "id": "776420",
+         "title": "LEVERAGING MACHINE LEARNING FOR REAL-TIME MALWARE CLASSIFICATION AND PREVENTION",
+         "presenter": "Vinay Dutt Jangampet",
+         "authors": "Vinay Dutt Jangampet (Intuit); Avinash Gupta Desetty (Sony Corporation of America); Srinivas Reddy Pulyala (Optiv Security); Shiva Dutt Jangampeta (JPMorgan Chase)"
+        },
+        {
+         "id": "496688",
+         "title": "Phishing URL Detection Using Machine Learning: A Comparative Study with SHAP-Based Explainability on a Large-Scale Multi-Source Dataset",
+         "presenter": "Faysal Mahmud",
+         "authors": "Tahsin Ahmed Fahim (Department of Computer Science, American International University-Bangladesh); Faysal Mahmud (Department of Computer Science, American International University-Bangladesh); Sunjeta Jahan Snegdha (Department of Computer Science, American International University-Bangladesh); Rifat Al Mamun Rudro (Department of Computer Science, American International University-Bangladesh); Taufique Sayeed (School of Business, Emporia State University); Kamruddin Nur (Department of Computer Science, American International University-Bangladesh)"
+        },
+        {
+         "id": "39400",
+         "title": "XAMF: An Explainable Framework for Android Forensic Evidence Collection and Extraction",
+         "presenter": "Md. Jobayed Hossen Hazary",
+         "authors": "Md. Jobayed Hossen Hazary (American International University-Bangladesh); Md. Tanbin Islam (American International University-Bangladesh); Showrav Ghosh (American International University-Bangladesh); Monish Saha (American International University-Bangladesh); Md Manirul Islam (American International University-Bangladesh)"
+        },
+        {
+         "id": "876720",
+         "title": "A Machine Learning Approach to Analysing and Improving Cybersecurity Workforce Readiness in the United States",
+         "presenter": "Asif Ehsan Sharwani",
+         "authors": "Asif Ehsan Sharwani (International American University Los Angeles, CA, USA); MST Nafisa Maliat Linaz (International American University Los Angeles, CA, USA)"
+        },
+        {
+         "id": "541467",
+         "title": "AdaShield: An Explainable and Adaptive Reinforcement Learning Framework for Cybersecurity Workforce Readiness",
+         "presenter": "Asif Ehsan Sharwani",
+         "authors": "Asif Ehsan Sharwani (International American University Los Angeles, CA, USA); MST Nafisa Maliat Linaz (International American University Los Angeles, CA, USA); Dr. Jessica Cristy Saliao (Immigration Paralegal Nelson and Associates, Los Angeles, CA, USA)"
+        },
+        {
+         "id": "762997",
+         "title": "Agentic Artificial Intelligence Framework for Autonomous Cyber Threat Detection and Incident Response in Industrial Internet of Things",
+         "presenter": "Naveeda",
+         "authors": "Perarasi M (BEST Centre, SASTRA Deemed to be University, Thanjavur, Tamil Nadu, India); Sumithra S (Department of Electronics and Communication Engineering, JJ College of Engineering and Technology, Ammapettai, Trichy); T. Karthick (BEST Centre, SASTRA Deemed to be University, Thanjavur, Tamil Nadu, India); Deepa N (Department of Electronics and Communication Engineering, R.M.K. Engineering College, Kavaraipettai, Tamil Nadu, India); Sarala B (Department of Electronics and Communication Engineering, R.M.K. Engineering College, Kavaraipettai, Tamil Nadu, India)"
+        },
+        {
+         "id": "777608",
+         "title": "An Explainable AI Framework for Real-Time Anomaly Detection in Multi-Cloud Security Environments",
+         "presenter": "SANDESH DHARMARAJ MANOCHARYA",
+         "authors": "SANDESH DHARMARAJ MANOCHARYA (New Horizon College of Engineering, Bengaluru, India); ASHA JOSEPH (New Horizon College of Engineering, Bengaluru, India); BHIMARAYA S PATIL (New Horizon College of Engineering, Bengaluru, India)"
+        }
+       ]
+      },
+      {
+       "num": 30,
+       "anchor": "s30",
+       "room": "F",
+       "family": "systems",
+       "title": "Network Optimization, 6G & Sensing",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "929751",
+         "title": "NLOS Acoustic Sensing via Spectral Gating and GCC-PHAT",
+         "presenter": "POLISETTI NARENDRA",
+         "authors": "Polisetti Narendra (Department of CSE, Swarnandhra College of Engineering and Technology Narasapur, Andhra Pradesh, India); Vijaya Raju Motru (Department of CSE, Swarnandhra College of Engineering and Technology Narasapur, Andhra Pradesh, India); Suresh Kumar Sreedharan (Department of CSE, Swarnandhra College of Engineering and Technology Narasapur, Andhra Pradesh, India); Praveena Mallampalli (Department of CSE, Swarnandhra College of Engineering and Technology Narasapur, Andhra Pradesh, India); T Murali Mohan (Department of CSE, Swarnandhra College of Engineering and Technology Narasapur, Andhra Pradesh, India); T V Satyasheela (Department of CSE, Swarnandhra College of Engineering and Technology Narasapur, Andhra Pradesh, India)"
+        },
+        {
+         "id": "567197",
+         "title": "Operationally Adaptive CKKS Inference for Privacy-Preserving Intrusion Detection in 6G-Oriented SDN Edge Networks: Boundary Validation and Workload Replay",
+         "presenter": "Md Tahsin Tasnim Aurin",
+         "authors": "Md Tahsin Tasnim Aurin (American International University-Bangladesh); Md Manirul Islam (American International University-Bangladesh)"
+        },
+        {
+         "id": "814299",
+         "title": "PRISM: A Proactive, Robust, Interpretable, and Scalable Machine-Learning Framework for Telecom Complaint Risk Prediction Using 4G/5G Network KPIs",
+         "presenter": "Yaseen Baig",
+         "authors": "Yaseen Baig (Huawei Technologies, Saudi Arabia); Fahad Rahman (Universit'e Paris Cit'e, France)"
+        },
+        {
+         "id": "679192",
+         "title": "Predictive Analytics Utilization for Improving Organizational Performance",
+         "presenter": "Dr S POUNSAMY",
+         "authors": "Dr S POUNSAMY (Commerce Nandha Arts and Science college (Autonomous) Erode-52); Dr Rajasekar (Department of Management Rajeev Institute of Technology , Plot 1-D, Growth Center, Industrial Area, B-M Bypass Road, Hassan, Karnataka 573201); Manoj Kumar M (School of Management studies Sathyabama institute of Science and technology Sriperambudur); CMA (Dr.) Sharad Gautam (Department of Commerce Graphic Era Hill University, Haldwani Campus Bareilly Raod, Beriparao, Haldwani (Nainital) Uttarakhand, 263159); Dr. SK POONGODI (Department of Corporate secretaryship Nandha arts and science college KOORAPALAYAM PIRIVU, perundurai Erode (Dt) 638052); Dr.S.BABY (Department of Commerce,Nandha Arts & Science College(Autonomous) Erode -52 ,)"
+        },
+        {
+         "id": "570772",
+         "title": "Quantum-Enhanced AI Mechanism for Dynamic Antenna Beam Optimization",
+         "presenter": "B. Ramana Kumar",
+         "authors": "B. Ramana Kumar (Department of Electronics and Communication Engineering, Swarnandhra College of Engineering and Technology (Autonomous), Narsapur, Andhra Pradesh 534275, India.); Nagavalli Vegesna (Department of Electronics and Communication Engineering, Sagi Rama Krishnam Raju Engineering College, Chinamiram, Andhra Pradesh 534202, India.); R.Rajitha Jasmine (Department of Information Technology, RMK Engineering College, Kavaraipettai, Tamil Nadu 601206, India.); G. Sheeba (Department of Electronics and Communication Engineering, New Prince Shri Bhavani College of Engineering and Technology, Chennai, Tamil Nadu 600073, India.); Gagan Preet Kaur (Department of Electronics and Communication Engineering, Ganga Institute of Technology and Management, Haryana 124104, India.); Nellore Manoj Kumar (Department of Mathematics, Saveetha School of Engineering, Saveetha Institute of Medical and Technical Sciences (SIMATS), Chennai, Tamil Nadu 602105, India.)"
+        },
+        {
+         "id": "18374",
+         "title": "Real Time Radio Frequency Localization for Maritime Safety Applications",
+         "presenter": "Parameswaran Ramesh",
+         "authors": "Parameswaran Ramesh (Sathyabama Institute of Science and Technology OMR Road, Chennai, India); Gangarani N (Paavai Engineering College Namakkal, India); Murali P M (Vinayaka Mission’s Kirupananda Variyar Engineering College, Vinayaka Mission’s Research Foundation (DU) Salem, Tamilnadu, India); Purnima R G (Vinayaka Mission’s Kirupananda Variyar Engineering College, Vinayaka Mission’s Research Foundation (DU) Salem, Tamilnadu, India); Jayageetha P (AKT Memorial College of Engineering and Technolog, Neelamangalam Tamilnadu, India); Boobalan K (Paavai Engineering College Namakkal, India)"
+        },
+        {
+         "id": "54225",
+         "title": "T2FL&ACO - Uncertainty-Aware On-Demand Routing in Long Range Wide Area Network Enabled Flying Ad Hoc Networks using Ant Colony Optimization and Type-II Fuzzy Logic",
+         "presenter": "TEJINDER KAUR",
+         "authors": "tejinder (mmdu)"
+        },
+        {
+         "id": "380050",
+         "title": "Wideband LHCP Antenna Using Slot-Loaded Elliptical Patch with Parasitic Element for C-Band Applications",
+         "presenter": "Pokharkar Sagar Babanrao",
+         "authors": "Pokharkar Sagar Babanrao (Mr.)"
+        }
+       ]
+      },
+      {
+       "num": 31,
+       "anchor": "s31",
+       "room": "G",
+       "family": "ai",
+       "title": "Large Language Models: Applications & Safety",
+       "chair": "",
+       "coordinator": "",
+       "link": "",
+       "start": "12:25",
+       "papers": [
+        {
+         "id": "261923",
+         "title": "Multilingual and Code-Mixed Indian Political Tweet Classification Using Deep Learning and Transformer-Based Approaches",
+         "presenter": "Jainee kumari",
+         "authors": "Jainee kumari (Symbiosis Institute of Technology, Pune Campus, Symbiosis International (Deemded University), (SIU) Pune, India); Durgesh Nandan (School of CS & AI SR University Warangal, India); Mangal Singh (Department of E & TC Symbiosis Institute of Technology, Pune Campus, Symbiosis International (Deemded University), (SIU) Pune, India)"
+        },
+        {
+         "id": "738516",
+         "title": "Multimodal Learning Data Management and Quality Aware Dynamic Fusion for Intelligent Learning Companions",
+         "presenter": "Cunqian You",
+         "authors": "Cunqian You (China Jiliang University); Xiaojun Wang (China Jiliang University); Huijuan Lu (China Jiliang University)"
+        },
+        {
+         "id": "50644",
+         "title": "RL-Driven Adaptive Retrieval Control in RAG Systems Using HNSW and GPU-Accelerated Retrieval Caching",
+         "presenter": "Don Christ G",
+         "authors": "Don Christ G (St. Joseph's College of Engineering); Dinesh P (St. Joseph's College of Engineering); Thiraviaselvi G (St. Joseph's College of Engineering); Adlin Layola J A (St. Joseph's College of Engineering)"
+        },
+        {
+         "id": "356150",
+         "title": "System for Dynamic Enterprise Management based on Context-Aware Decision Support",
+         "presenter": "K.S. Salini",
+         "authors": "K.S. Salini (Saveetha School of Law, Saveetha Institute of Medical and Technical Sciences, Chennai -77.)"
+        },
+        {
+         "id": "572078",
+         "title": "Systematic Review on Human Centric AI Support in Formula One",
+         "presenter": "Pitigala Kankanamge Sachin Pasindu",
+         "authors": "PKS Pasindu (General Sir John Kotelawala Defence University Ratmalana, Sri Lanka); LDSB Weerasinghe (University of Moratuwa Moratuwa, Sri Lanka); DVDS Abeysinghe (General Sir John Kotelawala Defence University Ratmalana, Sri Lanka)"
+        },
+        {
+         "id": "560429",
+         "title": "T-DeBERTa: Tuned DeBERTa for AI-Authored Tweet Detection",
+         "presenter": "Subhayan Bhattacharya",
+         "authors": "Subhayan Bhattacharya (Jadavpur University); Sarbani Roy (Jadavpur University)"
+        },
+        {
+         "id": "183986",
+         "title": "Talk It Out: Development of a Peer Support and Guidance Consultation Mobile Chat App",
+         "presenter": "Dr. Cristian Rey C. Seco",
+         "authors": "Rogelyn B. Imperial (Department of Information Technology, Central Luzon State University); Airah Trixie B. Gajete (Department of Information Technology, Central Luzon State University); Chris John R. Galvez (Department of Information Technology, Central Luzon State University); Cristian Rey C. Seco, DIT (Department of Information Technology, Central Luzon State University); Amir Ledesma (Department of Information Technology, Central Luzon State University); Santi S. Ognita (Department of Information Technology, Central Luzon State University)"
+        },
+        {
+         "id": "115423",
+         "title": "Towards Intelligent Automation in IT Project Management: A Systematic Review of Task Allocation, Resource Planning, and Sprint Scheduling with Implications for Small Language Model Adoption",
+         "presenter": "Falguni Sharma",
+         "authors": "Falguni Sharma (Amity University Rajasthan); Manju Kaushik (Amity University Rajasthan); Prashant Sharma (Vivekananda Global University)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ceremony",
+     "start": "14:15",
+     "end": "15:00",
+     "title": "Valedictory Session",
+     "link": "",
+     "chair": "",
+     "coordinator": "",
+     "run": [
+      {
+       "t": "14:15",
+       "d": "Welcome, and a look back over the two days"
+      },
+      {
+       "t": "14:20",
+       "d": "<b>Reports from the session chairs</b> &mdash; one voice for each strand of the programme"
+      },
+      {
+       "t": "14:33",
+       "d": "<b>Best paper announcements</b>"
+      },
+      {
+       "t": "14:41",
+       "d": "<b>Publication timelines</b> &mdash; the IEEE Xplore submission, indexing, and what authors should expect next"
+      },
+      {
+       "t": "14:49",
+       "d": "<b>Address</b> &mdash; Chief Guest and the IEEE Nepal Section"
+      },
+      {
+       "t": "14:55",
+       "d": "<b>Vote of thanks</b>, and the formal close"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+};
+
+const pad = n => String(n).padStart(2,"0");
+const toMin = h => { const p=h.split(":").map(Number); return p[0]*60+p[1]; };
+function clock(m){
+  m=((m%1440)+1440)%1440;
+  const h=Math.floor(m/60), mi=m%60, ap=h>=12?"p.m.":"a.m.";
+  const h12=h%12===0?12:h%12;
+  return h12+"."+pad(mi)+" "+ap;
+}
+const ist = m => clock(m-15);
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const written = v => (v && String(v).trim()) ? esc(v) : '<span class="rule-blank"></span>';
+const endOf = s => toMin(s.start) + s.papers.length*(TALK+QA);
+
+/* ---------- one session ---------- */
+function renderSession(s, dayDate){
+  const st = toMin(s.start), en = endOf(s);
+  const rows = s.papers.map(function(p,i){
+    const a = st + i*(TALK+QA);
+    return '<tr><td class="num">'+(i+1)+'</td><td class="tm">'+clock(a)+'</td>'
+      + '<td class="pid">'+esc(p.id)+'</td><td>'+esc(p.title)+'</td>'
+      + '<td class="pres">'+esc(p.presenter)+'</td></tr>';
+  }).join("");
+
+  return '<div class="session" id="'+esc(s.anchor)+'">'
+    + '<h3><em>Session '+pad(s.num)+'</em> &mdash; '+esc(s.title)+'</h3>'
+    + '<div class="tw"><table class="detail">'
+      + '<tr><th>Date and Time</th><td>'+esc(dayDate)+', '+clock(st)+' &ndash; '+clock(en)+' (NPT)'
+        + ' &nbsp;&middot;&nbsp; '+ist(st)+' &ndash; '+ist(en)+' (IST)</td></tr>'
+      + '<tr><th>Session Chair</th><td>'+written(s.chair)+'</td></tr>'
+      + '<tr><th>Session Coordinator</th><td>'+written(s.coordinator)+'</td></tr>'
+      + '<tr><th>Virtual Joining Link</th><td>'
+        + ((s.link&&s.link.trim())?'<a href="'+esc(s.link)+'" target="_blank" rel="noopener">'+esc(s.link)+'</a>':'<span class="rule-blank"></span>')
+        + '</td></tr>'
+    + '</table></div>'
+    + '<div class="tw"><table class="papers"><thead><tr>'
+      + '<th class="c1">S.No</th><th class="c2">Time (NPT)</th><th class="c3">Paper ID</th>'
+      + '<th>Title of the Paper</th><th>Presenting Author</th></tr></thead>'
+      + '<tbody>'+rows+'</tbody></table></div>'
+    + '<p class="after">'+s.papers.length+' papers &middot; '+(en-st)+' minutes</p>'
+    + '</div>';
+}
+
+function renderCeremony(b, dayDate){
+  const st = toMin(b.start);
+  const when = clock(st) + (b.end ? ' &ndash; '+clock(toMin(b.end)) : '');
+  const run = (b.run||[]).map(r =>
+    '<tr><td class="tm">'+clock(toMin(r.t))+'</td><td>'+r.d+'</td></tr>').join("");
+  let out = '<div class="session"><h3><em>'+esc(b.title)+'</em></h3>'
+    + '<div class="tw"><table class="detail">'
+    + '<tr><th>Date and Time</th><td>'+esc(dayDate)+', '+when+' (NPT)</td></tr>';
+  if (b.chair !== undefined){
+    out += '<tr><th>Chair</th><td>'+written(b.chair)+'</td></tr>'
+         + '<tr><th>Coordinator</th><td>'+written(b.coordinator)+'</td></tr>'
+         + '<tr><th>Virtual Joining Link</th><td>'
+         + ((b.link&&b.link.trim())?'<a href="'+esc(b.link)+'" target="_blank" rel="noopener">'+esc(b.link)+'</a>':'<span class="rule-blank"></span>')
+         + '</td></tr>';
+  }
+  if (b.subtitle) out += '<tr><th>Note</th><td>'+esc(b.subtitle)+'</td></tr>';
+  out += '</table></div>';
+  if (run) out += '<div class="tw"><table class="papers"><thead><tr><th class="c2">Time</th><th>Programme</th></tr></thead><tbody>'+run+'</tbody></table></div>';
+  return out + '</div>';
+}
+
+function renderBlock(b, dayDate){
+  if (b.type === "break")
+    return '<p class="interval"><b>'+clock(toMin(b.start))+'</b>'+esc(b.label)+'</p>';
+  if (b.type === "ceremony")
+    return renderCeremony(b, dayDate);
+  return '<p class="slotlead">Session Slot '+b.slot+' &nbsp;<span>'
+      + clock(toMin(b.start))+' &ndash; '+clock(toMin(b.end))+' (NPT) &middot; Sessions '
+      + pad(b.sessions[0].num)+' to '+pad(b.sessions[b.sessions.length-1].num)
+      + ' running in parallel</span></p>'
+    + b.sessions.map(s => renderSession(s, dayDate)).join("");
+}
+
+/* ---------- at a glance ---------- */
+function renderGlance(){
+  const slots = [];
+  DATA.days.forEach(d => d.blocks.forEach(b => { if (b.type==="sessions") slots.push({d:d,b:b}); }));
+  const cols = Math.max.apply(null, slots.map(s => s.b.sessions.length));
+  let html = '<thead><tr><th>Day and Time</th>';
+  for (let i=0;i<cols;i++) html += '<th>Room '+DATA.rooms[i]+'</th>';
+  html += '</tr></thead><tbody>';
+  html += slots.map(function(s){
+    let tr = '<tr><td class="slot"><b>'+esc(s.d.tag)+'</b><br>'
+      + clock(toMin(s.b.start))+' &ndash;<br>'+clock(toMin(s.b.end))+'</td>';
+    for (let i=0;i<cols;i++){
+      const ses = s.b.sessions[i];
+      tr += ses
+        ? '<td><span class="sn">'+pad(ses.num)+'.</span> <a href="#'+esc(ses.anchor)+'">'+esc(ses.title)+'</a><br><span class="cnt">'+ses.papers.length+' papers</span></td>'
+        : '<td></td>';
+    }
+    return tr+'</tr>';
+  }).join("");
+  document.getElementById("glance").innerHTML = html+'</tbody>';
+}
+
+/* ---------- local times elsewhere ---------- */
+/* Offsets are minutes from Nepal Time (UTC+05:45). Both conference days
+   fall in September, so northern-summer clocks apply in Europe and
+   North America. */
+var ZONES = [
+  ["Nepal (NPT)",              0,    "UTC+05:45"],
+  ["India (IST)",            -15,    "UTC+05:30"],
+  ["Bangladesh, Dhaka",      +15,    "UTC+06:00"],
+  ["Sri Lanka, Colombo",     -15,    "UTC+05:30"],
+  ["China, Beijing",        +135,    "UTC+08:00"],
+  ["Gulf, Riyadh / Dubai",  -105,    "UTC+03:00"],
+  ["UTC / GMT",             -345,    "UTC"],
+  ["United Kingdom",        -285,    "UTC+01:00"],
+  ["US Eastern, New York",  -585,    "UTC−04:00"]
+];
+
+function inZone(mins, off){
+  var t = mins + off, day = "";
+  if (t < 0){ t += 1440; day = " <i>(prev. day)</i>"; }
+  else if (t >= 1440){ t -= 1440; day = " <i>(next day)</i>"; }
+  return clock(t) + day;
+}
+
+function renderZones(){
+  var marks = [];
+  DATA.days.forEach(function(d){
+    d.blocks.forEach(function(b){
+      if (b.type === "sessions")
+        marks.push([d.tag + ", Session Slot " + b.slot, toMin(b.start), toMin(b.end)]);
+      else if (b.type === "ceremony" && b.end)
+        marks.push([d.tag + ", " + b.title, toMin(b.start), toMin(b.end)]);
+    });
+  });
+  var html = '<thead><tr><th>Location</th><th>Standard</th>';
+  marks.forEach(function(m){ html += '<th>' + esc(m[0]) + '</th>'; });
+  html += '</tr></thead><tbody>';
+  html += ZONES.map(function(z){
+    var tr = '<tr><td><b>' + esc(z[0]) + '</b></td><td class="tm">' + z[2] + '</td>';
+    marks.forEach(function(m){
+      tr += '<td class="tm">' + inZone(m[1], z[1]) + ' &ndash; ' + inZone(m[2], z[1]) + '</td>';
+    });
+    return tr + '</tr>';
+  }).join("");
+  document.getElementById("zones").innerHTML = html + '</tbody>';
+}
+
+/* ---------- chair / coordinator roster ---------- */
+function renderRoster(){
+  var slots = [];
+  DATA.days.forEach(function(d){
+    d.blocks.forEach(function(b){ if (b.type === "sessions") slots.push({d:d, b:b}); });
+  });
+  var html = '<thead><tr><th>Room</th>';
+  slots.forEach(function(s){
+    html += '<th>' + esc(s.d.tag) + '<br>Slot ' + s.b.slot + ', '
+          + clock(toMin(s.b.start)) + '</th>';
+  });
+  html += '</tr></thead><tbody>';
+  html += DATA.rooms.map(function(room){
+    var tr = '<tr><td class="slot"><b>Room ' + esc(room) + '</b></td>';
+    slots.forEach(function(s){
+      var ses = null;
+      s.b.sessions.forEach(function(x){ if (x.room === room) ses = x; });
+      if (!ses){ tr += '<td class="tm">&mdash;</td>'; return; }
+      tr += '<td><a href="#' + esc(ses.anchor) + '">Session ' + pad(ses.num) + '</a><br>'
+          + '<span class="cnt">Chair: </span>' + written(ses.chair) + '<br>'
+          + '<span class="cnt">Coord: </span>' + written(ses.coordinator) + '</td>';
+    });
+    return tr + '</tr>';
+  }).join("");
+  document.getElementById("roster").innerHTML = html + '</tbody>';
+}
+
+/* ---------- finder ---------- */
+const INDEX = [];
+DATA.days.forEach(day => day.blocks.forEach(b => {
+  if (b.type !== "sessions") return;
+  b.sessions.forEach(function(s){
+    const st = toMin(s.start);
+    s.papers.forEach(function(p,i){
+      INDEX.push({id:p.id, title:p.title, presenter:p.presenter, authors:p.authors||"",
+        day:day.tag, date:day.date, num:s.num, anchor:s.anchor, sess:s.title, room:s.room,
+        at:clock(st+i*(TALK+QA)), atIst:ist(st+i*(TALK+QA))});
+    });
+  });
+}));
+
+function runQuery(){
+  const v = document.getElementById("q").value.trim().toLowerCase();
+  const box = document.getElementById("qres");
+  if (v.length < 2){ box.innerHTML=""; return; }
+  const hits = INDEX.filter(r =>
+    r.id.toLowerCase().indexOf(v)===0 ||
+    r.title.toLowerCase().indexOf(v)>=0 ||
+    r.authors.toLowerCase().indexOf(v)>=0);
+  if (!hits.length){
+    box.innerHTML = '<p class="qnote">No paper found. Please try the Paper ID or one distinctive word from the title.</p>';
+    return;
+  }
+  box.innerHTML = hits.slice(0,20).map(r =>
+    '<div class="hit"><b>'+esc(r.id)+'</b> &nbsp;'+esc(r.title)
+    + '<br><i>'+esc(r.presenter)+' &middot; '+esc(r.date)+', Room '+esc(r.room)+', '+esc(r.at)+' NPT ('+esc(r.atIst)+' IST)</i>'
+    + '<br><a href="#'+esc(r.anchor)+'">Session '+pad(r.num)+' &mdash; '+esc(r.sess)+'</a></div>'
+  ).join("") + (hits.length>20 ? '<p class="qnote">'+(hits.length-20)+' further matches. Please narrow the search.</p>' : '');
+}
+
+function render(){
+  renderGlance();
+  renderZones();
+  renderRoster();
+  document.getElementById("programme").innerHTML = DATA.days.map(function(day){
+    let n = 0;
+    day.blocks.forEach(b => { if (b.type==="sessions") b.sessions.forEach(s => n += s.papers.length); });
+    return '<p class="dayhead">'+esc(day.tag)+' &mdash; '+esc(day.date)
+      + ' <span>('+esc(day.weekday)+') &middot; '+n+' papers</span></p>'
+      + day.blocks.map(b => renderBlock(b, day.date)).join("");
+  }).join("");
+  document.getElementById("ver").textContent = DATA.version;
+  document.getElementById("q").addEventListener("input", runQuery);
+}
+render();
+</script>
+
+<!-- ===================================================================
+     VIEW-ONLY LAYER
+     Deters casual copying of the circulated programme. Blocks the right-
+     click menu, text selection, copy/cut, dragging, printing and the
+     usual save / view-source / devtools shortcuts, and lays a watermark
+     over the page.
+
+     This is a deterrent, not security. Anyone determined can still read
+     the text: the page source is served to the browser and screen
+     capture happens in the operating system, where no web page can
+     reach. Do not treat this copy as confidential.
+     =================================================================== -->
+<style>
+  html,body{
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+    -webkit-touch-callout:none;
+  }
+  /* the search box must stay usable */
+  #q{ -webkit-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; }
+
+  .mark svg, .mark{ -webkit-user-drag:none; pointer-events:none; }
+  a{ -webkit-user-drag:none; }
+
+  #watermark{
+    position:fixed; inset:0; z-index:9998; pointer-events:none; opacity:.07;
+    background-repeat:repeat; background-position:0 0;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='330' height='190'><text x='6' y='104' transform='rotate(-24 165 95)' font-family='Georgia,serif' font-size='17' fill='%23000000'>ICACT 2026 &#183; not for redistribution</text></svg>");
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) #watermark{
+      opacity:.12;
+      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='330' height='190'><text x='6' y='104' transform='rotate(-24 165 95)' font-family='Georgia,serif' font-size='17' fill='%23ffffff'>ICACT 2026 &#183; not for redistribution</text></svg>");
+    }
+  }
+
+  #veil{
+    position:fixed; inset:0; z-index:9999; background:var(--paper); color:var(--ink-2);
+    display:none; align-items:center; justify-content:center; text-align:center;
+    font-family:var(--serif); font-size:17px; padding:30px;
+  }
+  #veil.on{ display:flex; }
+
+  @media print{
+    .doc,.head-rule,#watermark{ display:none !important; }
+    body::after{
+      content:"This copy of the ICACT 2026 programme is for viewing on screen only. For a printable copy, please write to secretaryicact@gmail.com.";
+      display:block; font-family:Georgia,serif; font-size:13pt; padding:40pt; max-width:34em;
+    }
+  }
+</style>
+
+<div id="watermark" aria-hidden="true"></div>
+<div id="veil" aria-hidden="true">This programme is hidden while the window is not in focus.<br>Return to this window to continue reading.</div>
+
+<script>
+(function(){
+  "use strict";
+  var stop = function(e){ e.preventDefault(); e.stopPropagation(); return false; };
+
+  document.addEventListener("contextmenu", stop, true);
+  document.addEventListener("copy",  stop, true);
+  document.addEventListener("cut",   stop, true);
+  document.addEventListener("dragstart", stop, true);
+
+  document.addEventListener("selectstart", function(e){
+    if (e.target && e.target.id === "q") return true;   // let the search box work
+    return stop(e);
+  }, true);
+
+  document.addEventListener("keydown", function(e){
+    var k = (e.key || "").toLowerCase();
+    if (e.target && e.target.id === "q" && !e.ctrlKey && !e.metaKey) return;
+
+    if (k === "f12"){ return stop(e); }
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (k==="i"||k==="j"||k==="c")) return stop(e);
+    if ((e.ctrlKey || e.metaKey) && (k==="c"||k==="x"||k==="a"||k==="s"||k==="u"||k==="p")) return stop(e);
+    if (k === "printscreen"){
+      try { if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(" "); } catch(err){}
+      return stop(e);
+    }
+  }, true);
+
+  // Screen capture cannot be blocked by a web page. Hiding the content while
+  // the window is not in focus is the most a page can do, and it defeats only
+  // the clumsiest attempts.
+  var veil = document.getElementById("veil");
+  var hide = function(){ veil.classList.add("on"); };
+  var show = function(){ veil.classList.remove("on"); };
+  window.addEventListener("blur", hide);
+  window.addEventListener("focus", show);
+  document.addEventListener("visibilitychange", function(){
+    if (document.visibilityState === "hidden") hide(); else show();
+  });
+})();
+</script>
+
+</body>
+</html>
