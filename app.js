@@ -18,6 +18,7 @@
   var NAV = [
     ["home", "./", "Home"],
     ["about", "about.html", "About"],
+    ["schedule", "schedule.html", "Schedule"],
     ["cfp", "call-for-papers.html", "Call for Papers"],
     ["committee", "committee.html", "Committee"],
     ["registration", "registration.html", "Registration"],
