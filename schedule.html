@@ -3343,7 +3343,7 @@ function calPaper(id){
     uid: "icact2026-paper-"+r.id+"@icact.github.io",
     date: d, start: r.mins, end: r.mins+TALK+QA,
     summary: "ICACT 2026 \u00b7 Paper "+r.id+" \u00b7 "+r.title,
-    location: "Room "+r.room+", Hilton Kathmandu",
+    location: "Online · Room "+r.room+" · joining link on the programme page",
     description: "Session "+pad(r.num)+" \u2014 "+r.sess
       +"\nPresenting author: "+r.presenter
       +"\nNepal Time "+r.at+" ("+r.atIst+" IST)"
@@ -3359,7 +3359,7 @@ function calSession(num){
     uid: "icact2026-session-"+pad(ss.num)+"@icact.github.io",
     date: d, start: st, end: en,
     summary: "ICACT 2026 \u00b7 Session "+pad(ss.num)+" \u00b7 "+ss.title,
-    location: "Room "+ss.room+", Hilton Kathmandu",
+    location: "Online · Room "+ss.room+" · joining link on the programme page",
     description: ss.papers.length+" papers, "+(en-st)+" minutes."
       +"\nPlease join ten minutes before the session begins."
       +"\nhttps://icact.github.io/schedule.html#"+ss.anchor
