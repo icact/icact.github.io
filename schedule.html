@@ -119,6 +119,13 @@ table.papers td.pres{width:172px;}
 .finder{border:1.5px solid var(--line); padding:16px 18px; margin-top:12px; background:var(--shade);}
 .finder label{display:block; font-weight:700; font-size:14.5px; margin-bottom:5px;}
 .finder p{margin:0 0 10px; font-size:13.5px; color:var(--ink-2);}
+.tmplbox{margin:16px 0 4px 0; padding:13px 16px; border:1px solid var(--line);
+  border-left:3px solid #00629B; background:var(--paper-2, #f7fafd);}
+.tmplbox b{display:block; margin-bottom:3px;}
+.tmplbox a.dl{display:inline-block; margin-top:8px; padding:6px 12px; border:1px solid #00629B;
+  color:#00629B; text-decoration:none; font-size:14px;}
+.tmplbox a.dl:hover{background:#00629B; color:#fff;}
+@media print{ .tmplbox a.dl{border:none;} }
 .cal{display:inline-block; font-family:var(--serif); font-size:12.5px; line-height:1.2;
   padding:3px 8px; border:1px solid var(--line); background:transparent; color:var(--ink-2);
   cursor:pointer; border-radius:2px;}
@@ -188,6 +195,15 @@ table.papers td.pres{width:172px;}
     <p>Type your Paper ID, a word from the title, or an author name.</p>
     <input id="q" type="search" placeholder="e.g. 3494, federated learning, Kamruddin" autocomplete="off">
     <div id="qres"></div>
+  </div>
+
+  <div class="tmplbox">
+    <b>Presentation template</b>
+    Please prepare your slides on the official ICACT&nbsp;2026 template. It carries the conference
+    details, a cover slide for your Paper&nbsp;ID, title, authors, session name and number, and a
+    section-by-section plan that fits the ten minutes allowed. Authors are requested to follow the
+    template and the timeline.
+    <a class="dl" href="assets/ICACT2026-Presentation-Template.pptx">Download the presentation template (PPTX)</a>
   </div>
 
   <h2><span class="n">2.</span> Local Times for Overseas Authors</h2>
