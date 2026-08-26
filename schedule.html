@@ -119,6 +119,14 @@ table.papers td.pres{width:172px;}
 .finder{border:1.5px solid var(--line); padding:16px 18px; margin-top:12px; background:var(--shade);}
 .finder label{display:block; font-weight:700; font-size:14.5px; margin-bottom:5px;}
 .finder p{margin:0 0 10px; font-size:13.5px; color:var(--ink-2);}
+.cal{display:inline-block; font-family:var(--serif); font-size:12.5px; line-height:1.2;
+  padding:3px 8px; border:1px solid var(--line); background:transparent; color:var(--ink-2);
+  cursor:pointer; border-radius:2px;}
+.cal:hover{border-color:var(--ink-3); color:var(--ink);}
+.hit .cal{margin-top:5px;}
+.hitmeta{margin-top:4px; font-size:13px; color:var(--ink-2); line-height:1.55;}
+.hitmeta i{color:var(--ink-3);}
+@media print{ .cal{display:none;} }
 #q{width:100%; max-width:460px; font-family:var(--serif); font-size:14.5px; padding:7px 9px; border:1px solid var(--line); background:var(--paper); color:var(--ink);}
 #q:focus{outline:2px solid var(--blue); outline-offset:1px;}
 #qres:not(:empty){margin-top:12px; background:var(--paper); border:1px solid var(--line-2); padding:4px 12px;}
@@ -3067,6 +3075,7 @@ const endOf = s => toMin(s.start) + s.papers.length*(TALK+QA);
 
 /* ---------- one session ---------- */
 function renderSession(s, dayDate){
+  SESSION_INDEX[s.num] = {s:s, date:dayDate};
   const st = toMin(s.start), en = endOf(s);
   const rows = s.papers.map(function(p,i){
     const a = st + i*(TALK+QA);
@@ -3082,6 +3091,7 @@ function renderSession(s, dayDate){
         + ' &nbsp;&middot;&nbsp; '+ist(st)+' &ndash; '+ist(en)+' (IST)</td></tr>'
       + '<tr><th>Session Chair</th><td>'+written(s.chair)+'</td></tr>'
       + '<tr><th>Session Coordinator</th><td>'+written(s.coordinator)+'</td></tr>'
+      + '<tr><th>Calendar</th><td><button type="button" class="cal" data-cal="session" data-num="'+s.num+'">Add this session to my calendar</button></td></tr>'
       + '<tr><th>Virtual Joining Link</th><td>'
         + ((s.link&&s.link.trim())?'<a href="'+esc(s.link)+'" target="_blank" rel="noopener">'+esc(s.link)+'</a>':'<span class="rule-blank"></span>')
         + '</td></tr>'
@@ -3222,8 +3232,122 @@ function renderRoster(){
   document.getElementById("roster").innerHTML = html + '</tbody>';
 }
 
+/* ---------- calendar export (.ics) ---------- */
+var MONTHS = {january:1,february:2,march:3,april:4,may:5,june:6,
+              july:7,august:8,september:9,october:10,november:11,december:12};
+function p2(n){ return (n<10?"0":"")+n; }
+function ymd(dateStr){
+  var m = String(dateStr).trim().match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  if (!m) return null;
+  var mo = MONTHS[m[2].toLowerCase()];
+  return mo ? m[3]+p2(mo)+p2(+m[1]) : null;
+}
+function hms(mins){ return p2(Math.floor(mins/60))+p2(mins%60)+"00"; }
+function icsEsc(t){
+  return String(t).replace(/\\/g,"\\\\").replace(/;/g,"\\;")
+                  .replace(/,/g,"\\,").replace(/\r?\n/g,"\\n");
+}
+function fold(line){
+  var out = "", rest = line;
+  while (rest.length > 73){ out += rest.slice(0,73)+"\r\n "; rest = rest.slice(73); }
+  return out + rest;
+}
+function icsStamp(){
+  var d = new Date();
+  return d.getUTCFullYear()+p2(d.getUTCMonth()+1)+p2(d.getUTCDate())+"T"
+       + p2(d.getUTCHours())+p2(d.getUTCMinutes())+p2(d.getUTCSeconds())+"Z";
+}
+function vevent(o){
+  return ["BEGIN:VEVENT",
+    "UID:"+o.uid,
+    "DTSTAMP:"+icsStamp(),
+    "DTSTART;TZID=Asia/Kathmandu:"+o.date+"T"+hms(o.start),
+    "DTEND;TZID=Asia/Kathmandu:"+o.date+"T"+hms(o.end),
+    "SUMMARY:"+icsEsc(o.summary),
+    "LOCATION:"+icsEsc(o.location),
+    "DESCRIPTION:"+icsEsc(o.description),
+    "END:VEVENT"].map(fold).join("\r\n");
+}
+function icsDoc(body){
+  return ["BEGIN:VCALENDAR","VERSION:2.0",
+    "PRODID:-//ICACT 2026//Conference Programme//EN",
+    "CALSCALE:GREGORIAN","METHOD:PUBLISH",
+    "BEGIN:VTIMEZONE","TZID:Asia/Kathmandu",
+    "BEGIN:STANDARD","DTSTART:19860101T000000",
+    "TZOFFSETFROM:+0545","TZOFFSETTO:+0545","TZNAME:NPT",
+    "END:STANDARD","END:VTIMEZONE",
+    body,"END:VCALENDAR"].join("\r\n")+"\r\n";
+}
+function icsSave(name, text){
+  try{
+    var blob = new Blob([text], {type:"text/calendar;charset=utf-8"});
+    var url  = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = name; a.style.display = "none";
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ document.body.removeChild(a); URL.revokeObjectURL(url); }, 500);
+  } catch (err) {
+    alert("This browser would not start the download. Please note the time from the programme instead.");
+  }
+}
+var SESSION_INDEX = {};
+/* session details shown with each search result */
+function tba(v){
+  return (v && String(v).trim()) ? esc(v) : '<i>to be announced</i>';
+}
+function joinBit(r){
+  var out = '<div class="hitmeta">';
+  out += 'Session Chair: '+tba(r.chair)+'<br>';
+  out += 'Session Coordinator: '+tba(r.coord)+'<br>';
+  out += (r.link && r.link.trim())
+    ? 'Joining link: <a href="'+esc(r.link)+'" target="_blank" rel="noopener">'+esc(r.link)+'</a>'
+    : 'Joining link: <i>will be published here before the conference</i>';
+  out += '<br>For support, write to us at '
+      +  '<a href="mailto:secretaryicact@gmail.com">secretaryicact@gmail.com</a>';
+  return out+'</div>';
+}
+function calPaper(id){
+  var r = INDEX_BY_ID[id]; if (!r) return;
+  var d = ymd(r.date); if (!d) return;
+  icsSave("ICACT2026-paper-"+r.id+".ics", icsDoc(vevent({
+    uid: "icact2026-paper-"+r.id+"@icact.github.io",
+    date: d, start: r.mins, end: r.mins+TALK+QA,
+    summary: "ICACT 2026 \u00b7 Paper "+r.id+" \u00b7 "+r.title,
+    location: "Room "+r.room+", Hilton Kathmandu",
+    description: "Session "+pad(r.num)+" \u2014 "+r.sess
+      +"\nPresenting author: "+r.presenter
+      +"\nNepal Time "+r.at+" ("+r.atIst+" IST)"
+      +"\nAllotted 10 minutes, plus 2 minutes for questions."
+      +"\nhttps://icact.github.io/schedule.html#"+r.anchor
+  })));
+}
+function calSession(num){
+  var e = SESSION_INDEX[num]; if (!e) return;
+  var d = ymd(e.date); if (!d) return;
+  var ss = e.s, st = toMin(ss.start), en = endOf(ss);
+  icsSave("ICACT2026-session-"+pad(ss.num)+".ics", icsDoc(vevent({
+    uid: "icact2026-session-"+pad(ss.num)+"@icact.github.io",
+    date: d, start: st, end: en,
+    summary: "ICACT 2026 \u00b7 Session "+pad(ss.num)+" \u00b7 "+ss.title,
+    location: "Room "+ss.room+", Hilton Kathmandu",
+    description: ss.papers.length+" papers, "+(en-st)+" minutes."
+      +"\nPlease join ten minutes before the session begins."
+      +"\nhttps://icact.github.io/schedule.html#"+ss.anchor
+  })));
+}
+document.addEventListener("click", function(ev){
+  var t = ev.target;
+  while (t && t !== document && !(t.getAttribute && t.getAttribute("data-cal"))) t = t.parentNode;
+  if (!t || t === document || !t.getAttribute) return;
+  ev.preventDefault();
+  var kind = t.getAttribute("data-cal");
+  if (kind === "paper") calPaper(t.getAttribute("data-id"));
+  else if (kind === "session") calSession(t.getAttribute("data-num"));
+});
+
 /* ---------- finder ---------- */
 const INDEX = [];
+var INDEX_BY_ID = {};
 DATA.days.forEach(day => day.blocks.forEach(b => {
   if (b.type !== "sessions") return;
   b.sessions.forEach(function(s){
@@ -3231,10 +3355,12 @@ DATA.days.forEach(day => day.blocks.forEach(b => {
     s.papers.forEach(function(p,i){
       INDEX.push({id:p.id, title:p.title, presenter:p.presenter, authors:p.authors||"",
         day:day.tag, date:day.date, num:s.num, anchor:s.anchor, sess:s.title, room:s.room,
+        mins:st+i*(TALK+QA), link:s.link||"", chair:s.chair||"", coord:s.coordinator||"",
         at:clock(st+i*(TALK+QA)), atIst:ist(st+i*(TALK+QA))});
     });
   });
 }));
+INDEX.forEach(function(r){ INDEX_BY_ID[r.id] = r; });
 
 function runQuery(){
   const v = document.getElementById("q").value.trim().toLowerCase();
@@ -3251,7 +3377,9 @@ function runQuery(){
   box.innerHTML = hits.slice(0,20).map(r =>
     '<div class="hit"><b>'+esc(r.id)+'</b> &nbsp;'+esc(r.title)
     + '<br><i>'+esc(r.presenter)+' &middot; '+esc(r.date)+', Room '+esc(r.room)+', '+esc(r.at)+' NPT ('+esc(r.atIst)+' IST)</i>'
-    + '<br><a href="#'+esc(r.anchor)+'">Session '+pad(r.num)+' &mdash; '+esc(r.sess)+'</a></div>'
+    + '<br><a href="#'+esc(r.anchor)+'">Session '+pad(r.num)+' &mdash; '+esc(r.sess)+'</a>'
+    + '<br>'+joinBit(r)
+    + '<br><button type="button" class="cal" data-cal="paper" data-id="'+esc(r.id)+'">Add this paper to my calendar</button></div>'
   ).join("") + (hits.length>20 ? '<p class="qnote">'+(hits.length-20)+' further matches. Please narrow the search.</p>' : '');
 }
 
