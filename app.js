@@ -10,9 +10,10 @@
      message changes so a dismissed bar comes back with the new text. */
   var ANN = {
     show: true,
-    key: "icact-ann-2026-notify",
-    msg: "&#9200; <b>Submission deadline passed.</b> Acceptance notifications go out <b>on or before 8 Aug 2026</b>. Paper Submission Portal.",
-    cta: "Submit now &rarr;"
+    key: "icact-ann-2026-programme",
+    msg: "&#128203; <b>Conference programme published.</b> Check your session, room and time, and download the official presentation template.",
+    cta: "Open the programme &rarr;",
+    href: "schedule.html"
   };
 
   var NAV = [
@@ -33,7 +34,7 @@
     return (
       '<div class="annbar" id="annbar">' +
         "<span>" + ANN.msg + "</span>" +
-        '<a href="' + SUBMIT + '" target="_blank" rel="noopener">' + ANN.cta + "</a>" +
+        '<a href="' + (ANN.href || SUBMIT) + '"' + (ANN.href ? '' : ' target="_blank" rel="noopener"') + '>' + ANN.cta + "</a>" +
         '<button class="annbar__x" type="button" aria-label="Dismiss announcement">&times;</button>' +
       "</div>"
     );
