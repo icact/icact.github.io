@@ -11,7 +11,7 @@
   var ANN = {
     show: true,
     key: "icact-ann-2026-programme",
-    msg: "&#128203; <b>Conference programme published.</b> Check your session, room and time, and download the official presentation template.",
+    msg: "&#128231; <b>Authors are requested to check their email for the schedule.</b> For support, reach us at <a href=\"mailto:secretaryicact@gmail.com\">secretaryicact@gmail.com</a>.",
     cta: "Open the programme &rarr;",
     href: "schedule.html"
   };
