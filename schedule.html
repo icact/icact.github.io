@@ -252,7 +252,7 @@ table.papers td.pres{width:172px;}
         <li><strong>The presentation must be live, and must be delivered by an author of the paper.</strong>
             Pre-recorded presentations and presentation by proxy are <strong>strictly discouraged</strong>.
             Where the presenting author named in this programme is unable to attend, a co-author may present
-            in their place; please inform the Session Coordinator before the session so that the certificate
+            in their place; please inform the session chairs before the session so that the certificate
             is issued correctly. A paper presented by someone who is not an author, or played as a recording,
             may be treated as not presented.</li>
       </ul>
@@ -274,16 +274,16 @@ table.papers td.pres{width:172px;}
     </li>
     <li><b>Assistance during the conference</b>
       <ul>
-        <li>The <strong>Session Coordinator</strong> named against each session is the first point of contact on the day for links, admission and technical difficulty.</li>
-        <li>The <strong>Session Chair</strong> conducts the session, maintains time and moderates the discussion.</li>
+        <li>The <strong>Session Chair 2</strong> named against each session is the first point of contact on the day for links, admission and technical difficulty.</li>
+        <li>The <strong>Session Chair 1</strong> conducts the session, maintains time and moderates the discussion.</li>
         <li>Sessions and links are subject to change. Authors are advised to check the conference website before their day.</li>
         <li>For any other matter, please write to <a href="mailto:secretaryicact@gmail.com">secretaryicact@gmail.com</a>.</li>
       </ul>
     </li>
   </ol>
 
-  <h2><span class="n">4.</span> Session Chairs and Session Coordinators</h2>
-  <p class="note-line">Each room needs one Session Chair and one Session Coordinator for the duration of a slot. Because the four slots run at different times, <b>one person may take the same room through all four slots</b>. The conference therefore needs a minimum of <b>eight chairs and eight coordinators</b>, or sixteen of each if the committee prefers two shifts, one for each day.</p>
+  <h2><span class="n">4.</span> Session Chairs</h2>
+  <p class="note-line">Each room needs two Session Chairs, a Session Chair 1 and a Session Chair 2, for the duration of a slot. Because the four slots run at different times, <b>one person may take the same room through all four slots</b>. The conference therefore needs a minimum of <b>sixteen chairs</b>, or sixteen of each if the committee prefers two shifts, one for each day.</p>
   <div class="tw"><table id="roster"></table></div>
   <p class="note-line">Names entered against a session in the schedule below appear here automatically.</p>
 
@@ -385,7 +385,7 @@ const DATA = {
        "family": "health",
        "title": "Medical Image Segmentation & Ensemble Diagnostics",
        "chair": "Dr. Chander Prabha, Professor, Chitkara University Institute of Engineering and Technology, Chitkara University, Punjab, India",
-       "coordinator": "",
+       "coordinator": "Dr. Ambika Gupta, Assistant Professor, Sharda University, Agra",
        "link": "",
        "start": "10:45",
        "papers": [
@@ -822,7 +822,7 @@ const DATA = {
        "room": "G",
        "family": "society",
        "title": "Water Quality, Sustainability & Green Computing",
-       "chair": "Dr. Anurodh Kumar, Associate Professor, SR University, Warangal, India",
+       "chair": "Dr. Anurodh Kumar, Associate Professor, SR University, Warangal, Telangana, India",
        "coordinator": "",
        "link": "",
        "start": "10:45",
@@ -962,7 +962,7 @@ const DATA = {
        "room": "I",
        "family": "systems",
        "title": "Smart Grids, Energy Systems & Power Analytics",
-       "chair": "Dr. Rupesh Kumar Mishra, Associate Professor, SR University",
+       "chair": "Dr. Rupesh Kumar Mishra, Associate Professor, SR University, Warangal, Telangana, India",
        "coordinator": "",
        "link": "",
        "start": "10:45",
@@ -1170,7 +1170,7 @@ const DATA = {
        "room": "B",
        "family": "security",
        "title": "AI-Driven Cyber Threat Detection & Response",
-       "chair": "Dr. Abhishek Kumar Tripathi, Assistant Professor, Aditya University",
+       "chair": "Dr. Abhishek Kumar Tripathi, Assistant Professor, Aditya University, Surampalem, Andhra Pradesh, India",
        "coordinator": "",
        "link": "",
        "start": "13:10",
@@ -1706,7 +1706,7 @@ const DATA = {
        "room": "J",
        "family": "health",
        "title": "Clinical Decision Support & Connected Health",
-       "chair": "",
+       "chair": "Dr. Sandip Bhattacharya, Professor, SR University, Warangal, Telangana, India",
        "coordinator": "",
        "link": "",
        "start": "13:10",
@@ -1850,7 +1850,7 @@ const DATA = {
        "room": "B",
        "family": "systems",
        "title": "Low-Power Circuits, Energy Systems & EV Infrastructure",
-       "chair": "Dr. Prakash Chandra Behera, Associate Professor, St. Claret College, Bengaluru",
+       "chair": "Dr. Prakash Chandra Behera, Associate Professor, St. Claret College, Autonomous",
        "coordinator": "",
        "link": "",
        "start": "10:00",
@@ -2941,7 +2941,7 @@ const DATA = {
        "room": "H",
        "family": "systems",
        "title": "Space, Spectrum & Reliable Communications",
-       "chair": "Dr. Vishwanath Bijalwan, Associate Professor, Amity University, Punjab",
+       "chair": "Dr. Vishwanath Bijalwan, Associate Professor, Amity University Punjab",
        "coordinator": "",
        "link": "",
        "start": "12:25",
@@ -2978,7 +2978,7 @@ const DATA = {
        "room": "I",
        "family": "systems",
        "title": "Networks, Spectrum & 5G Intelligence",
-       "chair": "",
+       "chair": "Dr. Kabita Thaoroijam, Associate Professor, SR University",
        "coordinator": "",
        "link": "",
        "start": "12:25",
@@ -3027,7 +3027,7 @@ const DATA = {
        "room": "J",
        "family": "security",
        "title": "Security, Privacy & Trusted Data Collaboration",
-       "chair": "",
+       "chair": "Dr. Pramoda Patro, Associate Professor, Associate Professor, Symbiosis International University, Pune",
        "coordinator": "",
        "link": "",
        "start": "12:25",
@@ -3153,8 +3153,8 @@ function renderSession(s, dayDate){
     + '<div class="tw"><table class="detail">'
       + '<tr><th>Date and Time</th><td>'+esc(dayDate)+', '+clock(st)+' &ndash; '+clock(en)+' (NPT)'
         + ' &nbsp;&middot;&nbsp; '+ist(st)+' &ndash; '+ist(en)+' (IST)</td></tr>'
-      + '<tr><th>Session Chair</th><td>'+written(s.chair)+'</td></tr>'
-      + '<tr><th>Session Coordinator</th><td>'+written(s.coordinator)+'</td></tr>'
+      + '<tr><th>Session Chair 1</th><td>'+written(s.chair)+'</td></tr>'
+      + '<tr><th>Session Chair 2</th><td>'+written(s.coordinator)+'</td></tr>'
       + '<tr><th>Calendar</th><td><button type="button" class="cal" data-cal="session" data-num="'+s.num+'">Add this session to my calendar</button></td></tr>'
       + '<tr><th>Virtual Joining Link</th><td>'
         + ((s.link&&s.link.trim())?'<a href="'+esc(s.link)+'" target="_blank" rel="noopener">'+esc(s.link)+'</a>':'<span class="rule-blank"></span>')
@@ -3177,8 +3177,8 @@ function renderCeremony(b, dayDate){
     + '<div class="tw"><table class="detail">'
     + '<tr><th>Date and Time</th><td>'+esc(dayDate)+', '+when+' (NPT)</td></tr>';
   if (b.chair !== undefined){
-    out += '<tr><th>Chair</th><td>'+written(b.chair)+'</td></tr>'
-         + '<tr><th>Coordinator</th><td>'+written(b.coordinator)+'</td></tr>'
+    out += '<tr><th>Session Chair 1</th><td>'+written(b.chair)+'</td></tr>'
+         + '<tr><th>Session Chair 2</th><td>'+written(b.coordinator)+'</td></tr>'
          + '<tr><th>Virtual Joining Link</th><td>'
          + ((b.link&&b.link.trim())?'<a href="'+esc(b.link)+'" target="_blank" rel="noopener">'+esc(b.link)+'</a>':'<span class="rule-blank"></span>')
          + '</td></tr>';
@@ -3288,8 +3288,8 @@ function renderRoster(){
       s.b.sessions.forEach(function(x){ if (x.room === room) ses = x; });
       if (!ses){ tr += '<td class="tm">&mdash;</td>'; return; }
       tr += '<td><a href="#' + esc(ses.anchor) + '">Session ' + pad(ses.num) + '</a><br>'
-          + '<span class="cnt">Chair: </span>' + written(ses.chair) + '<br>'
-          + '<span class="cnt">Coord: </span>' + written(ses.coordinator) + '</td>';
+          + '<span class="cnt">Chair 1: </span>' + written(ses.chair) + '<br>'
+          + '<span class="cnt">Chair 2: </span>' + written(ses.coordinator) + '</td>';
     });
     return tr + '</tr>';
   }).join("");
@@ -3361,8 +3361,8 @@ function tba(v){
 }
 function joinBit(r){
   var out = '<div class="hitmeta">';
-  out += 'Session Chair: '+tba(r.chair)+'<br>';
-  out += 'Session Coordinator: '+tba(r.coord)+'<br>';
+  out += 'Session Chair 1: '+tba(r.chair)+'<br>';
+  out += 'Session Chair 2: '+tba(r.coord)+'<br>';
   out += (r.link && r.link.trim())
     ? 'Joining link: <a href="'+esc(r.link)+'" target="_blank" rel="noopener">'+esc(r.link)+'</a>'
     : 'Joining link: <i>will be published here before the conference</i>';
