@@ -1,0 +1,12 @@
+# Working files kept alongside the site but NEVER published.
+# These hold session chairs' e-mail addresses, mobile and WhatsApp numbers.
+# GitHub Pages serves every committed file at icact.github.io, so anything
+# listed here must stay untracked.
+
+session chair.csv
+ICACT-2026-Session-Chairs.xlsx
+chaser-emails-all-pending.txt
+
+# Office lock files and other spreadsheet leftovers
+~$*
+*.tmp
