@@ -10,3 +10,4 @@ chaser-emails-all-pending.txt
 # Office lock files and other spreadsheet leftovers
 ~$*
 *.tmp
+reminder-emails-tomorrow.txt
