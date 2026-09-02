@@ -12,3 +12,7 @@ chaser-emails-all-pending.txt
 *.tmp
 reminder-emails-tomorrow.txt
 author-join-email.html
+exports_*.xlsx
+
+# Chief Guest keynote deck - his material, not ours to publish
+AI-Cybersecurity-Landscape-Technical.pdf
