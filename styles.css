@@ -81,12 +81,26 @@ em{font-style:normal;color:var(--ieee);}
 }
 
 /* ---------- Announcement ---------- */
-.annbar{background:var(--ieee-dark);color:#fff;font-size:.86rem;text-align:center;padding:9px 46px 9px 20px;position:relative;font-family:var(--f-body);}
+.annbar{background:var(--ieee-dark);color:#fff;font-size:.86rem;padding:9px 46px 9px 0;position:relative;font-family:var(--f-body);overflow:hidden;}
 .annbar b{color:var(--sky-2);}
 .annbar s{color:var(--sky-3);opacity:.8;}
 .annbar a{color:#fff;font-weight:700;text-decoration:underline;margin-left:6px;}
-.annbar__x{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--sky-3);font-size:1.3rem;line-height:1;cursor:pointer;}
+.annbar__x{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--sky-3);font-size:1.3rem;line-height:1;cursor:pointer;z-index:2;}
 .annbar--hide{display:none;}
+/* Marquee: two copies of the message, track shifted by half its width so the
+   loop is seamless. Pauses on hover/focus so the address stays readable. */
+.annbar__viewport{overflow:hidden;}
+.annbar__track{display:flex;width:max-content;animation:annbar-scroll 34s linear infinite;}
+.annbar__item{white-space:nowrap;padding-left:5rem;}
+.annbar:hover .annbar__track,.annbar:focus-within .annbar__track{animation-play-state:paused;}
+@keyframes annbar-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+/* No motion: drop the duplicate and show the message as a centred static line. */
+@media(prefers-reduced-motion:reduce){
+  .annbar{padding-left:20px;text-align:center;}
+  .annbar__track{animation:none;width:auto;justify-content:center;}
+  .annbar__item{white-space:normal;padding-left:0;}
+  .annbar__item[aria-hidden="true"]{display:none;}
+}
 
 /* ---------- Masthead (home hero): light, split spec-sheet ---------- */
 .mast{background:var(--paper);border-bottom:2px solid var(--rule);position:relative;}

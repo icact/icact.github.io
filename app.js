@@ -10,10 +10,10 @@
      message changes so a dismissed bar comes back with the new text. */
   var ANN = {
     show: true,
-    key: "icact-ann-2026-programme",
-    msg: "&#128231; <b>Authors are requested to check their email for the schedule.</b> For support, reach us at <a href=\"mailto:secretaryicact@gmail.com\">secretaryicact@gmail.com</a>.",
-    cta: "Open the programme &rarr;",
-    href: "schedule.html"
+    key: "icact-ann-2026-acceptance",
+    msg: "&#128231; <b>Acceptance has been sent, authors are requested to adhere with guidelines and deadlines.</b> For support please write us at <a href=\"mailto:convenericccmla@gmail.com\">convenericccmla@gmail.com</a>",
+    cta: "Author guidelines &rarr;",
+    href: "author-guidelines.html"
   };
 
   var NAV = [
@@ -28,13 +28,31 @@
     ["contact", "contact.html", "Contact"]
   ];
 
+  /* The bar scrolls, so the message is emitted twice: the track is translated by
+     half its width, and the second copy fills the gap for a seamless loop. That
+     copy is decorative — hidden from screen readers and taken out of the tab
+     order so its links are not announced or focusable twice. */
+  function annItem(dup) {
+    var ext = ANN.href ? "" : ' target="_blank" rel="noopener"';
+    var msg = dup ? ANN.msg.replace(/<a /g, '<a tabindex="-1" ') : ANN.msg;
+    return (
+      '<span class="annbar__item"' + (dup ? ' aria-hidden="true"' : "") + ">" +
+        msg +
+        '<a href="' + (ANN.href || SUBMIT) + '"' + ext + (dup ? ' tabindex="-1"' : "") + ">" +
+          ANN.cta +
+        "</a>" +
+      "</span>"
+    );
+  }
+
   function annbarHTML() {
     if (!ANN.show) return "";
     try { if (sessionStorage.getItem(ANN.key) === "1") return ""; } catch (e) {}
     return (
       '<div class="annbar" id="annbar">' +
-        "<span>" + ANN.msg + "</span>" +
-        '<a href="' + (ANN.href || SUBMIT) + '"' + (ANN.href ? '' : ' target="_blank" rel="noopener"') + '>' + ANN.cta + "</a>" +
+        '<div class="annbar__viewport">' +
+          '<div class="annbar__track">' + annItem(false) + annItem(true) + "</div>" +
+        "</div>" +
         '<button class="annbar__x" type="button" aria-label="Dismiss announcement">&times;</button>' +
       "</div>"
     );
